@@ -1,6 +1,6 @@
 <title>GEO-SCOPE レーダー</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Share+Tech+Mono&family=Noto+Sans+JP:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Share+Tech+Mono&family=Noto+Sans+JP:wght@400;700&family=Bodoni+Moda:opsz,wght@6..96,600&display=swap">
 <style>
 /* Layout: cockpit frame — status strip on top, radar map as the main scope, a tabbed readout console beside it (below it on phones). Single dark look by choice. */
 :root{
@@ -94,20 +94,20 @@ body.live .strip .ctl{border-top-color:transparent;padding-top:2px}
 .bigalert{position:absolute;inset:0;z-index:6;display:none;align-items:center;justify-content:center;background:rgba(2,7,9,.62);--ac:#fff}
 .bigalert.on{display:flex}
 .bigalert.c-emerg{--ac:#ff3b3b}.bigalert.c-quake{--ac:#ffd23f}.bigalert.c-nuke{--ac:#c77dff}.bigalert.c-cyber{--ac:#3fa9ff}.bigalert.c-break{--ac:#f4f7f7}
-.bigalert .bx{--ink:var(--ac);position:relative;border:2px solid var(--ink);outline:2px solid var(--ink);outline-offset:6px;color:var(--ink);background:rgba(3,10,12,.96);padding:30px 48px 26px;min-width:min(640px,86%);max-width:94%;text-align:center;box-shadow:0 0 34px color-mix(in srgb,var(--ac) 55%,transparent),inset 0 0 24px color-mix(in srgb,var(--ac) 12%,transparent);animation:baBlink 1.1s steps(1,end) infinite}
+.bigalert .bx{--ink:var(--ac);position:relative;border:2px solid var(--ink);outline:2px solid var(--ink);outline-offset:6px;color:var(--ink);background:rgba(3,10,12,.96);padding:12px 14px 14px;max-width:92%;box-sizing:border-box;text-align:center;box-shadow:0 0 34px color-mix(in srgb,var(--ac) 55%,transparent),inset 0 0 24px color-mix(in srgb,var(--ac) 12%,transparent);animation:baBlink 1.1s steps(1,end) infinite}
 @keyframes baBlink{0%,100%{--ink:var(--ac);box-shadow:0 0 34px color-mix(in srgb,var(--ac) 55%,transparent),inset 0 0 24px color-mix(in srgb,var(--ac) 12%,transparent)}50%{--ink:color-mix(in srgb,var(--ac) 22%,transparent);box-shadow:none}}
-.bigalert .k,.bigalert .t{font-family:"Helvetica Neue",Helvetica,"Helvetica Bold",Arial,"Liberation Sans","Noto Sans JP",sans-serif;font-weight:700;text-transform:uppercase;color:transparent;-webkit-text-stroke:2px var(--ink);paint-order:stroke fill;display:inline-block;transform:scale(.74,1.22);transform-origin:center;white-space:nowrap;line-height:1}
-.bigalert .k{font-size:clamp(34px,7.2vw,124px);letter-spacing:.02em;margin:14px 0 22px}
-.bigalert .k i{display:inline-block;width:9px;height:9px;border-radius:50%;background:currentColor;margin-right:10px;vertical-align:middle}
-.bigalert .k2{font-family:var(--mono);font-size:11px;letter-spacing:.2em;opacity:.85;margin-bottom:12px}
-.bigalert .t{font-size:clamp(18px,2.4vw,40px);letter-spacing:.12em;-webkit-text-stroke-width:1.4px;margin:0 0 10px;display:block}
+/* title call: tall condensed outline serif, squeezed by textLength so it fills the inner frame edge to edge */
+.bigalert .k,.bigalert .t{display:block;width:100%;height:auto;overflow:visible}
+.bigalert .k text,.bigalert .t text{font-family:"Bodoni Moda","Bodoni MT","Didot","Times New Roman",serif;font-weight:600;font-variation-settings:"opsz" 96;fill:none;stroke:var(--ink);stroke-width:3.2;stroke-linejoin:round}
+.bigalert .t{margin:12px auto 0;padding-top:12px;border-top:1px solid color-mix(in srgb,var(--ink) 55%,transparent)}
+.bigalert .t text{stroke-width:4.6}
 .bigalert .h{font-family:var(--display);font-size:clamp(20px,2.6vw,34px);line-height:1.35;font-weight:700;margin:0 0 10px;text-wrap:balance}
 .bigalert .b{font-size:15px;line-height:1.6;opacity:.92;max-width:62ch;margin:0 auto 10px}
 .bigalert .m{font-family:var(--mono);font-size:11px;letter-spacing:.14em;opacity:.8}
 .bigalert .bar{position:absolute;left:0;bottom:0;height:2px;background:var(--ink);width:100%;transform-origin:left;animation:baBar var(--dur,12s) linear forwards}
 @keyframes baBar{to{transform:scaleX(0)}}
 @media (prefers-reduced-motion:reduce){.bigalert .bx{animation:none}}
-@media (max-width:900px){.bigalert .bx{padding:18px 18px 16px;max-width:88%;min-width:0;outline-offset:4px}.bigalert .k{display:block;white-space:normal;font-size:clamp(18px,7vw,30px);line-height:1.05;letter-spacing:.02em;-webkit-text-stroke-width:1.1px;margin:6px 0 10px;transform:scale(.86,1.15)}.bigalert .t{font-size:14px;-webkit-text-stroke-width:.8px;transform:scale(.86,1.1)}.bigalert .t{font-size:12px;letter-spacing:.2em}}
+@media (max-width:900px){.bigalert .bx{padding:8px 9px 9px;outline-offset:4px}.bigalert .t{margin-top:8px;padding-top:8px}}
 
 /* signal glitch: analog/digital break-up on the map pane (SVG displacement + channel split + dropout rows + speckle) */
 .scope .glitch{position:absolute;inset:0;z-index:7;pointer-events:none;display:none}
@@ -1422,8 +1422,14 @@ const ALERT=(()=>{
     found.sort((a,b)=>b.t-a.t);(limit?found.slice(0,limit):found).reverse().forEach(a=>queue.push(a)); // items beyond the limit stay marked as seen
     pump();return found.length;}
   async function pump(){if(busy||!queue.length)return;busy=true;const a=queue.shift();try{await show(a)}catch(e){}busy=false;pump();}
+  // one SVG line per text: viewBox is ADV units per character × 200 tall, the glyphs are stretched to exactly that width
+  const ADV=82,CAP_VH=20,SUB_VH=7;
+  const ttl=(s,cls)=>{const W=Math.max(1,[...s].length)*ADV;return {W,svg:`<svg class="${cls}" viewBox="0 0 ${W} 200" preserveAspectRatio="none" aria-hidden="true"><text x="2" y="188" font-size="250" textLength="${W-4}" lengthAdjust="spacingAndGlyphs">${esc(s)}</text></svg>`};};
   function card(a){const L=LABEL[a.c];const sub=a.n?enName(a.n):(a.sub||'');
-    return `<div class="bx" style="--dur:${DUR}ms"><div class="k">${esc(L)}</div>${sub?`<div class="t">${esc(sub)}</div>`:''}<div class="bar"></div></div>`;}
+    const k=ttl(L,'k'),t=sub?ttl(sub,'t'):null;
+    // box width follows the title's aspect at CAP_VH tall; the country line is narrower when it is short
+    const tw=t?`style="width:${Math.min(100,(t.W/k.W)*(SUB_VH/CAP_VH)*100).toFixed(1)}%"`:'';
+    return `<div class="bx" role="img" aria-label="${esc(L+(sub?' — '+sub:''))}" style="--dur:${DUR}ms;width:min(92%,${(k.W/200*CAP_VH).toFixed(1)}vh)">${k.svg}${t?t.svg.replace('<svg ',`<svg ${tw} `):''}<div class="bar"></div></div>`;}
   function show(a){return new Promise(res=>{
     focusSeq++;VOICE.stop();box.classList.remove('on');lineG.innerHTML='';relG.innerHTML='';clearTimeout(relTimer);
     window.__holdUntil=Math.max(window.__holdUntil||0,Date.now()+DUR+12000);

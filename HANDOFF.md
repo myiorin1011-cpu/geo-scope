@@ -59,7 +59,7 @@
 ## 5. 確定済みの仕様・方針（変えるときはユーザー確認）
 **デザイン**
 - 全画面アラートはエヴァンゲリオン風の「雰囲気」だけ参考。**デザインの直接的な模倣は NG**
-- アラート: 8 秒、英語タイトル＋英語国名のみ、二重枠、Helvetica Bold の縦長・中抜き文字。種類と色＝赤 STATE OF EMERGENCY（サイレン音）／黄 SEISMIC ALERT／紫 NUCLEAR / BIO ALERT／青 CYBER ALERT／白 BREAKING NEWS。初日のみ表示、表示後にそのニュースを地図で出す
+- アラート: 8 秒、英語タイトル＋英語国名のみ、二重枠、縦長コンデンスのセリフ体（Bodoni Moda 600 を横に圧縮）の中抜き文字を枠いっぱいに収める（2026-11-08 ユーザー指定の参考画像に合わせて Helvetica Bold から変更）。種類と色＝赤 STATE OF EMERGENCY（サイレン音）／黄 SEISMIC ALERT／紫 NUCLEAR / BIO ALERT／青 CYBER ALERT／白 BREAKING NEWS。初日のみ表示、表示後にそのニュースを地図で出す
 - コールアウト: 引き出し線→枠の順に描く。関連国は 2 秒後にピン＋ズームアウト＋左右反転
 - 無線ノイズ＋画面の乱れ（SVG displacement / RGB ずれ / ドロップアウト）
 - ヘッダー: 2 段目は SND・VOICE・BGM・EN・LIVE と ⚙SET のみ。他の設定は SET パネル
