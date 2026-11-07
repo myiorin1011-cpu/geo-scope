@@ -1,0 +1,188 @@
+{
+ "updated": "2026-11-05T12:28:11.324777",
+ "note": "サンプルデータ。scripts/update_regions.mjs が実データに置き換えます",
+ "japan": [
+  {
+   "area": "北海道",
+   "t": "2026-11-05 / 産業",
+   "lv": "info",
+   "h": "【サンプル】半導体工場の稼働に向け地元で採用説明会",
+   "b": "千歳市周辺で人材確保の動きが続く。（表示確認用のサンプル。自動更新で実データに置き換わります）",
+   "h_en": "[Sample] Chip plant hiring sessions ahead of start-up",
+   "b_en": "Recruiting continues around Chitose. (placeholder; replaced by the auto-update)",
+   "ts": "2026-11-05T12:28:11.324777",
+   "src": [
+    {
+     "name": "サンプル"
+    }
+   ]
+  },
+  {
+   "area": "愛知県",
+   "t": "2026-11-05 / 製造業",
+   "lv": "info",
+   "h": "【サンプル】自動車部品メーカーが県内でEV向け新ライン",
+   "b": "2027年稼働を目指す。（表示確認用のサンプル。自動更新で実データに置き換わります）",
+   "h_en": "[Sample] Auto-parts maker adds EV line in the prefecture",
+   "b_en": "Targeting 2027 start. (placeholder; replaced by the auto-update)",
+   "ts": "2026-11-05T12:28:11.324777",
+   "src": [
+    {
+     "name": "サンプル"
+    }
+   ]
+  },
+  {
+   "area": "福岡県",
+   "t": "2026-11-05 / インフラ",
+   "lv": "info",
+   "h": "【サンプル】データセンター向け非常用電源の新工場が着工",
+   "b": "北九州市で2027年完成予定。（表示確認用のサンプル。自動更新で実データに置き換わります）",
+   "h_en": "[Sample] New plant for data-center backup power breaks ground",
+   "b_en": "Kitakyushu, completion planned 2027. (placeholder; replaced by the auto-update)",
+   "ts": "2026-11-05T12:28:11.324777",
+   "src": [
+    {
+     "name": "サンプル"
+    }
+   ]
+  },
+  {
+   "area": "大阪府",
+   "t": "2026-11-05 / 消費",
+   "lv": "info",
+   "h": "【サンプル】インバウンド消費が百貨店売上を押し上げ",
+   "b": "免税売上が前年同月比で増加。（表示確認用のサンプル。自動更新で実データに置き換わります）",
+   "h_en": "[Sample] Inbound spending lifts department-store sales",
+   "b_en": "Duty-free sales up year on year. (placeholder; replaced by the auto-update)",
+   "ts": "2026-11-05T12:28:11.324777",
+   "src": [
+    {
+     "name": "サンプル"
+    }
+   ]
+  },
+  {
+   "area": "熊本県",
+   "t": "2026-11-05 / 雇用",
+   "lv": "info",
+   "h": "【サンプル】半導体関連の求人倍率が県全体を上回る",
+   "b": "周辺の住宅・交通整備も課題に。（表示確認用のサンプル。自動更新で実データに置き換わります）",
+   "h_en": "[Sample] Chip-related job openings outpace the prefecture average",
+   "b_en": "Housing and transport around the site are issues. (placeholder; replaced by the auto-update)",
+   "ts": "2026-11-05T12:28:11.324777",
+   "src": [
+    {
+     "name": "サンプル"
+    }
+   ]
+  },
+  {
+   "area": "宮城県",
+   "t": "2026-11-05 / 金融",
+   "lv": "info",
+   "h": "【サンプル】地銀が再エネ向け融資枠を拡大",
+   "b": "県内の洋上風力関連を想定。（表示確認用のサンプル。自動更新で実データに置き換わります）",
+   "h_en": "[Sample] Regional bank widens renewable-energy loan facility",
+   "b_en": "Aimed at offshore-wind projects. (placeholder; replaced by the auto-update)",
+   "ts": "2026-11-05T12:28:11.324777",
+   "src": [
+    {
+     "name": "サンプル"
+    }
+   ]
+  }
+ ],
+ "usa": [
+  {
+   "area": "Texas",
+   "t": "2026-11-05 / エネルギー",
+   "lv": "info",
+   "h": "【サンプル】州内のLNG輸出が過去最高ペース",
+   "b": "メキシコ湾岸の新ターミナルが寄与。（表示確認用のサンプル。自動更新で実データに置き換わります）",
+   "h_en": "[Sample] LNG exports on record pace",
+   "b_en": "New Gulf Coast terminal contributes. (placeholder; replaced by the auto-update)",
+   "ts": "2026-11-05T12:28:11.324777",
+   "src": [
+    {
+     "name": "サンプル"
+    }
+   ]
+  },
+  {
+   "area": "California",
+   "t": "2026-11-05 / 電力",
+   "lv": "info",
+   "h": "【サンプル】AIデータセンター向け電力確保で州が新制度",
+   "b": "系統接続の待ち時間短縮を狙う。（表示確認用のサンプル。自動更新で実データに置き換わります）",
+   "h_en": "[Sample] State adopts new rules to secure power for AI data centers",
+   "b_en": "Aims to shorten grid-connection waits. (placeholder; replaced by the auto-update)",
+   "ts": "2026-11-05T12:28:11.324777",
+   "src": [
+    {
+     "name": "サンプル"
+    }
+   ]
+  },
+  {
+   "area": "Michigan",
+   "t": "2026-11-05 / 製造業",
+   "lv": "info",
+   "h": "【サンプル】EV減速で自動車工場がハイブリッド生産へ転換",
+   "b": "雇用は維持の見通し。（表示確認用のサンプル。自動更新で実データに置き換わります）",
+   "h_en": "[Sample] Auto plant pivots to hybrids as EV demand cools",
+   "b_en": "Jobs expected to be kept. (placeholder; replaced by the auto-update)",
+   "ts": "2026-11-05T12:28:11.324777",
+   "src": [
+    {
+     "name": "サンプル"
+    }
+   ]
+  },
+  {
+   "area": "New York",
+   "t": "2026-11-05 / 金融",
+   "lv": "info",
+   "h": "【サンプル】金融大手が州内で人員再配置",
+   "b": "AI活用で事務部門を縮小。（表示確認用のサンプル。自動更新で実データに置き換わります）",
+   "h_en": "[Sample] Big banks reshuffle staff across the state",
+   "b_en": "Back-office roles shrink with AI. (placeholder; replaced by the auto-update)",
+   "ts": "2026-11-05T12:28:11.324777",
+   "src": [
+    {
+     "name": "サンプル"
+    }
+   ]
+  },
+  {
+   "area": "Arizona",
+   "t": "2026-11-05 / 産業",
+   "lv": "info",
+   "h": "【サンプル】半導体工場の第2期が前倒し",
+   "b": "補助金の執行が進む。（表示確認用のサンプル。自動更新で実データに置き換わります）",
+   "h_en": "[Sample] Chip fab phase two pulled forward",
+   "b_en": "Subsidy disbursement advances. (placeholder; replaced by the auto-update)",
+   "ts": "2026-11-05T12:28:11.324777",
+   "src": [
+    {
+     "name": "サンプル"
+    }
+   ]
+  },
+  {
+   "area": "Florida",
+   "t": "2026-11-05 / 不動産",
+   "lv": "info",
+   "h": "【サンプル】住宅保険料の上昇が住宅販売を圧迫",
+   "b": "ハリケーン被害の影響が続く。（表示確認用のサンプル。自動更新で実データに置き換わります）",
+   "h_en": "[Sample] Rising home-insurance costs weigh on sales",
+   "b_en": "Hurricane losses still bite. (placeholder; replaced by the auto-update)",
+   "ts": "2026-11-05T12:28:11.324777",
+   "src": [
+    {
+     "name": "サンプル"
+    }
+   ]
+  }
+ ]
+}

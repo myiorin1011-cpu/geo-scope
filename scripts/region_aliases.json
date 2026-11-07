@@ -1,0 +1,550 @@
+{
+ "_readme": "都道府県・州の判定に使う別名（記事タイトル・説明文にこの語があればその地域の候補）。誤判定しやすい短い名前（山口・石川・福井など人名と重なるもの）は「〜県」付きでのみ判定。",
+ "japan": {
+  "北海道": [
+   "北海道",
+   "Hokkaido",
+   "北海道",
+   "札幌",
+   "函館",
+   "旭川",
+   "千歳"
+  ],
+  "青森県": [
+   "青森県",
+   "Aomori",
+   "青森",
+   "八戸"
+  ],
+  "岩手県": [
+   "岩手県",
+   "Iwate",
+   "岩手",
+   "盛岡"
+  ],
+  "宮城県": [
+   "宮城県",
+   "Miyagi",
+   "宮城",
+   "仙台"
+  ],
+  "秋田県": [
+   "秋田県",
+   "Akita",
+   "秋田",
+   "秋田市"
+  ],
+  "山形県": [
+   "山形県",
+   "Yamagata",
+   "山形",
+   "山形市"
+  ],
+  "福島県": [
+   "福島県",
+   "Fukushima",
+   "郡山",
+   "いわき"
+  ],
+  "茨城県": [
+   "茨城県",
+   "Ibaraki",
+   "茨城",
+   "つくば",
+   "水戸"
+  ],
+  "栃木県": [
+   "栃木県",
+   "Tochigi",
+   "栃木",
+   "宇都宮"
+  ],
+  "群馬県": [
+   "群馬県",
+   "Gunma",
+   "群馬",
+   "高崎",
+   "前橋"
+  ],
+  "埼玉県": [
+   "埼玉県",
+   "Saitama",
+   "埼玉",
+   "さいたま"
+  ],
+  "千葉県": [
+   "千葉県",
+   "Chiba",
+   "成田",
+   "幕張"
+  ],
+  "東京都": [
+   "東京都",
+   "東京",
+   "都内",
+   "Tokyo"
+  ],
+  "神奈川県": [
+   "神奈川県",
+   "Kanagawa",
+   "神奈川",
+   "横浜",
+   "川崎",
+   "相模原"
+  ],
+  "新潟県": [
+   "新潟県",
+   "Niigata",
+   "新潟",
+   "新潟市"
+  ],
+  "富山県": [
+   "富山県",
+   "Toyama",
+   "富山市"
+  ],
+  "石川県": [
+   "石川県",
+   "Ishikawa",
+   "金沢",
+   "能登"
+  ],
+  "福井県": [
+   "福井県",
+   "Fukui",
+   "敦賀"
+  ],
+  "山梨県": [
+   "山梨県",
+   "Yamanashi",
+   "山梨",
+   "甲府"
+  ],
+  "長野県": [
+   "長野県",
+   "Nagano",
+   "松本",
+   "軽井沢"
+  ],
+  "岐阜県": [
+   "岐阜県",
+   "Gifu",
+   "岐阜",
+   "岐阜市"
+  ],
+  "静岡県": [
+   "静岡県",
+   "Shizuoka",
+   "静岡",
+   "浜松"
+  ],
+  "愛知県": [
+   "愛知県",
+   "Aichi",
+   "愛知",
+   "名古屋",
+   "豊田"
+  ],
+  "三重県": [
+   "三重県",
+   "Mie",
+   "三重",
+   "四日市",
+   "伊勢"
+  ],
+  "滋賀県": [
+   "滋賀県",
+   "Shiga",
+   "滋賀",
+   "大津"
+  ],
+  "京都府": [
+   "京都府",
+   "Kyoto",
+   "京都",
+   "京都市"
+  ],
+  "大阪府": [
+   "大阪府",
+   "Osaka",
+   "大阪",
+   "大阪市",
+   "堺",
+   "関西万博"
+  ],
+  "兵庫県": [
+   "兵庫県",
+   "Hyogo",
+   "兵庫",
+   "神戸",
+   "姫路"
+  ],
+  "奈良県": [
+   "奈良県",
+   "Nara",
+   "奈良",
+   "奈良市"
+  ],
+  "和歌山県": [
+   "和歌山県",
+   "Wakayama",
+   "和歌山",
+   "和歌山市"
+  ],
+  "鳥取県": [
+   "鳥取県",
+   "Tottori",
+   "鳥取",
+   "米子"
+  ],
+  "島根県": [
+   "島根県",
+   "Shimane",
+   "島根",
+   "松江",
+   "出雲"
+  ],
+  "岡山県": [
+   "岡山県",
+   "Okayama",
+   "倉敷"
+  ],
+  "広島県": [
+   "広島県",
+   "Hiroshima",
+   "広島",
+   "広島市"
+  ],
+  "山口県": [
+   "山口県",
+   "Yamaguchi",
+   "下関"
+  ],
+  "徳島県": [
+   "徳島県",
+   "Tokushima",
+   "徳島",
+   "徳島市"
+  ],
+  "香川県": [
+   "香川県",
+   "Kagawa",
+   "香川",
+   "高松"
+  ],
+  "愛媛県": [
+   "愛媛県",
+   "Ehime",
+   "愛媛",
+   "松山"
+  ],
+  "高知県": [
+   "高知県",
+   "Kochi",
+   "高知",
+   "高知市"
+  ],
+  "福岡県": [
+   "福岡県",
+   "Fukuoka",
+   "福岡市",
+   "北九州",
+   "博多"
+  ],
+  "佐賀県": [
+   "佐賀県",
+   "Saga",
+   "佐賀",
+   "佐賀市"
+  ],
+  "長崎県": [
+   "長崎県",
+   "Nagasaki",
+   "長崎",
+   "佐世保"
+  ],
+  "熊本県": [
+   "熊本県",
+   "Kumamoto",
+   "熊本",
+   "熊本市",
+   "菊陽",
+   "TSMC熊本"
+  ],
+  "大分県": [
+   "大分県",
+   "Oita",
+   "大分",
+   "別府"
+  ],
+  "宮崎県": [
+   "宮崎県",
+   "Miyazaki",
+   "宮崎市"
+  ],
+  "鹿児島県": [
+   "鹿児島県",
+   "Kagoshima",
+   "鹿児島",
+   "薩摩"
+  ],
+  "沖縄県": [
+   "沖縄県",
+   "Okinawa",
+   "沖縄",
+   "那覇"
+  ]
+ },
+ "usa": {
+  "Alabama": [
+   "アラバマ州",
+   "Alabama"
+  ],
+  "Alaska": [
+   "アラスカ州",
+   "Alaska"
+  ],
+  "Arizona": [
+   "アリゾナ州",
+   "Phoenix",
+   "Arizona"
+  ],
+  "Arkansas": [
+   "アーカンソー州",
+   "Arkansas"
+  ],
+  "California": [
+   "カリフォルニア州",
+   "Los Angeles",
+   "San Francisco",
+   "Silicon Valley",
+   "San Diego",
+   "San Jose",
+   "California"
+  ],
+  "Colorado": [
+   "コロラド州",
+   "Denver",
+   "Colorado"
+  ],
+  "Connecticut": [
+   "コネチカット州",
+   "Connecticut"
+  ],
+  "Delaware": [
+   "デラウェア州",
+   "Delaware"
+  ],
+  "Florida": [
+   "フロリダ州",
+   "Miami",
+   "Orlando",
+   "Tampa",
+   "Florida"
+  ],
+  "Georgia": [
+   "ジョージア州",
+   "Atlanta",
+   "Georgia",
+   "Savannah"
+  ],
+  "Hawaii": [
+   "ハワイ州",
+   "Hawaii"
+  ],
+  "Idaho": [
+   "アイダホ州",
+   "Idaho"
+  ],
+  "Illinois": [
+   "イリノイ州",
+   "Chicago",
+   "Illinois"
+  ],
+  "Indiana": [
+   "インディアナ州",
+   "Indianapolis",
+   "Indiana"
+  ],
+  "Iowa": [
+   "アイオワ州",
+   "Iowa"
+  ],
+  "Kansas": [
+   "カンザス州",
+   "Kansas"
+  ],
+  "Kentucky": [
+   "ケンタッキー州",
+   "Louisville",
+   "Kentucky"
+  ],
+  "Louisiana": [
+   "ルイジアナ州",
+   "New Orleans",
+   "Louisiana"
+  ],
+  "Maine": [
+   "メイン州",
+   "Maine"
+  ],
+  "Maryland": [
+   "メリーランド州",
+   "Baltimore",
+   "Maryland"
+  ],
+  "Massachusetts": [
+   "マサチューセッツ州",
+   "Boston",
+   "Massachusetts"
+  ],
+  "Michigan": [
+   "ミシガン州",
+   "Detroit",
+   "Michigan"
+  ],
+  "Minnesota": [
+   "ミネソタ州",
+   "Minneapolis",
+   "Minnesota"
+  ],
+  "Mississippi": [
+   "ミシシッピ州",
+   "Mississippi"
+  ],
+  "Missouri": [
+   "ミズーリ州",
+   "St. Louis",
+   "Kansas City",
+   "Missouri"
+  ],
+  "Montana": [
+   "モンタナ州",
+   "Montana"
+  ],
+  "Nebraska": [
+   "ネブラスカ州",
+   "Nebraska"
+  ],
+  "Nevada": [
+   "ネバダ州",
+   "Las Vegas",
+   "Reno",
+   "Nevada"
+  ],
+  "New Hampshire": [
+   "ニューハンプシャー州",
+   "New Hampshire"
+  ],
+  "New Jersey": [
+   "ニュージャージー州",
+   "New Jersey"
+  ],
+  "New Mexico": [
+   "ニューメキシコ州",
+   "New Mexico"
+  ],
+  "New York": [
+   "ニューヨーク州",
+   "New York City",
+   "NYC",
+   "Manhattan",
+   "Wall Street",
+   "New York"
+  ],
+  "North Carolina": [
+   "ノースカロライナ州",
+   "Charlotte",
+   "Raleigh",
+   "North Carolina"
+  ],
+  "North Dakota": [
+   "ノースダコタ州",
+   "North Dakota"
+  ],
+  "Ohio": [
+   "オハイオ州",
+   "Columbus",
+   "Cleveland",
+   "Cincinnati",
+   "Ohio"
+  ],
+  "Oklahoma": [
+   "オクラホマ州",
+   "Oklahoma"
+  ],
+  "Oregon": [
+   "オレゴン州",
+   "Portland, Oregon",
+   "Oregon"
+  ],
+  "Pennsylvania": [
+   "ペンシルベニア州",
+   "Pittsburgh",
+   "Philadelphia",
+   "Pennsylvania"
+  ],
+  "Rhode Island": [
+   "ロードアイランド州",
+   "Rhode Island"
+  ],
+  "South Carolina": [
+   "サウスカロライナ州",
+   "South Carolina"
+  ],
+  "South Dakota": [
+   "サウスダコタ州",
+   "South Dakota"
+  ],
+  "Tennessee": [
+   "テネシー州",
+   "Nashville",
+   "Memphis",
+   "Tennessee"
+  ],
+  "Texas": [
+   "テキサス州",
+   "Houston",
+   "Dallas",
+   "Austin",
+   "San Antonio",
+   "Texas"
+  ],
+  "Utah": [
+   "ユタ州",
+   "Salt Lake City",
+   "Utah"
+  ],
+  "Vermont": [
+   "バーモント州",
+   "Vermont"
+  ],
+  "Virginia": [
+   "バージニア州",
+   "Virginia"
+  ],
+  "Washington": [
+   "ワシントン州",
+   "Seattle",
+   "Washington state"
+  ],
+  "West Virginia": [
+   "ウェストバージニア州",
+   "West Virginia"
+  ],
+  "Wisconsin": [
+   "ウィスコンシン州",
+   "Milwaukee",
+   "Wisconsin"
+  ],
+  "Wyoming": [
+   "ワイオミング州",
+   "Wyoming"
+  ],
+  "District of Columbia": [
+   "ワシントンD.C.",
+   "D.C.",
+   "Washington, D.C."
+  ]
+ }
+}

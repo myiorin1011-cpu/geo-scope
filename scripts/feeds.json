@@ -1,0 +1,632 @@
+{
+ "_readme": "GEO-SCOPE の記事収集元。RSS は各メディアが配信している公式フィードのみ。追加・削除は自由（name / url / lang / tag[既定の国キー] / weight[優先度 0.5〜1.5]）。取得に失敗したフィードは飛ばして続行します。GDELT は無料の世界ニュース索引（https://www.gdeltproject.org/、1リクエスト/5秒の目安）。",
+ "world": [
+  {
+   "name": "NHK 国際",
+   "url": "https://www3.nhk.or.jp/rss/news/cat6.xml",
+   "lang": "ja",
+   "weight": 1.3
+  },
+  {
+   "name": "NHK 主要",
+   "url": "https://www3.nhk.or.jp/rss/news/cat0.xml",
+   "lang": "ja",
+   "tag": "Japan",
+   "weight": 1.1
+  },
+  {
+   "name": "NHK 政治",
+   "url": "https://www3.nhk.or.jp/rss/news/cat4.xml",
+   "lang": "ja",
+   "tag": "Japan",
+   "weight": 0.9
+  },
+  {
+   "name": "BBC World",
+   "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+   "weight": 1.3
+  },
+  {
+   "name": "BBC Asia",
+   "url": "https://feeds.bbci.co.uk/news/world/asia/rss.xml"
+  },
+  {
+   "name": "BBC Africa",
+   "url": "https://feeds.bbci.co.uk/news/world/africa/rss.xml"
+  },
+  {
+   "name": "BBC Europe",
+   "url": "https://feeds.bbci.co.uk/news/world/europe/rss.xml"
+  },
+  {
+   "name": "BBC Latin America",
+   "url": "https://feeds.bbci.co.uk/news/world/latin_america/rss.xml"
+  },
+  {
+   "name": "BBC Middle East",
+   "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml"
+  },
+  {
+   "name": "BBC US & Canada",
+   "url": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
+  },
+  {
+   "name": "Al Jazeera",
+   "url": "https://www.aljazeera.com/xml/rss/all.xml",
+   "weight": 1.2
+  },
+  {
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/world/rss"
+  },
+  {
+   "name": "New York Times",
+   "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
+  },
+  {
+   "name": "NPR",
+   "url": "https://feeds.npr.org/1004/rss.xml",
+   "weight": 0.9
+  },
+  {
+   "name": "DW",
+   "url": "https://rss.dw.com/rdf/rss-en-all",
+   "weight": 0.9
+  },
+  {
+   "name": "France 24",
+   "url": "https://www.france24.com/en/rss",
+   "weight": 0.9
+  },
+  {
+   "name": "UN News",
+   "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+   "weight": 0.8
+  },
+  {
+   "name": "ReliefWeb",
+   "url": "https://reliefweb.int/updates/rss.xml",
+   "weight": 0.6
+  }
+ ],
+ "world_gdelt": [
+  {
+   "label": "world",
+   "query": "(war OR attack OR missile OR election OR coup OR protest OR earthquake OR flood OR sanctions OR summit OR ceasefire OR evacuation) sourcelang:english",
+   "timespan": "6h",
+   "max": 250,
+   "weight": 0.7
+  }
+ ],
+ "japan": [
+  {
+   "name": "NHK 経済",
+   "url": "https://www3.nhk.or.jp/rss/news/cat5.xml",
+   "lang": "ja",
+   "weight": 1.3
+  },
+  {
+   "name": "NHK 主要",
+   "url": "https://www3.nhk.or.jp/rss/news/cat0.xml",
+   "lang": "ja"
+  },
+  {
+   "name": "NHK 社会",
+   "url": "https://www3.nhk.or.jp/rss/news/cat1.xml",
+   "lang": "ja",
+   "weight": 0.8
+  },
+  {
+   "name": "Nikkei Asia",
+   "url": "https://asia.nikkei.com/rss/feed/nar",
+   "weight": 0.9
+  },
+  {
+   "name": "The Japan Times",
+   "url": "https://www.japantimes.co.jp/feed/",
+   "weight": 0.8
+  }
+ ],
+ "japan_gdelt": [
+  {
+   "label": "jp-business",
+   "query": "sourcecountry:japan (economy OR company OR factory OR plant OR tourism OR investment OR employment OR prefecture OR bank OR semiconductor)",
+   "timespan": "24h",
+   "max": 250,
+   "weight": 0.8
+  }
+ ],
+ "usa": [
+  {
+   "name": "NPR Business",
+   "url": "https://feeds.npr.org/1006/rss.xml"
+  },
+  {
+   "name": "NYT Business",
+   "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+  },
+  {
+   "name": "NYT U.S.",
+   "url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml",
+   "weight": 0.8
+  }
+ ],
+ "usa_gdelt": [
+  {
+   "label": "us-business",
+   "query": "sourcecountry:unitedstates sourcelang:english (jobs OR layoffs OR factory OR plant OR \"data center\" OR investment OR economy OR budget OR tariffs)",
+   "timespan": "24h",
+   "max": 250,
+   "weight": 0.9
+  }
+ ],
+ "_examples_japan_local": "地方紙や自治体の RSS を japan に足すと都道府県のカバーが広がります（例: {\"name\":\"〇〇新聞 経済\",\"url\":\"https://.../rss.xml\",\"lang\":\"ja\",\"tag\":\"北海道\"}）。tag に都道府県名を入れると、記事中に県名が無くてもその県として扱います。",
+ "country_aliases": {
+  "United States of America": [
+   "United States",
+   "U.S.",
+   "US",
+   "USA",
+   "America",
+   "American",
+   "米国",
+   "アメリカ",
+   "ホワイトハウス",
+   "White House",
+   "Pentagon",
+   "トランプ",
+   "Trump"
+  ],
+  "United Kingdom": [
+   "UK",
+   "U.K.",
+   "Britain",
+   "British",
+   "England",
+   "Scotland",
+   "Wales",
+   "London",
+   "英国",
+   "イギリス"
+  ],
+  "Russia": [
+   "Russian",
+   "Kremlin",
+   "Moscow",
+   "Putin",
+   "ロシア",
+   "プーチン"
+  ],
+  "Ukraine": [
+   "Ukrainian",
+   "Kyiv",
+   "Kiev",
+   "Zelensky",
+   "Zelenskyy",
+   "ウクライナ",
+   "キーウ",
+   "ゼレンスキー"
+  ],
+  "China": [
+   "Chinese",
+   "Beijing",
+   "Xi Jinping",
+   "中国",
+   "習近平",
+   "北京"
+  ],
+  "Taiwan": [
+   "Taiwanese",
+   "Taipei",
+   "台湾",
+   "台北"
+  ],
+  "North Korea": [
+   "Pyongyang",
+   "Kim Jong Un",
+   "DPRK",
+   "北朝鮮",
+   "金正恩"
+  ],
+  "South Korea": [
+   "Seoul",
+   "Korean",
+   "韓国",
+   "ソウル"
+  ],
+  "Japan": [
+   "Japanese",
+   "Tokyo",
+   "Takaichi",
+   "日本"
+  ],
+  "Israel": [
+   "Israeli",
+   "Netanyahu",
+   "Gaza",
+   "West Bank",
+   "Hamas",
+   "Jerusalem",
+   "イスラエル",
+   "ガザ",
+   "ハマス"
+  ],
+  "Iran": [
+   "Iranian",
+   "Tehran",
+   "イラン"
+  ],
+  "India": [
+   "Indian",
+   "New Delhi",
+   "Modi",
+   "インド"
+  ],
+  "Pakistan": [
+   "Pakistani",
+   "Islamabad",
+   "パキスタン"
+  ],
+  "Saudi Arabia": [
+   "Saudi",
+   "Riyadh",
+   "サウジ"
+  ],
+  "Syria": [
+   "Syrian",
+   "Damascus",
+   "シリア"
+  ],
+  "Lebanon": [
+   "Lebanese",
+   "Beirut",
+   "Hezbollah",
+   "レバノン",
+   "ヒズボラ"
+  ],
+  "Yemen": [
+   "Yemeni",
+   "Houthi",
+   "Houthis",
+   "イエメン",
+   "フーシ"
+  ],
+  "Turkey": [
+   "Turkish",
+   "Türkiye",
+   "Ankara",
+   "Erdogan",
+   "トルコ"
+  ],
+  "Germany": [
+   "German",
+   "Berlin",
+   "ドイツ"
+  ],
+  "France": [
+   "French",
+   "Paris",
+   "Macron",
+   "フランス"
+  ],
+  "Italy": [
+   "Italian",
+   "Rome",
+   "イタリア"
+  ],
+  "Spain": [
+   "Spanish",
+   "Madrid",
+   "スペイン"
+  ],
+  "Poland": [
+   "Polish",
+   "Warsaw",
+   "ポーランド"
+  ],
+  "Brazil": [
+   "Brazilian",
+   "Brasilia",
+   "Lula",
+   "ブラジル"
+  ],
+  "Mexico": [
+   "Mexican",
+   "メキシコ"
+  ],
+  "Venezuela": [
+   "Venezuelan",
+   "Caracas",
+   "Maduro",
+   "ベネズエラ"
+  ],
+  "Argentina": [
+   "Argentine",
+   "Buenos Aires",
+   "Milei",
+   "アルゼンチン"
+  ],
+  "Canada": [
+   "Canadian",
+   "Ottawa",
+   "カナダ"
+  ],
+  "Australia": [
+   "Australian",
+   "Canberra",
+   "オーストラリア"
+  ],
+  "Philippines": [
+   "Filipino",
+   "Manila",
+   "フィリピン"
+  ],
+  "Indonesia": [
+   "Indonesian",
+   "Jakarta",
+   "インドネシア"
+  ],
+  "Myanmar": [
+   "Burma",
+   "Burmese",
+   "Naypyidaw",
+   "ミャンマー"
+  ],
+  "Afghanistan": [
+   "Afghan",
+   "Kabul",
+   "Taliban",
+   "アフガニスタン",
+   "タリバン"
+  ],
+  "Iraq": [
+   "Iraqi",
+   "Baghdad",
+   "イラク"
+  ],
+  "Egypt": [
+   "Egyptian",
+   "Cairo",
+   "エジプト"
+  ],
+  "Sudan": [
+   "Sudanese",
+   "Khartoum",
+   "RSF",
+   "スーダン"
+  ],
+  "S. Sudan": [
+   "South Sudan",
+   "Juba",
+   "南スーダン"
+  ],
+  "Dem. Rep. Congo": [
+   "DR Congo",
+   "DRC",
+   "Kinshasa",
+   "M23",
+   "コンゴ民主共和国"
+  ],
+  "Ethiopia": [
+   "Ethiopian",
+   "Addis Ababa",
+   "エチオピア"
+  ],
+  "Nigeria": [
+   "Nigerian",
+   "Abuja",
+   "Lagos",
+   "ナイジェリア"
+  ],
+  "Somalia": [
+   "Somali",
+   "Mogadishu",
+   "al-Shabab",
+   "ソマリア"
+  ],
+  "South Africa": [
+   "South African",
+   "Pretoria",
+   "Johannesburg",
+   "南アフリカ"
+  ],
+  "Haiti": [
+   "Haitian",
+   "Port-au-Prince",
+   "ハイチ"
+  ],
+  "Côte d'Ivoire": [
+   "Ivory Coast",
+   "Ivorian",
+   "コートジボワール"
+  ],
+  "Central African Rep.": [
+   "Central African Republic",
+   "中央アフリカ"
+  ],
+  "Eq. Guinea": [
+   "Equatorial Guinea",
+   "赤道ギニア"
+  ],
+  "Bosnia and Herz.": [
+   "Bosnia",
+   "Bosnian",
+   "Sarajevo",
+   "ボスニア"
+  ],
+  "Dominican Rep.": [
+   "Dominican Republic",
+   "Santo Domingo",
+   "ドミニカ共和国"
+  ],
+  "Solomon Is.": [
+   "Solomon Islands",
+   "ソロモン諸島"
+  ],
+  "United Arab Emirates": [
+   "UAE",
+   "Emirati",
+   "Dubai",
+   "Abu Dhabi",
+   "アラブ首長国連邦",
+   "ドバイ"
+  ],
+  "Czechia": [
+   "Czech",
+   "Prague",
+   "チェコ"
+  ],
+  "Netherlands": [
+   "Dutch",
+   "Amsterdam",
+   "The Hague",
+   "オランダ"
+  ],
+  "Belgium": [
+   "Belgian",
+   "Brussels",
+   "ベルギー"
+  ],
+  "Switzerland": [
+   "Swiss",
+   "Geneva",
+   "スイス"
+  ],
+  "Vietnam": [
+   "Vietnamese",
+   "Hanoi",
+   "ベトナム"
+  ],
+  "Thailand": [
+   "Thai",
+   "Bangkok",
+   "タイ"
+  ],
+  "Cambodia": [
+   "Cambodian",
+   "Phnom Penh",
+   "カンボジア"
+  ],
+  "Bangladesh": [
+   "Bangladeshi",
+   "Dhaka",
+   "バングラデシュ"
+  ],
+  "Georgia": [
+   "Tbilisi",
+   "ジョージア"
+  ],
+  "Armenia": [
+   "Armenian",
+   "Yerevan",
+   "アルメニア"
+  ],
+  "Azerbaijan": [
+   "Azerbaijani",
+   "Baku",
+   "アゼルバイジャン"
+  ],
+  "Belarus": [
+   "Belarusian",
+   "Minsk",
+   "Lukashenko",
+   "ベラルーシ"
+  ],
+  "Serbia": [
+   "Serbian",
+   "Belgrade",
+   "セルビア"
+  ],
+  "Hungary": [
+   "Hungarian",
+   "Budapest",
+   "Orban",
+   "ハンガリー"
+  ],
+  "Romania": [
+   "Romanian",
+   "Bucharest",
+   "ルーマニア"
+  ],
+  "Greece": [
+   "Greek",
+   "Athens",
+   "ギリシャ"
+  ],
+  "Cuba": [
+   "Cuban",
+   "Havana",
+   "キューバ"
+  ],
+  "Colombia": [
+   "Colombian",
+   "Bogota",
+   "コロンビア"
+  ],
+  "Peru": [
+   "Peruvian",
+   "Lima",
+   "ペルー"
+  ],
+  "Chile": [
+   "Chilean",
+   "Santiago",
+   "チリ"
+  ],
+  "Libya": [
+   "Libyan",
+   "Tripoli",
+   "リビア"
+  ],
+  "Mali": [
+   "Malian",
+   "Bamako",
+   "マリ"
+  ],
+  "Niger": [
+   "Niamey",
+   "ニジェール"
+  ],
+  "Burkina Faso": [
+   "Ouagadougou",
+   "ブルキナファソ"
+  ],
+  "Kenya": [
+   "Kenyan",
+   "Nairobi",
+   "ケニア"
+  ],
+  "Qatar": [
+   "Qatari",
+   "Doha",
+   "カタール"
+  ],
+  "Jordan": [
+   "Jordanian",
+   "Amman",
+   "ヨルダン"
+  ],
+  "Nepal": [
+   "Nepali",
+   "Kathmandu",
+   "ネパール"
+  ],
+  "Sri Lanka": [
+   "Sri Lankan",
+   "Colombo",
+   "スリランカ"
+  ],
+  "New Zealand": [
+   "Wellington",
+   "ニュージーランド"
+  ],
+  "Malaysia": [
+   "Malaysian",
+   "Kuala Lumpur",
+   "マレーシア"
+  ],
+  "Singapore": [
+   "シンガポール"
+  ]
+ }
+}

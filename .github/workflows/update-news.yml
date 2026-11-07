@@ -1,0 +1,104 @@
+name: Update GEO-SCOPE news feed
+on:
+  schedule:
+    - cron: "17 */4 * * *"      # 4時間ごと（UTC 0,4,8,12,16,20時17分 = JST 9,13,17,21,1,5時台）。3時間おきなら */3
+  workflow_dispatch:            # 手動実行ボタン
+    inputs:
+      init:
+        description: '初期化モード（ニュースのない国に1件ずつ概況を作る。40か国ずつ。全国分なら3回実行）'
+        type: boolean
+        default: false
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency: { group: geo-scope-news, cancel-in-progress: false }
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    services:
+      voicevox:
+        image: voicevox/voicevox_engine:cpu-latest
+        ports: ["50021:50021"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Build site/index.html from src/page.html
+        env:
+          SITE_URL: ${{ vars.GEOSCOPE_SITE_URL || 'https://example.github.io/geo-scope/' }}
+        run: node scripts/build_site.mjs
+      - name: Generate news.json
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MODEL: ${{ vars.GEOSCOPE_MODEL || 'claude-sonnet-5-5' }}
+          INIT: ${{ inputs.init == true && '1' || '' }}
+          SOURCE: ${{ vars.GEOSCOPE_SOURCE || 'feeds' }}   # feeds = RSS+GDELT（安い・既定） / search = Claude の web 検索（旧方式・約10倍）
+        run: node scripts/update_news.mjs
+      - name: Generate regions.json (都道府県・米国州の経済ニュース)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MODEL: ${{ vars.GEOSCOPE_MODEL || 'claude-sonnet-5-5' }}
+          INIT: ${{ inputs.init == true && '1' || '' }}
+          SOURCE: ${{ vars.GEOSCOPE_SOURCE || 'feeds' }}
+          REGIONS: ${{ vars.GEOSCOPE_REGIONS || 'japan,usa' }}  # 日本だけなら Variables に GEOSCOPE_REGIONS=japan
+        # 地域枠は 1 日 2 回（UTC 20時・8時台 = JST 朝5時台・夕方17時台）と手動実行のときだけ
+        run: |
+          H=$(date -u +%H)
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$H" = "20" ] || [ "$H" = "08" ]; then
+            node scripts/update_regions.mjs || echo "regions step failed (continuing)"
+          else echo "regions: skipped this run (twice a day)"; fi
+      - name: Validate data files
+        run: node scripts/check.mjs
+      - name: Wait for VOICEVOX
+        run: for i in $(seq 1 30); do curl -sf http://127.0.0.1:50021/version && break; sleep 4; done
+      - name: Synthesize voice clips
+        env:
+          SPEAKER: ${{ vars.GEOSCOPE_SPEAKER || '30' }}
+        run: node scripts/synth_voice.mjs || echo "voice step failed (continuing)"
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - name: Install Piper TTS (English voice)
+        run: pip install -q piper-tts
+      - name: Cache Piper voice model
+        uses: actions/cache@v4
+        with:
+          path: .piper
+          key: piper-${{ vars.GEOSCOPE_PIPER_VOICE || 'en_US-amy-medium' }}
+      - name: Download Piper voice model
+        env:
+          PIPER_VOICE: "${{ vars.GEOSCOPE_PIPER_VOICE || 'en_US-amy-medium' }}"
+        run: test -f ".piper/$PIPER_VOICE.onnx" || python -m piper.download_voices "$PIPER_VOICE" --data-dir .piper
+      - name: Synthesize English voice clips
+        env:
+          PIPER_VOICE: ${{ vars.GEOSCOPE_PIPER_VOICE || 'en_US-amy-medium' }}
+        run: node scripts/synth_voice_en.mjs || echo "english voice step failed (continuing)"
+      - name: Synthesize country-profile clips (ja+en, only new/changed)
+        env:
+          SPEAKER: ${{ vars.GEOSCOPE_SPEAKER || '30' }}
+          PIPER_VOICE: ${{ vars.GEOSCOPE_PIPER_VOICE || 'en_US-amy-medium' }}
+        run: node scripts/synth_profile.mjs || echo "profile voice step failed (continuing)"
+      - name: Commit if changed
+        run: |
+          git config user.name "geo-scope-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add site/index.html site/news.json site/regions.json site/voice site/changelog.json .cache
+          git diff --cached --quiet || git commit -m "news: $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git pull --rebase --autostash || true
+          git push
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - run: git pull --ff-only
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: site }
+      - id: deployment
+        uses: actions/deploy-pages@v4

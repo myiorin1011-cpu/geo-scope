@@ -1,0 +1,30 @@
+name: Update GEO-SCOPE quake & disaster feeds
+on:
+  schedule:
+    - cron: "*/15 * * * *"      # 15分ごと（GitHubの最短は5分。負荷と履歴の肥大を考えて15分）
+  workflow_dispatch:
+permissions: { contents: write, pages: write, id-token: write }
+concurrency: { group: geo-scope-quakes, cancel-in-progress: true }
+jobs:
+  quakes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node scripts/fetch_quakes.mjs
+      - run: node scripts/fetch_disasters.mjs || echo "disaster feed failed (continuing)"
+      - name: Commit if changed
+        id: commit
+        run: |
+          git config user.name "geo-scope-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add site/quakes.json site/disasters.json
+          if git diff --cached --quiet; then echo "changed=false" >> $GITHUB_OUTPUT; else git commit -m "quakes: $(date -u +'%Y-%m-%d %H:%M UTC')" && git push && echo "changed=true" >> $GITHUB_OUTPUT; fi
+      - uses: actions/configure-pages@v5
+        if: steps.commit.outputs.changed == 'true'
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.commit.outputs.changed == 'true'
+        with: { path: site }
+      - uses: actions/deploy-pages@v4
+        if: steps.commit.outputs.changed == 'true'

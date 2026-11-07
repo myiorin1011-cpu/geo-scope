@@ -1,0 +1,978 @@
+{
+ "items": {
+  "USA|en": {
+   "file": "voice/profile_USA_en.ogg",
+   "dur": 16,
+   "text": "the United States. Washington, D.C., ≈340 million. Federal presidential republic. Travel advisory level 0: No advisory. Japan's only treaty ally; about 50,000 US troops are stationed in Japan."
+  },
+  "RUS|en": {
+   "file": "voice/profile_RUS_en.ogg",
+   "dur": 13.4,
+   "text": "Russia. Moscow, ≈144 million. Federal semi-presidential. Travel advisory level 3: Do not travel. The Northern Territories dispute means no peace treaty has ever been signed."
+  },
+  "UKR|en": {
+   "file": "voice/profile_UKR_en.ogg",
+   "dur": 17.6,
+   "text": "Ukraine. Keev, ≈37 million war has shifted this greatly . Semi-presidential republic. Travel advisory level 4: Evacuate. Japan is one of the main donors for budget and reconstruction support and hosted a recovery conference in Tokyo in 2024."
+  },
+  "IRN|en": {
+   "file": "voice/profile_IRN_en.ogg",
+   "dur": 14,
+   "text": "Iran. Tehran, ≈90 million. Islamic republic. Travel advisory level 4: Evacuate. Japan imports most of its oil from the Middle East and is among the countries most exposed to a Hor-mooz closure."
+  },
+  "ISR|en": {
+   "file": "voice/profile_ISR_en.ogg",
+   "dur": 16.6,
+   "text": "Israel. Jerusalem not internationally recognised; most embassies in Tel Aviv , ≈10 million. Parliamentary republic. Travel advisory level 2: Avoid non-essential travel. Relations are good, with growing cooperation in start-ups and semiconductors."
+  },
+  "CHN|en": {
+   "file": "voice/profile_CHN_en.ogg",
+   "dur": 11.4,
+   "text": "China. Beijing, ≈1.41 billion. One-party Communist Party . Travel advisory level 1: Exercise caution. Japan's largest trading partner."
+  },
+  "PRK|en": {
+   "file": "voice/profile_PRK_en.ogg",
+   "dur": 14.9,
+   "text": "North Korea. Pyongyang, ≈26 million. One-party dictatorship Workers' Party . Travel advisory level 2: Avoid non-essential travel. The abduction issue is the biggest sticking point; there are no diplomatic relations."
+  },
+  "JPN|en": {
+   "file": "voice/profile_JPN_en.ogg",
+   "dur": 14.7,
+   "text": "Japan. Tokyo, ≈123 million. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. This is Japan itself; see each country's entry for how it relates to Japan."
+  },
+  "ROU|en": {
+   "file": "voice/profile_ROU_en.ogg",
+   "dur": 11.3,
+   "text": "Romania. Bucharest, ≈19 million. Semi-presidential. Travel advisory level 0: No advisory. Diplomatic ties date from 1902."
+  },
+  "SAU|en": {
+   "file": "voice/profile_SAU_en.ogg",
+   "dur": 12.4,
+   "text": "Saudi Arabia. Riyadh, ≈35 million. Absolute monarchy. Travel advisory level 3: Do not travel. Japan's largest crude supplier, about 40% of imports."
+  },
+  "POL|en": {
+   "file": "voice/profile_POL_en.ogg",
+   "dur": 11.8,
+   "text": "Poland. Warsaw, ≈37 million. Semi-presidential. Travel advisory level 0: No advisory. Strong cultural ties through Chopin and Japanese anime."
+  },
+  "GBR|en": {
+   "file": "voice/profile_GBR_en.ogg",
+   "dur": 13.6,
+   "text": "the United Kingdom. London, ≈69 million. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. A traditional partner since the 1902 alliance."
+  },
+  "KOR|en": {
+   "file": "voice/profile_KOR_en.ogg",
+   "dur": 9.6,
+   "text": "South Korea. Seoul, ≈51 million. Presidential. Travel advisory level 0: No advisory. Japan's nearest neighbour."
+  },
+  "FRA|en": {
+   "file": "voice/profile_FRA_en.ogg",
+   "dur": 12.4,
+   "text": "France. Paris, ≈68 million. Semi-presidential Fifth Republic . Travel advisory level 0: No advisory. Ties date from the 1858 treaty."
+  },
+  "DEU|en": {
+   "file": "voice/profile_DEU_en.ogg",
+   "dur": 10.8,
+   "text": "Germany. Berlin, ≈84 million. Federal parliamentary. Travel advisory level 0: No advisory. A model for Meiji-era law and medicine."
+  },
+  "ITA|en": {
+   "file": "voice/profile_ITA_en.ogg",
+   "dur": 9.8,
+   "text": "Italy. Rome, ≈59 million. Parliamentary. Travel advisory level 0: No advisory. GCAP fighter partner."
+  },
+  "ESP|en": {
+   "file": "voice/profile_ESP_en.ogg",
+   "dur": 17,
+   "text": "Spain. Madrid, ≈48 million. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. The 1613 Keichō embassy reached near Seville; descendants with the surname 'Japón' still live in Coria del Río."
+  },
+  "IND|en": {
+   "file": "voice/profile_IND_en.ogg",
+   "dur": 10.7,
+   "text": "India. New Delhi, ≈1.45 billion 1st . Federal parliamentary. Travel advisory level 1: Exercise caution. A Quad partner."
+  },
+  "PAK|en": {
+   "file": "voice/profile_PAK_en.ogg",
+   "dur": 12,
+   "text": "Pakistan. Islamabad, ≈250 million. Federal parliamentary. Travel advisory level 2: Avoid non-essential travel. Japanese used cars are everywhere."
+  },
+  "BRA|en": {
+   "file": "voice/profile_BRA_en.ogg",
+   "dur": 17,
+   "text": "Brazil. Brasília, ≈210 million. Federal presidential. Travel advisory level 1: Exercise caution. Home to the world's largest Japanese diaspora ≈2 million ; about 200,000 Brazilians live in Japan, many in manufacturing."
+  },
+  "MEX|en": {
+   "file": "voice/profile_MEX_en.ogg",
+   "dur": 15.9,
+   "text": "Mexico. Mexico City, ≈130 million. Federal presidential. Travel advisory level 1: Exercise caution. In 1888 Mexico became the first non-Asian country to sign an equal treaty with Japan."
+  },
+  "CAN|en": {
+   "file": "voice/profile_CAN_en.ogg",
+   "dur": 12,
+   "text": "Canada. Ottawa, ≈41 million. Constitutional monarchy, federal parliamentary. Travel advisory level 0: No advisory. Popular for migration and study."
+  },
+  "AUS|en": {
+   "file": "voice/profile_AUS_en.ogg",
+   "dur": 17,
+   "text": "Australia. Canberra, ≈27 million. Constitutional monarchy, federal parliamentary. Travel advisory level 0: No advisory. A top supplier of coal, iron ore and L N G; often called a 'quasi-ally' with close Quad and security ties."
+  },
+  "TUR|en": {
+   "file": "voice/profile_TUR_en.ogg",
+   "dur": 19.2,
+   "text": "Turkey. Ankara, ≈86 million. Presidential. Travel advisory level 1: Exercise caution. The 1890 Ertuğrul shipwreck, when villagers of Kushimoto rescued the crew, is the root of Turkish goodwill; in 1985 a Turkish plane evacuated Japanese from Tehran."
+  },
+  "EGY|en": {
+   "file": "voice/profile_EGY_en.ogg",
+   "dur": 17.1,
+   "text": "Egypt. Cairo moving to the New Administrative Capital , ≈110 million. Presidential. Travel advisory level 1: Exercise caution. Japan funded the Grand Egyptian Museum's construction and conservation through ODA; Japanese-style 'tokkatsu' schools are spreading."
+  },
+  "IRQ|en": {
+   "file": "voice/profile_IRQ_en.ogg",
+   "dur": 13.1,
+   "text": "Iraq. Baghdad, ≈46 million. Federal parliamentary. Travel advisory level 3: Do not travel. The SDF ran reconstruction work in Samawah in 2004–06."
+  },
+  "YEM|en": {
+   "file": "voice/profile_YEM_en.ogg",
+   "dur": 16.9,
+   "text": "Yemen. Sanaa Hoothee-held / Aden interim government , ≈35 million. Divided by civil war. Travel advisory level 4: Evacuate. The Hoothees say they will not target Japanese ships, but Red Sea diversions have pushed up shipping costs to Japan."
+  },
+  "TWN|en": {
+   "file": "voice/profile_TWN_en.ogg",
+   "dur": 13.1,
+   "text": "Taiwan. Taipei, ≈23 million. Semi-presidential. Travel advisory level 0: No advisory. No formal relations, yet economic and people-to-people ties are intense."
+  },
+  "IDN|en": {
+   "file": "voice/profile_IDN_en.ogg",
+   "dur": 15.7,
+   "text": "Indonesia. Jakarta moving to Nusantara , ≈280 million 4th . Presidential. Travel advisory level 1: Exercise caution. One of Japan's largest ODA recipients; the Jakarta MRT was built with Japanese support."
+  },
+  "BGR|en": {
+   "file": "voice/profile_BGR_en.ogg",
+   "dur": 13.7,
+   "text": "Bulgaria. Sofia, ≈6.4 million. Parliamentary. Travel advisory level 0: No advisory. Known in Japan for yogurt 'Meiji Bulgaria Yogurt' ; sumo wrestler Kotooshu is Bulgarian."
+  },
+  "HUN|en": {
+   "file": "voice/profile_HUN_en.ogg",
+   "dur": 14,
+   "text": "Hungary. Budapest, ≈9.6 million. Parliamentary. Travel advisory level 0: No advisory. Known for the Rubik's Cube and Tokaji wine; many Japanese auto-parts makers operate here."
+  },
+  "BEL|en": {
+   "file": "voice/profile_BEL_en.ogg",
+   "dur": 14.9,
+   "text": "Belgium. Brussels, ≈11.8 million. Constitutional monarchy, federal. Travel advisory level 0: No advisory. Japan's gateway to EU diplomacy as host of the EU and Nayto; source of chocolate and beer."
+  },
+  "SWE|en": {
+   "file": "voice/profile_SWE_en.ogg",
+   "dur": 16.4,
+   "text": "Sweden. Stockholm, ≈10.6 million. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. Nordic design, IKEA and games such as Minecraft are everywhere in Japan; long royal–imperial exchanges."
+  },
+  "ECU|en": {
+   "file": "voice/profile_ECU_en.ogg",
+   "dur": 11.8,
+   "text": "Ecuador. Quito, ≈18 million. Presidential. Travel advisory level 2: Avoid non-essential travel. A major banana supplier, around a tenth of Japan's imports."
+  },
+  "ZAF|en": {
+   "file": "voice/profile_ZAF_en.ogg",
+   "dur": 18.5,
+   "text": "South Africa. Pretoria executive / Cape Town legislative / Bloemfontein judicial , ≈63 million. Parliamentary republic. Travel advisory level 1: Exercise caution. Supplier of platinum and palladium essential for car catalysts; also a Japanese car production base."
+  },
+  "RWA|en": {
+   "file": "voice/profile_RWA_en.ogg",
+   "dur": 13.6,
+   "text": "Rwanda. Kigali, ≈14 million. Presidential. Travel advisory level 1: Exercise caution. Positioning itself as an ICT nation, with growing Japanese start-up and university presence."
+  },
+  "NPL|en": {
+   "file": "voice/profile_NPL_en.ogg",
+   "dur": 15.9,
+   "text": "Nepal. Kathmandu, ≈30 million. Federal parliamentary republic. Travel advisory level 1: Exercise caution. About 200,000 Nepalis live in Japan and the number is rising fast; many 'Indian' restaurants are Nepali-run."
+  },
+  "PHL|en": {
+   "file": "voice/profile_PHL_en.ogg",
+   "dur": 14.6,
+   "text": "the Philippines. Manila, ≈117 million. Presidential. Travel advisory level 1: Exercise caution. About 300,000 Filipinos live in Japan; an EPA brings care and nursing workers."
+  },
+  "VEN|en": {
+   "file": "voice/profile_VEN_en.ogg",
+   "dur": 17.1,
+   "text": "Venezuela. Caracas, ≈28 million volatile due to emigration . Presidential. Travel advisory level 2: Avoid non-essential travel. Limited direct economic ties, but influence via the oil market; Japanese emigrants arrived in the 1920s."
+  },
+  "NOR|en": {
+   "file": "voice/profile_NOR_en.ogg",
+   "dur": 15.9,
+   "text": "Norway. Oslo, ≈5.6 million. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. The biggest supplier of mackerel to Japan — 'Norwegian saba' has been on Japanese tables for half a century."
+  },
+  "IRL|en": {
+   "file": "voice/profile_IRL_en.ogg",
+   "dur": 14.1,
+   "text": "Ireland. Dublin, ≈5.3 million. Parliamentary. Travel advisory level 0: No advisory. Source of Guinness and whiskey; many Japanese IT and pharma firms base European operations here."
+  },
+  "KHM|en": {
+   "file": "voice/profile_KHM_en.ogg",
+   "dur": 16.8,
+   "text": "Cambodia. Phnom Penh, ≈17 million. Constitutional monarchy, parliamentary. Travel advisory level 1: Exercise caution. Japan has long helped restore Angkor; in 1992 the SDF joined its first UN peacekeeping mission here."
+  },
+  "EST|en": {
+   "file": "voice/profile_EST_en.ogg",
+   "dur": 11.4,
+   "text": "Estonia. Tallinn, ≈1.37 million. Parliamentary. Travel advisory level 0: No advisory. A model for Japan's government digitalisation."
+  },
+  "QAT|en": {
+   "file": "voice/profile_QAT_en.ogg",
+   "dur": 15.4,
+   "text": "Cutter. Doha, ≈3 million citizens ≈10% . Emirate. Travel advisory level 1: Exercise caution. A key L N G supplier; Japanese trading houses helped develop the fields under long-term contracts."
+  },
+  "OMN|en": {
+   "file": "voice/profile_OMN_en.ogg",
+   "dur": 13.9,
+   "text": "Oman. Muscat, ≈5 million. Absolute monarchy sultanate . Travel advisory level 1: Exercise caution. Controls the southern shore of Hor-mooz — an important partner for the safety of Japanese tankers."
+  },
+  "NLD|en": {
+   "file": "voice/profile_NLD_en.ogg",
+   "dur": 16.7,
+   "text": "the Netherlands. Amsterdam government in The Hague , ≈18 million. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. The only Western country allowed to trade during Japan's isolation; Western learning entered via Dejima."
+  },
+  "GRC|en": {
+   "file": "voice/profile_GRC_en.ogg",
+   "dur": 12.8,
+   "text": "Greece. Athens, ≈10.4 million. Parliamentary. Travel advisory level 0: No advisory. Fellow shipping powers: Japanese yards have built many ships for Greek owners."
+  },
+  "KAZ|en": {
+   "file": "voice/profile_KAZ_en.ogg",
+   "dur": 14.5,
+   "text": "Kazakhstan. Astana, ≈20 million. Presidential. Travel advisory level 1: Exercise caution. A uranium supplier with Japanese stakes in mine development; the anchor of Japan's Central Asia diplomacy."
+  },
+  "ARG|en": {
+   "file": "voice/profile_ARG_en.ogg",
+   "dur": 14.6,
+   "text": "Argentina. Buenos Aires, ≈46 million. Federal presidential. Travel advisory level 1: Exercise caution. About 60,000 people of Japanese descent; beef imports were allowed in 2018."
+  },
+  "NGA|en": {
+   "file": "voice/profile_NGA_en.ogg",
+   "dur": 16.3,
+   "text": "Nigeria. Abuja, ≈230 million 1st in Africa . Federal presidential. Travel advisory level 2: Avoid non-essential travel. A target market for Japanese firms as Africa's most populous country; also an L N G supplier."
+  },
+  "VNM|en": {
+   "file": "voice/profile_VNM_en.ogg",
+   "dur": 17.3,
+   "text": "Vietnam. Hanoi, ≈100 million. One-party Communist Party . Travel advisory level 0: No advisory. About 600,000 Vietnamese live in Japan, second only to Chinese; many trainees and students, and a dense cluster of Japanese factories."
+  },
+  "THA|en": {
+   "file": "voice/profile_THA_en.ogg",
+   "dur": 15.1,
+   "text": "Thailand. Bangkok, ≈72 million. Constitutional monarchy, parliamentary. Travel advisory level 1: Exercise caution. The 'Detroit of Asia' with some 6,000 Japanese firms and many long-term Japanese residents."
+  },
+  "AFG|en": {
+   "file": "voice/profile_AFG_en.ogg",
+   "dur": 17.1,
+   "text": "Afghanistan. Kabul, ≈42 million. Taliban interim government. Travel advisory level 4: Evacuate. Known in Japan for Dr Tetsu Nakamura's irrigation work Peshawar-kai ; SDF aircraft were sent for the 2021 evacuation."
+  },
+  "SYR|en": {
+   "file": "voice/profile_SYR_en.ogg",
+   "dur": 15.8,
+   "text": "Syria. Damascus, ≈24 million volatile due to displacement . Transitional government. Travel advisory level 4: Evacuate. The Japanese embassy was temporarily closed during the civil war; Japan is a major humanitarian donor."
+  },
+  "LBN|en": {
+   "file": "voice/profile_LBN_en.ogg",
+   "dur": 14,
+   "text": "Lebanon. Beirut, ≈5.5 million. Confessional power-sharing. Travel advisory level 3: Do not travel. Known in Japan as the country Carlos Ghosn fled to; Lebanese food is popular."
+  },
+  "CUB|en": {
+   "file": "voice/profile_CUB_en.ogg",
+   "dur": 13.5,
+   "text": "Cuba. Havana, ≈11 million. One-party Communist Party . Travel advisory level 1: Exercise caution. Known for Hemingway, cigars and rum; diplomatic ties since 1929."
+  },
+  "COL|en": {
+   "file": "voice/profile_COL_en.ogg",
+   "dur": 12.6,
+   "text": "Colombia. Bogotá, ≈52 million. Presidential. Travel advisory level 1: Exercise caution. A major coffee source; also a big flower carnation exporter to Japan."
+  },
+  "FIN|en": {
+   "file": "voice/profile_FIN_en.ogg",
+   "dur": 15.1,
+   "text": "Finland. Helsinki, ≈5.6 million. Parliamentary. Travel advisory level 0: No advisory. Moomins and sauna culture are hugely popular in Japan; Helsinki is one of the shortest direct flights to Europe."
+  },
+  "ETH|en": {
+   "file": "voice/profile_ETH_en.ogg",
+   "dur": 13.4,
+   "text": "Ethiopia. Addis Ababa, ≈130 million. Federal parliamentary. Travel advisory level 2: Avoid non-essential travel. Birthplace of coffee; Japan supports agriculture and education."
+  },
+  "KEN|en": {
+   "file": "voice/profile_KEN_en.ogg",
+   "dur": 14.1,
+   "text": "Kenya. Nairobi, ≈55 million. Presidential. Travel advisory level 1: Exercise caution. Japan funded Mombasa port through ODA; many Kenyan runners compete for Japanese corporate teams."
+  },
+  "BLR|en": {
+   "file": "voice/profile_BLR_en.ogg",
+   "dur": 13.6,
+   "text": "Belarus. Minsk, ≈9 million. Presidential Lukashenko's long rule . Travel advisory level 2: Avoid non-essential travel. Limited ties; a history of civic exchange through Chernobyl-area aid."
+  },
+  "GEO|en": {
+   "file": "voice/profile_GEO_en.ogg",
+   "dur": 12.8,
+   "text": "Georgia. Tbilisi, ≈3.7 million. Parliamentary. Travel advisory level 1: Exercise caution. Home of sumo wrestler Tochinoshin; wine exports to Japan are growing."
+  },
+  "DZA|en": {
+   "file": "voice/profile_DZA_en.ogg",
+   "dur": 13.5,
+   "text": "Algeria. Algiers, ≈46 million. Presidential. Travel advisory level 2: Avoid non-essential travel. A gas supplier to Europe; Japanese firms have been involved in plant construction."
+  },
+  "MAR|en": {
+   "file": "voice/profile_MAR_en.ogg",
+   "dur": 10.3,
+   "text": "Morocco. Rabat, ≈38 million. Constitutional monarchy. Travel advisory level 1: Exercise caution. A key octopus supplier."
+  },
+  "TUN|en": {
+   "file": "voice/profile_TUN_en.ogg",
+   "dur": 13.3,
+   "text": "Tunisia. Tunis, ≈12 million. Presidential. Travel advisory level 1: Exercise caution. Japan backed democratisation after the Arab Spring and hosted TICAD here in 2022."
+  },
+  "LBY|en": {
+   "file": "voice/profile_LBY_en.ogg",
+   "dur": 13.2,
+   "text": "Libya. Tripoli, ≈7 million. Divided east–west. Travel advisory level 4: Evacuate. An oil supplier; Japanese nationals were evacuated during the 2011 civil war."
+  },
+  "SDN|en": {
+   "file": "voice/profile_SDN_en.ogg",
+   "dur": 16,
+   "text": "Sudan. Khartoum, ≈49 million. Military rule civil war . Travel advisory level 4: Evacuate. SDF aircraft evacuated Japanese nationals when war broke out in 2023; a humanitarian aid recipient."
+  },
+  "SSD|en": {
+   "file": "voice/profile_SSD_en.ogg",
+   "dur": 14.6,
+   "text": "South Sudan. Juba, ≈12 million. Presidential transitional unity government . Travel advisory level 4: Evacuate. SDF engineers served in the UN mission here from 2012 to 2017."
+  },
+  "SOM|en": {
+   "file": "voice/profile_SOM_en.ogg",
+   "dur": 14.2,
+   "text": "Somalia. Mogadishu, ≈18 million. Federal effectively fragmented . Travel advisory level 4: Evacuate. Japan's navy continues anti-piracy escorts in the Gulf of Aden from a base in Djibouti."
+  },
+  "TZA|en": {
+   "file": "voice/profile_TZA_en.ogg",
+   "dur": 15.4,
+   "text": "Tanzania. Dodoma official / Dar es Salaam de facto , ≈67 million. Presidential. Travel advisory level 1: Exercise caution. Known for Kilimanjaro coffee; Japan supports agriculture and ports through ODA."
+  },
+  "UGA|en": {
+   "file": "voice/profile_UGA_en.ogg",
+   "dur": 14.3,
+   "text": "Uganda. Kampala, ≈49 million. Presidential Museveni's long rule . Travel advisory level 1: Exercise caution. Japan funded a Nile bridge through ODA and cooperates on refugee support."
+  },
+  "COD|en": {
+   "file": "voice/profile_COD_en.ogg",
+   "dur": 15.8,
+   "text": "the Democratic Republic of the Congo. Kinshasa, ≈105 million. Presidential. Travel advisory level 3: Do not travel. Supplier of cobalt essential for EV batteries; Japan provides humanitarian aid for the eastern conflict."
+  },
+  "AGO|en": {
+   "file": "voice/profile_AGO_en.ogg",
+   "dur": 12.7,
+   "text": "Angola. Luanda, ≈37 million. Presidential. Travel advisory level 1: Exercise caution. An oil supplier; Japan cooperates on fisheries and health through ODA."
+  },
+  "MOZ|en": {
+   "file": "voice/profile_MOZ_en.ogg",
+   "dur": 15,
+   "text": "Mozambique. Maputo, ≈34 million. Presidential. Travel advisory level 2: Avoid non-essential travel. Mitsui is a partner in the L N G project; Japan supports agriculture along the Nacala Corridor."
+  },
+  "GHA|en": {
+   "file": "voice/profile_GHA_en.ogg",
+   "dur": 13.3,
+   "text": "Ghana. Accra, ≈34 million. Presidential. Travel advisory level 1: Exercise caution. Where Hideyo Noguchi died researching yellow fever; a main source of cocoa for Japanese chocolate."
+  },
+  "SEN|en": {
+   "file": "voice/profile_SEN_en.ogg",
+   "dur": 12.2,
+   "text": "Senegal. Dakar, ≈18 million. Presidential. Travel advisory level 1: Exercise caution. Japan cooperates on fisheries and health; Japanese vessels fish offshore."
+  },
+  "MLI|en": {
+   "file": "voice/profile_MLI_en.ogg",
+   "dur": 11.1,
+   "text": "Mali. Bamako, ≈23 million. Military junta. Travel advisory level 4: Evacuate. Japan supports stabilisation efforts in the Sahel."
+  },
+  "NER|en": {
+   "file": "voice/profile_NER_en.ogg",
+   "dur": 12,
+   "text": "Niger. Niamey, ≈27 million. Military junta. Travel advisory level 4: Evacuate. A uranium producer; Japan provides food and education aid."
+  },
+  "PER|en": {
+   "file": "voice/profile_PER_en.ogg",
+   "dur": 13.7,
+   "text": "Peru. Lima, ≈34 million. Presidential. Travel advisory level 1: Exercise caution. About 100,000 people of Japanese descent; Fujimori became president in 1990."
+  },
+  "CHL|en": {
+   "file": "voice/profile_CHL_en.ogg",
+   "dur": 12.6,
+   "text": "Chile. Santiago, ≈20 million. Presidential. Travel advisory level 1: Exercise caution. A major copper and salmon supplier — much of Japan's imported salmon is Chilean."
+  },
+  "BOL|en": {
+   "file": "voice/profile_BOL_en.ogg",
+   "dur": 16,
+   "text": "Bolivia. La Paz seat of government / Sucre constitutional , ≈12 million. Presidential. Travel advisory level 1: Exercise caution. Japanese settlements Okinawa colony in Santa Cruz ; Uyuni is a favourite of Japanese travellers."
+  },
+  "URY|en": {
+   "file": "voice/profile_URY_en.ogg",
+   "dur": 15.3,
+   "text": "Uruguay. Montevideo, ≈3.4 million. Presidential. Travel advisory level 0: No advisory. Beef exports to Japan opened in 2019; 'the world's poorest president' Mujica is admired in Japan."
+  },
+  "PRY|en": {
+   "file": "voice/profile_PRY_en.ogg",
+   "dur": 14.4,
+   "text": "Paraguay. Asunción, ≈7 million. Presidential. Travel advisory level 1: Exercise caution. About 10,000 people of Japanese descent; Japanese colonies Iguazú, La Paz pioneered soybean farming."
+  },
+  "GTM|en": {
+   "file": "voice/profile_GTM_en.ogg",
+   "dur": 12.9,
+   "text": "Guatemala. Guatemala City, ≈18 million. Presidential. Travel advisory level 1: Exercise caution. A main coffee source; Japan provides health and education aid."
+  },
+  "HTI|en": {
+   "file": "voice/profile_HTI_en.ogg",
+   "dur": 14.9,
+   "text": "Haiti. Port-au-Prince, ≈12 million. Transitional parts effectively ungoverned . Travel advisory level 4: Evacuate. The SDF joined the UN mission after the 2010 earthquake; Japan continues humanitarian aid."
+  },
+  "PAN|en": {
+   "file": "voice/profile_PAN_en.ogg",
+   "dur": 14.2,
+   "text": "Panama. Panama City, ≈4.5 million. Presidential. Travel advisory level 1: Exercise caution. Many Japanese ships fly the Panamanian flag; Japan is financing the canal's fourth bridge."
+  },
+  "UZB|en": {
+   "file": "voice/profile_UZB_en.ogg",
+   "dur": 14.9,
+   "text": "Uzbekistan. Tashkent, ≈36 million. Presidential. Travel advisory level 1: Exercise caution. Samarkand draws Japanese visitors; the Navoi Theatre was built by Japanese internees after WWII."
+  },
+  "AZE|en": {
+   "file": "voice/profile_AZE_en.ogg",
+   "dur": 13.1,
+   "text": "Azerbaijan. Baku, ≈10 million. Presidential. Travel advisory level 1: Exercise caution. An oil and gas supplier; Japanese firms participate in Caspian field development."
+  },
+  "ARM|en": {
+   "file": "voice/profile_ARM_en.ogg",
+   "dur": 12.7,
+   "text": "Armenia. Yerevan, ≈3 million. Parliamentary. Travel advisory level 1: Exercise caution. Japan opened an embassy in 2015; IT exchange is growing."
+  },
+  "MNG|en": {
+   "file": "voice/profile_MNG_en.ogg",
+   "dur": 14.2,
+   "text": "Mongolia. Ulaanbaatar, ≈3.5 million. Semi-presidential. Travel advisory level 0: No advisory. Familiar through Mongolian sumo wrestlers; Japan is one of its largest ODA donors."
+  },
+  "MMR|en": {
+   "file": "voice/profile_MMR_en.ogg",
+   "dur": 16.4,
+   "text": "Myanmar. Naypyidaw, ≈54 million. Military junta civil war . Travel advisory level 3: Do not travel. The Myanmar community in Japan has surged ≈100,000 ; Japanese firms had invested in the Thilawa SEZ."
+  },
+  "MYS|en": {
+   "file": "voice/profile_MYS_en.ogg",
+   "dur": 16.9,
+   "text": "Malaysia. Kuala Lumpur administration in Putrajaya , ≈34 million. Constitutional monarchy, parliamentary. Travel advisory level 1: Exercise caution. The 'Look East' policy took Japan as a model; a popular long-stay destination for Japanese."
+  },
+  "BGD|en": {
+   "file": "voice/profile_BGD_en.ogg",
+   "dur": 15.6,
+   "text": "Bangladesh. Dhaka, ≈170 million. Parliamentary interim government . Travel advisory level 2: Avoid non-essential travel. One of Japan's largest ODA recipients; the Dhaka metro was built with Japanese support."
+  },
+  "LKA|en": {
+   "file": "voice/profile_LKA_en.ogg",
+   "dur": 14.7,
+   "text": "Sri Lanka. Sri Jayawardenepura Kotte, ≈22 million. Presidential. Travel advisory level 1: Exercise caution. Remembered for the 1951 San Francisco speech waiving reparations from Japan."
+  },
+  "NZL|en": {
+   "file": "voice/profile_NZL_en.ogg",
+   "dur": 15.3,
+   "text": "New Zealand. Wellington, ≈5.3 million. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. A working-holiday favourite; supplier of kiwifruit and dairy; rugby ties run deep."
+  },
+  "PRT|en": {
+   "file": "voice/profile_PRT_en.ogg",
+   "dur": 17.5,
+   "text": "Portugal. Lisbon, ≈10.5 million. Semi-presidential. Travel advisory level 0: No advisory. Japan's oldest European contact: firearms arrived in 1543, and words like castella, tempura and pan come from Portuguese."
+  },
+  "CHE|en": {
+   "file": "voice/profile_CHE_en.ogg",
+   "dur": 13.8,
+   "text": "Switzerland. Bern, ≈9 million. Federal, direct democracy. Travel advisory level 0: No advisory. Rival and partner in precision machinery and pharma; a popular long-stay destination."
+  },
+  "AUT|en": {
+   "file": "voice/profile_AUT_en.ogg",
+   "dur": 13.1,
+   "text": "Austria. Vienna, ≈9.1 million. Federal parliamentary. Travel advisory level 0: No advisory. A favourite for music study; a neutral state sharing values with Japan."
+  },
+  "CZE|en": {
+   "file": "voice/profile_CZE_en.ogg",
+   "dur": 13.6,
+   "text": "the Czech Republic. Prague, ≈10.9 million. Parliamentary. Travel advisory level 0: No advisory. A cluster of Japanese auto-parts makers; Prague is popular with Japanese tourists."
+  },
+  "DNK|en": {
+   "file": "voice/profile_DNK_en.ogg",
+   "dur": 14.1,
+   "text": "Denmark. Copenhagen, ≈6 million. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. At odds with the US over Greenland; cooperates with Japan on offshore wind."
+  },
+  "SRB|en": {
+   "file": "voice/profile_SRB_en.ogg",
+   "dur": 12.5,
+   "text": "Serbia. Belgrade, ≈6.6 million. Parliamentary. Travel advisory level 0: No advisory. Japan supports environmental improvement in Belgrade through ODA."
+  },
+  "JOR|en": {
+   "file": "voice/profile_JOR_en.ogg",
+   "dur": 15.1,
+   "text": "Jordan. Amman, ≈11 million. Constitutional monarchy. Travel advisory level 2: Avoid non-essential travel. Long supported by Japan as an anchor of Middle East stability; Petra is popular with Japanese tourists."
+  },
+  "KWT|en": {
+   "file": "voice/profile_KWT_en.ogg",
+   "dur": 16,
+   "text": "Kuwait. Kuwait City, ≈4.8 million citizens ≈30% . Emirate. Travel advisory level 1: Exercise caution. A major oil supplier; donated 5 million barrels of crude after the 2011 Japan earthquake."
+  },
+  "ARE|en": {
+   "file": "voice/profile_ARE_en.ogg",
+   "dur": 16.9,
+   "text": "the United Arab Emirates. Abu Dhabi, ≈10 million citizens ≈10% . Federation of emirates. Travel advisory level 1: Exercise caution. A major oil supplier and host of the US–Russia–Ukraine talks; many Japanese expatriates."
+  },
+  "TCD|en": {
+   "file": "voice/profile_TCD_en.ogg",
+   "dur": 11,
+   "text": "Chad. N'Djamena, ≈19 million. Military-led transition. Travel advisory level 4: Evacuate. Japan provides food and refugee aid."
+  },
+  "DOM|en": {
+   "file": "voice/profile_DOM_en.ogg",
+   "dur": 12.5,
+   "text": "the Dominican Republic. Santo Domingo, ≈11 million. Presidential. Travel advisory level 1: Exercise caution. Deep baseball ties, with many players in Japan's leagues."
+  },
+  "BHS|en": {
+   "file": "voice/profile_BHS_en.ogg",
+   "dur": 13.2,
+   "text": "the Bahamas. Nassau, ≈400,000. Constitutional monarchy, parliamentary. Travel advisory level 1: Exercise caution. Limited direct ties with Japan; known for cruise tourism."
+  },
+  "TLS|en": {
+   "file": "voice/profile_TLS_en.ogg",
+   "dur": 13.9,
+   "text": "Timor-Leste. Dili, ≈1.4 million. Semi-presidential. Travel advisory level 1: Exercise caution. Japan was among the biggest supporters after independence; the SDF joined the UN mission."
+  },
+  "LSO|en": {
+   "file": "voice/profile_LSO_en.ogg",
+   "dur": 12.2,
+   "text": "Lesotho. Maseru, ≈2.3 million. Constitutional monarchy. Travel advisory level 1: Exercise caution. Japan supports water and education projects."
+  },
+  "CRI|en": {
+   "file": "voice/profile_CRI_en.ogg",
+   "dur": 13.3,
+   "text": "Costa Rica. San José, ≈5.2 million. Presidential. Travel advisory level 1: Exercise caution. Popular with Japanese eco-tourists; a hub for chips and medical devices."
+  },
+  "NIC|en": {
+   "file": "voice/profile_NIC_en.ogg",
+   "dur": 12,
+   "text": "Nicaragua. Managua, ≈7 million. Presidential Ortega's long rule . Travel advisory level 1: Exercise caution. Japan has funded roads and health through ODA."
+  },
+  "HND|en": {
+   "file": "voice/profile_HND_en.ogg",
+   "dur": 12.3,
+   "text": "Honduras. Tegucigalpa, ≈10.5 million. Presidential. Travel advisory level 2: Avoid non-essential travel. Ties through coffee imports and health cooperation."
+  },
+  "SLV|en": {
+   "file": "voice/profile_SLV_en.ogg",
+   "dur": 12.7,
+   "text": "El Salvador. San Salvador, ≈6.3 million. Presidential Boo-keh-leh . Travel advisory level 1: Exercise caution. Japan supports disaster prevention and education."
+  },
+  "BLZ|en": {
+   "file": "voice/profile_BLZ_en.ogg",
+   "dur": 13.7,
+   "text": "Belize. Belmopan, ≈400,000. Constitutional monarchy, parliamentary. Travel advisory level 1: Exercise caution. Small-scale Japanese cooperation in fisheries and the environment."
+  },
+  "GUY|en": {
+   "file": "voice/profile_GUY_en.ogg",
+   "dur": 11.1,
+   "text": "Guyana. Georgetown, ≈800,000. Presidential. Travel advisory level 1: Exercise caution. Japanese firms' interest grows with the oil boom."
+  },
+  "SUR|en": {
+   "file": "voice/profile_SUR_en.ogg",
+   "dur": 12.1,
+   "text": "Suriname. Paramaribo, ≈630,000. Presidential. Travel advisory level 1: Exercise caution. Limited ties with Japan; exports timber and gold."
+  },
+  "JAM|en": {
+   "file": "voice/profile_JAM_en.ogg",
+   "dur": 14,
+   "text": "Jamaica. Kingston, ≈2.8 million. Constitutional monarchy, parliamentary. Travel advisory level 1: Exercise caution. Japan is the main buyer of Blue Mountain coffee; reggae culture is popular."
+  },
+  "ZWE|en": {
+   "file": "voice/profile_ZWE_en.ogg",
+   "dur": 10.8,
+   "text": "Zimbabwe. Harare, ≈17 million. Presidential. Travel advisory level 1: Exercise caution. Japan supports water and health through ODA."
+  },
+  "BWA|en": {
+   "file": "voice/profile_BWA_en.ogg",
+   "dur": 13.2,
+   "text": "Botswana. Gaborone, ≈2.5 million. Parliamentary republic. Travel advisory level 0: No advisory. A diamond supplier; Japan cooperates in education and health."
+  },
+  "NAM|en": {
+   "file": "voice/profile_NAM_en.ogg",
+   "dur": 12.1,
+   "text": "Namibia. Windhoek, ≈3 million. Presidential. Travel advisory level 0: No advisory. Supplier of uranium and diamonds; fisheries cooperation with Japan."
+  },
+  "MRT|en": {
+   "file": "voice/profile_MRT_en.ogg",
+   "dur": 13,
+   "text": "Mauritania. Nouakchott, ≈5 million. Presidential. Travel advisory level 2: Avoid non-essential travel. A main supplier of octopus to Japan, with long fisheries cooperation."
+  },
+  "BEN|en": {
+   "file": "voice/profile_BEN_en.ogg",
+   "dur": 11.8,
+   "text": "Benin. Porto-Novo, ≈14 million. Presidential. Travel advisory level 1: Exercise caution. Well known in Japan through Zomahoun, who served as ambassador."
+  },
+  "CMR|en": {
+   "file": "voice/profile_CMR_en.ogg",
+   "dur": 14.1,
+   "text": "Cameroon. Yaoundé, ≈29 million. Presidential Biya's long rule . Travel advisory level 2: Avoid non-essential travel. Remembered in Japan for the 2002 World Cup camp in Nakatsue village."
+  },
+  "TGO|en": {
+   "file": "voice/profile_TGO_en.ogg",
+   "dur": 12.4,
+   "text": "Togo. Lomé, ≈9 million. Parliamentary 2024 constitution . Travel advisory level 1: Exercise caution. Japan cooperates on ports and education."
+  },
+  "CIV|en": {
+   "file": "voice/profile_CIV_en.ogg",
+   "dur": 14.3,
+   "text": "Ivory Coast. Yamoussoukro de facto Abidjan , ≈31 million. Presidential. Travel advisory level 1: Exercise caution. The biggest supplier of chocolate's raw material; Japan supports Abidjan port."
+  },
+  "GIN|en": {
+   "file": "voice/profile_GIN_en.ogg",
+   "dur": 11.5,
+   "text": "Guinea. Conakry, ≈14 million. Military-led transition. Travel advisory level 2: Avoid non-essential travel. A supplier of bauxite for aluminium."
+  },
+  "GNB|en": {
+   "file": "voice/profile_GNB_en.ogg",
+   "dur": 10.9,
+   "text": "Guinea-Bissau. Bissau, ≈2.1 million. Semi-presidential. Travel advisory level 2: Avoid non-essential travel. Limited ties with Japan."
+  },
+  "LBR|en": {
+   "file": "voice/profile_LBR_en.ogg",
+   "dur": 12.5,
+   "text": "Liberia. Monrovia, ≈5.5 million. Presidential. Travel advisory level 1: Exercise caution. Many Japanese ships are registered under the Liberian flag."
+  },
+  "SLE|en": {
+   "file": "voice/profile_SLE_en.ogg",
+   "dur": 13,
+   "text": "Sierra Leone. Freetown, ≈8.7 million. Presidential. Travel advisory level 1: Exercise caution. Japan supports health and education, including the Ebola response."
+  },
+  "BFA|en": {
+   "file": "voice/profile_BFA_en.ogg",
+   "dur": 11.7,
+   "text": "Burkina Faso. Ouagadougou, ≈23 million. Military junta. Travel advisory level 4: Evacuate. Japan provides food and education aid."
+  },
+  "CAF|en": {
+   "file": "voice/profile_CAF_en.ogg",
+   "dur": 11.2,
+   "text": "the Central African Republic. Bangui, ≈5.5 million. Presidential. Travel advisory level 4: Evacuate. Japan provides humanitarian aid."
+  },
+  "COG|en": {
+   "file": "voice/profile_COG_en.ogg",
+   "dur": 13.2,
+   "text": "the Republic of the Congo. Brazzaville, ≈6.2 million. Presidential Sassou Nguesso's long rule . Travel advisory level 1: Exercise caution. Japan cooperates in health and education."
+  },
+  "GAB|en": {
+   "file": "voice/profile_GAB_en.ogg",
+   "dur": 14.3,
+   "text": "Gabon. Libreville, ≈2.4 million. Presidential after 2023 coup . Travel advisory level 1: Exercise caution. Supplier of manganese and timber; fisheries cooperation with Japan."
+  },
+  "GNQ|en": {
+   "file": "voice/profile_GNQ_en.ogg",
+   "dur": 12.5,
+   "text": "Equatorial Guinea. Malabo, ≈1.8 million. Presidential Obiang's long rule . Travel advisory level 1: Exercise caution. Limited ties with Japan; an oil exporter."
+  },
+  "ZMB|en": {
+   "file": "voice/profile_ZMB_en.ogg",
+   "dur": 11.7,
+   "text": "Zambia. Lusaka, ≈21 million. Presidential. Travel advisory level 1: Exercise caution. A copper supplier; Japan funds health and agriculture."
+  },
+  "MWI|en": {
+   "file": "voice/profile_MWI_en.ogg",
+   "dur": 12.4,
+   "text": "Malawi. Lilongwe, ≈21 million. Presidential. Travel advisory level 1: Exercise caution. One of the largest destinations for Japanese overseas volunteers."
+  },
+  "SWZ|en": {
+   "file": "voice/profile_SWZ_en.ogg",
+   "dur": 11.9,
+   "text": "Eswatini. Mbabane, ≈1.2 million. Absolute monarchy. Travel advisory level 0: No advisory. The only African country with ties to Taiwan."
+  },
+  "BDI|en": {
+   "file": "voice/profile_BDI_en.ogg",
+   "dur": 10.5,
+   "text": "Burundi. Gitega, ≈14 million. Presidential. Travel advisory level 2: Avoid non-essential travel. Japan provides food aid."
+  },
+  "MDG|en": {
+   "file": "voice/profile_MDG_en.ogg",
+   "dur": 13,
+   "text": "Madagascar. Antananarivo, ≈31 million. Presidential. Travel advisory level 1: Exercise caution. A key vanilla supplier; Japan funded the Toamasina port expansion."
+  },
+  "GMB|en": {
+   "file": "voice/profile_GMB_en.ogg",
+   "dur": 10.1,
+   "text": "the Gambia. Banjul, ≈2.7 million. Presidential. Travel advisory level 1: Exercise caution. Limited ties with Japan."
+  },
+  "ERI|en": {
+   "file": "voice/profile_ERI_en.ogg",
+   "dur": 10.7,
+   "text": "Eritrea. Asmara, ≈3.6 million. One-party state. Travel advisory level 2: Avoid non-essential travel. Limited ties with Japan."
+  },
+  "DJI|en": {
+   "file": "voice/profile_DJI_en.ogg",
+   "dur": 12.4,
+   "text": "Djibouti. Djibouti, ≈1.1 million. Presidential. Travel advisory level 1: Exercise caution. Special to Japan as the base for its anti-piracy naval operations."
+  },
+  "LAO|en": {
+   "file": "voice/profile_LAO_en.ogg",
+   "dur": 13.8,
+   "text": "Laos. Vientiane, ≈7.7 million. One-party socialist. Travel advisory level 1: Exercise caution. Japan is among Laos's largest donors; Luang Prabang is popular with Japanese."
+  },
+  "BTN|en": {
+   "file": "voice/profile_BTN_en.ogg",
+   "dur": 13.2,
+   "text": "Bhutan. Thimphu, ≈780,000. Constitutional monarchy. Travel advisory level 0: No advisory. Close royal ties; Bhutanese hold strongly pro-Japan sentiment."
+  },
+  "TJK|en": {
+   "file": "voice/profile_TJK_en.ogg",
+   "dur": 10.7,
+   "text": "Tajikistan. Dushanbe, ≈10 million. Presidential. Travel advisory level 1: Exercise caution. Japan supports border management and education."
+  },
+  "KGZ|en": {
+   "file": "voice/profile_KGZ_en.ogg",
+   "dur": 11.5,
+   "text": "Kyrgyzstan. Bishkek, ≈7.2 million. Presidential. Travel advisory level 1: Exercise caution. Notably pro-Japan; many study Japanese."
+  },
+  "TKM|en": {
+   "file": "voice/profile_TKM_en.ogg",
+   "dur": 12.6,
+   "text": "Turkmenistan. Ashgabat, ≈6.5 million. Presidential authoritarian . Travel advisory level 1: Exercise caution. Japanese firms built many gas-chemical plants."
+  },
+  "MDA|en": {
+   "file": "voice/profile_MDA_en.ogg",
+   "dur": 11.4,
+   "text": "Moldova. Chișinău, ≈2.5 million. Parliamentary. Travel advisory level 1: Exercise caution. Japan supports EU accession and agriculture."
+  },
+  "LTU|en": {
+   "file": "voice/profile_LTU_en.ogg",
+   "dur": 13.4,
+   "text": "Lithuania. Vilnius, ≈2.9 million. Semi-presidential. Travel advisory level 0: No advisory. Where Chiune Sugihara issued 'visas for life'; a museum stands in Kaunas."
+  },
+  "LVA|en": {
+   "file": "voice/profile_LVA_en.ogg",
+   "dur": 10.9,
+   "text": "Latvia. Riga, ≈1.9 million. Parliamentary. Travel advisory level 0: No advisory. Japan is deepening ties with the Baltics."
+  },
+  "ALB|en": {
+   "file": "voice/profile_ALB_en.ogg",
+   "dur": 10.5,
+   "text": "Albania. Tirana, ≈2.8 million. Parliamentary. Travel advisory level 0: No advisory. Japan supports rural development."
+  },
+  "HRV|en": {
+   "file": "voice/profile_HRV_en.ogg",
+   "dur": 11.4,
+   "text": "Croatia. Zagreb, ≈3.8 million. Parliamentary. Travel advisory level 0: No advisory. Dubrovnik is popular with Japanese tourists."
+  },
+  "LUX|en": {
+   "file": "voice/profile_LUX_en.ogg",
+   "dur": 12.7,
+   "text": "Luxembourg. Luxembourg, ≈670,000. Grand duchy, constitutional. Travel advisory level 0: No advisory. Many Japanese banks have their European base here."
+  },
+  "ISL|en": {
+   "file": "voice/profile_ISL_en.ogg",
+   "dur": 12.6,
+   "text": "Iceland. Reykjavík, ≈390,000. Parliamentary. Travel advisory level 0: No advisory. A whaling nation aligned with Japan; popular for aurora tourism."
+  },
+  "BRN|en": {
+   "file": "voice/profile_BRN_en.ogg",
+   "dur": 12.9,
+   "text": "Brunei. Bandar Seri Begawan, ≈460,000. Absolute monarchy Sultan . Travel advisory level 0: No advisory. Japan is the largest buyer of Brunei's L N G."
+  },
+  "SVN|en": {
+   "file": "voice/profile_SVN_en.ogg",
+   "dur": 11.5,
+   "text": "Slovenia. Ljubljana, ≈2.1 million. Parliamentary. Travel advisory level 0: No advisory. Lake Bled is popular with Japanese tourists."
+  },
+  "SVK|en": {
+   "file": "voice/profile_SVK_en.ogg",
+   "dur": 11.7,
+   "text": "Slovakia. Bratislava, ≈5.4 million. Parliamentary. Travel advisory level 0: No advisory. Many Japanese auto-parts makers operate here."
+  },
+  "CYP|en": {
+   "file": "voice/profile_CYP_en.ogg",
+   "dur": 12.3,
+   "text": "Cyprus. Nicosia, ≈1.3 million. Presidential. Travel advisory level 0: No advisory. Key evacuation hub for Japanese nationals leaving the Middle East."
+  },
+  "BIH|en": {
+   "file": "voice/profile_BIH_en.ogg",
+   "dur": 14.2,
+   "text": "Bosnia and Herzegovina. Sarajevo, ≈3.2 million. Federal; three-member presidency. Travel advisory level 0: No advisory. Japan has long supported reconstruction."
+  },
+  "MKD|en": {
+   "file": "voice/profile_MKD_en.ogg",
+   "dur": 11.8,
+   "text": "North Macedonia. Skopje, ≈1.8 million. Parliamentary. Travel advisory level 0: No advisory. Japan cooperates on environment and health."
+  },
+  "MNE|en": {
+   "file": "voice/profile_MNE_en.ogg",
+   "dur": 11.7,
+   "text": "Montenegro. Podgorica, ≈620,000. Parliamentary. Travel advisory level 0: No advisory. Japan cooperates on Kotor Bay conservation."
+  },
+  "TTO|en": {
+   "file": "voice/profile_TTO_en.ogg",
+   "dur": 13.3,
+   "text": "Trinidad and Tobago. Port of Spain, ≈1.5 million. Parliamentary. Travel advisory level 1: Exercise caution. Japanese firms take part in L N G and ammonia projects."
+  },
+  "FJI|en": {
+   "file": "voice/profile_FJI_en.ogg",
+   "dur": 12.9,
+   "text": "Fiji. Suva, ≈930,000. Parliamentary. Travel advisory level 0: No advisory. Japan cooperates via the PALM summit framework; popular for English study."
+  },
+  "PNG|en": {
+   "file": "voice/profile_PNG_en.ogg",
+   "dur": 15,
+   "text": "Papua New Guinea. Port Moresby, ≈10 million. Constitutional monarchy, parliamentary. Travel advisory level 1: Exercise caution. Japan is a major L N G buyer; war-remains recovery from WWII continues."
+  },
+  "VUT|en": {
+   "file": "voice/profile_VUT_en.ogg",
+   "dur": 12.2,
+   "text": "Vanuatu. Port Vila, ≈330,000. Parliamentary. Travel advisory level 0: No advisory. Japan cooperates on disaster prevention and fisheries."
+  },
+  "SLB|en": {
+   "file": "voice/profile_SLB_en.ogg",
+   "dur": 14.7,
+   "text": "the Solomon Islands. Honiara, ≈750,000. Constitutional monarchy, parliamentary. Travel advisory level 1: Exercise caution. Site of the Guadalcanal campaign; remains recovery continues."
+  },
+  "SGP|en": {
+   "file": "voice/profile_SGP_en.ogg",
+   "dur": 15.1,
+   "text": "Singapore. Singapore, ≈6 million. Parliamentary. Travel advisory level 0: No advisory. ≈30,000 Japanese residents and ≈1,000 Japanese firms; a regional HQ hub."
+  },
+  "MLT|en": {
+   "file": "voice/profile_MLT_en.ogg",
+   "dur": 10.8,
+   "text": "Malta. Valletta, ≈550,000. Parliamentary. Travel advisory level 0: No advisory. Popular with Japanese for English study."
+  },
+  "MDV|en": {
+   "file": "voice/profile_MDV_en.ogg",
+   "dur": 13.6,
+   "text": "the Maldives. Malé, ≈520,000. Presidential. Travel advisory level 0: No advisory. Japan built Malé's seawall, which protected the island in the 2004 tsunami."
+  },
+  "BHR|en": {
+   "file": "voice/profile_BHR_en.ogg",
+   "dur": 13.5,
+   "text": "Bahrain. Manama, ≈1.5 million. Constitutional monarchy. Travel advisory level 1: Exercise caution. Japan imports oil and the MSDF calls here for anti-piracy duty."
+  },
+  "MUS|en": {
+   "file": "voice/profile_MUS_en.ogg",
+   "dur": 13.2,
+   "text": "Mauritius. Port Louis, ≈1.3 million. Parliamentary. Travel advisory level 0: No advisory. Site of the 2020 Wakashio oil spill; Japan supported the clean-up."
+  },
+  "SYC|en": {
+   "file": "voice/profile_SYC_en.ogg",
+   "dur": 10.9,
+   "text": "Seychelles. Victoria, ≈120,000. Presidential. Travel advisory level 0: No advisory. Ties with Japan through tuna fisheries."
+  },
+  "COM|en": {
+   "file": "voice/profile_COM_en.ogg",
+   "dur": 10.5,
+   "text": "Comoros. Moroni, ≈900,000. Federal presidential. Travel advisory level 1: Exercise caution. Limited ties with Japan."
+  },
+  "CPV|en": {
+   "file": "voice/profile_CPV_en.ogg",
+   "dur": 11.1,
+   "text": "Cabo Verde. Praia, ≈600,000. Semi-presidential. Travel advisory level 0: No advisory. Japan cooperates on fisheries and ports."
+  },
+  "STP|en": {
+   "file": "voice/profile_STP_en.ogg",
+   "dur": 11.6,
+   "text": "São Tomé and Príncipe. São Tomé, ≈230,000. Semi-presidential. Travel advisory level 0: No advisory. Limited ties with Japan."
+  },
+  "BRB|en": {
+   "file": "voice/profile_BRB_en.ogg",
+   "dur": 11,
+   "text": "Barbados. Bridgetown, ≈280,000. Parliamentary republic. Travel advisory level 0: No advisory. Limited ties with Japan."
+  },
+  "LCA|en": {
+   "file": "voice/profile_LCA_en.ogg",
+   "dur": 12.3,
+   "text": "Saint Lucia. Castries, ≈180,000. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. Japan cooperates on fisheries."
+  },
+  "GRD|en": {
+   "file": "voice/profile_GRD_en.ogg",
+   "dur": 12.1,
+   "text": "Grenada. St George's, ≈130,000. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. Japan cooperates on fisheries."
+  },
+  "VCT|en": {
+   "file": "voice/profile_VCT_en.ogg",
+   "dur": 13.7,
+   "text": "Saint Vincent and the Grenadines. Kingstown, ≈100,000. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. Aligned with Japan on fisheries and whaling."
+  },
+  "ATG|en": {
+   "file": "voice/profile_ATG_en.ogg",
+   "dur": 12.8,
+   "text": "Antigua and Barbuda. St John's, ≈100,000. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. Japan cooperates on fisheries."
+  },
+  "KNA|en": {
+   "file": "voice/profile_KNA_en.ogg",
+   "dur": 12.8,
+   "text": "Saint Kitts and Nevis. Basseterre, ≈50,000. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. Japan cooperates on fisheries."
+  },
+  "DMA|en": {
+   "file": "voice/profile_DMA_en.ogg",
+   "dur": 12.3,
+   "text": "Dominica. Roseau, ≈70,000. Parliamentary republic. Travel advisory level 0: No advisory. Japan cooperates on fisheries, though positions on whaling differ."
+  },
+  "AND|en": {
+   "file": "voice/profile_AND_en.ogg",
+   "dur": 11,
+   "text": "Andorra. Andorra la Vella, ≈80,000. Co-principality, parliamentary. Travel advisory level 0: No advisory. Limited ties with Japan."
+  },
+  "MCO|en": {
+   "file": "voice/profile_MCO_en.ogg",
+   "dur": 13.1,
+   "text": "Monaco. Monaco, ≈39,000. Constitutional monarchy principality . Travel advisory level 0: No advisory. Limited ties with Japan; known for the F1 Grand Prix."
+  },
+  "SMR|en": {
+   "file": "voice/profile_SMR_en.ogg",
+   "dur": 13.5,
+   "text": "San Marino. San Marino, ≈34,000. Republic with two Captains Regent. Travel advisory level 0: No advisory. Europe's first Shinto shrine was built here in 2011."
+  },
+  "LIE|en": {
+   "file": "voice/profile_LIE_en.ogg",
+   "dur": 11.2,
+   "text": "Liechtenstein. Vaduz, ≈40,000. Constitutional monarchy principality . Travel advisory level 0: No advisory. Limited ties with Japan."
+  },
+  "FSM|en": {
+   "file": "voice/profile_FSM_en.ogg",
+   "dur": 13.5,
+   "text": "Micronesia. Palikir, ≈110,000. Federal presidential. Travel advisory level 0: No advisory. Former Japanese mandate; many of Japanese descent and strongly pro-Japan."
+  },
+  "MHL|en": {
+   "file": "voice/profile_MHL_en.ogg",
+   "dur": 13.5,
+   "text": "the Marshall Islands. Majuro, ≈40,000. Presidential. Travel advisory level 0: No advisory. Site of the 1954 Lucky Dragon incident; a former Japanese mandate."
+  },
+  "PLW|en": {
+   "file": "voice/profile_PLW_en.ogg",
+   "dur": 11.7,
+   "text": "Palau. Ngerulmud, ≈18,000. Presidential. Travel advisory level 0: No advisory. Former Japanese mandate; Palauan has many Japanese loanwords."
+  },
+  "NRU|en": {
+   "file": "voice/profile_NRU_en.ogg",
+   "dur": 11.3,
+   "text": "Nauru. Yaren de facto , ≈12,000. Presidential. Travel advisory level 0: No advisory. Japan supports it via the Pacific Islands summit."
+  },
+  "KIR|en": {
+   "file": "voice/profile_KIR_en.ogg",
+   "dur": 14,
+   "text": "Kiribati. Tarawa, ≈130,000. Presidential. Travel advisory level 0: No advisory. Japan cooperates on fisheries and ports; Tarawa was a WWII battlefield."
+  },
+  "TUV|en": {
+   "file": "voice/profile_TUV_en.ogg",
+   "dur": 12.6,
+   "text": "Tuvalu. Funafuti, ≈11,000. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. Japan supports seawalls and climate adaptation."
+  },
+  "TON|en": {
+   "file": "voice/profile_TON_en.ogg",
+   "dur": 12.8,
+   "text": "Tonga. Nukuʻalofa, ≈100,000. Constitutional monarchy. Travel advisory level 0: No advisory. Many Tongan rugby players come to Japan; ties are close."
+  },
+  "WSM|en": {
+   "file": "voice/profile_WSM_en.ogg",
+   "dur": 10.7,
+   "text": "Samoa. Apia, ≈220,000. Parliamentary. Travel advisory level 0: No advisory. Japan supports ports and education."
+  }
+ },
+ "updated": "2026-11-05T09:33:50.603Z",
+ "credit": {
+  "en": "Piper TTS (en_US-amy-medium)"
+ }
+}

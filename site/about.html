@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>GEO-SCOPE 運営ポリシー</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Share+Tech+Mono&family=Noto+Sans+JP:wght@400;700&display=swap">
+<style>
+:root{--bg:#050a0c;--panel:#0a1418;--line:#1b3a40;--fg:#bfe9dc;--fg-dim:#5f8f86;--accent:#00e6b4;--warn:#ffb347;--alert:#ff5a4e;color-scheme:dark;
+ --display:"Orbitron","Noto Sans JP",system-ui,sans-serif;--mono:"Share Tech Mono","Noto Sans JP",ui-monospace,monospace;--body:"Noto Sans JP",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.8;
+ background-image:linear-gradient(rgba(0,230,180,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(0,230,180,.07) 1px,transparent 1px);background-size:40px 40px}
+.wrap{max-width:820px;margin:0 auto;padding-block:24px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.strip{display:flex;align-items:center;gap:16px;border:1px solid var(--line);background:var(--panel);padding:10px 16px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-dim);margin-bottom:22px}
+.strip .id{font-family:var(--display);font-weight:700;color:var(--accent);font-size:16px;letter-spacing:.2em}
+.strip a{margin-left:auto;color:var(--accent);text-decoration:none;border:1px solid var(--line);padding:3px 10px}
+h1{font-family:var(--display);font-size:22px;letter-spacing:.1em;color:var(--accent);margin:0 0 6px;text-wrap:balance}
+.lead{color:var(--fg-dim);margin:0 0 28px;max-width:62ch}
+h2{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--fg-dim);border-bottom:1px solid var(--line);padding-bottom:6px;margin:34px 0 12px}
+h2 b{color:var(--accent);font-weight:400;margin-right:8px}
+p,li{max-width:66ch}
+ul{padding-left:1.3em}li{margin:4px 0}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{font-family:var(--mono);font-weight:400;color:var(--fg-dim);letter-spacing:.08em;font-size:11.5px;background:var(--panel)}
+a{color:var(--accent)}
+.box{border:1px solid var(--line);background:var(--panel);padding:12px 16px;margin:12px 0}
+.box.warn{border-color:var(--warn)}
+.log{font-family:var(--mono);font-size:12.5px;max-height:420px;overflow:auto;border:1px solid var(--line);background:var(--panel);padding:10px 12px}
+.log div{padding:3px 0;border-bottom:1px dashed rgba(27,58,64,.6)}
+.log .t{color:var(--fg-dim);margin-right:8px}.log .k{color:var(--warn);margin-right:8px}.log .k.add{color:var(--accent)}.log .k.correction{color:var(--alert)}
+.tbl{overflow-x:auto}
+footer{margin-top:40px;color:var(--fg-dim);font-family:var(--mono);font-size:11.5px;letter-spacing:.08em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="strip"><span class="id">GEO-SCOPE</span><span>POLICY // 運営方針</span><a href="./">← レーダーに戻る</a></div>
+  <h1>出典・要約・訂正の方針</h1>
+  <p class="lead">GEO-SCOPEは、世界各国の情勢を地図上で俯瞰するための個人運営の情報ページです。速さと見やすさを優先しつつ、「どこから来た情報か」「どう加工したか」「間違えたらどう直すか」を常に開示します。</p>
+
+  <h2><b>01</b>情報源と採用基準</h2>
+  <ul>
+    <li>記事の収集元は、公共放送・主要紙・国際機関が公式に配信している RSS（NHK、BBC、Al Jazeera、The Guardian、New York Times、NPR、DW、France 24、国連ニュース など）と、世界の報道を索引化している <a href="https://www.gdeltproject.org/" target="_blank" rel="noopener">GDELT Project</a> です。<strong>複数の媒体が報じた出来事を優先</strong>し、単一の媒体のみの場合は「〜と報じられている」と明記します。</li>
+    <li>SNS発の未確認情報、匿名の投稿、当事者の一方のみの主張は採用しません。やむを得ず単一ソースの場合は「報道ベース」と明記します。</li>
+    <li>各項目には、要約の根拠にした元記事の媒体名とリンクを付けます（リンクは収集時の実在の記事 URL をそのまま使います）。</li>
+    <li>死傷者数などの数値は「少なくとも」「○日時点」を付け、確定値のように書きません。</li>
+  </ul>
+
+  <h2><b>02</b>要約の方法</h2>
+  <ul>
+    <li>見出しと本文は、原文を引き写さず<strong>自分の言葉で要約</strong>しています。要約の下書きにはAI（Claude）を使い、採用基準・中立性・表記ルールをプロンプトで固定しています。</li>
+    <li>評価や予測（「〜すべきだ」「〜になるだろう」）は書きません。政治的に対立する論点は、双方の立場が分かる書き方を心がけます。</li>
+    <li>色分け（赤＝紛争・危機／橙＝注視／緑＝情報）は運営側の編集判断であり、公式の警報区分ではありません。</li>
+    <li>地図上の速報は直近3日以内の項目のみ表示し、古い項目は7日で自動的に外れます。</li>
+  </ul>
+
+  <h2><b>03</b>更新頻度と自動化</h2>
+  <ul>
+    <li>ニュース：約2時間ごとに自動収集・要約・反映。地震：約15分ごと（自前配信の場合は閲覧者のブラウザから5分ごとに直接取得）。</li>
+    <li>自動処理の失敗時はデータを更新せず、前回の内容を表示し続けます。ヘッダーの「LINK」に最終更新時刻を表示しています。</li>
+    <li>自動生成には誤りが混じり得ます。気づいた点は下記の連絡先までお知らせください。</li>
+  </ul>
+
+  <h2><b>04</b>訂正の方針</h2>
+  <div class="box warn">
+    誤りが判明した項目は、黙って消すのではなく<strong>訂正した旨を本文に残し</strong>、このページの訂正履歴に記録します。重大な誤り（死傷者数の桁違い、国や当事者の取り違えなど）は、地図上のティッカーでも訂正を流します。
+  </div>
+  <h3 style="font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--fg-dim);margin:18px 0 8px">CHANGELOG // 更新・訂正履歴（自動生成＋手動）</h3>
+  <div class="log" id="log"><div>読み込み中…</div></div>
+
+  <h2><b>05</b>データの出所</h2>
+  <div class="tbl"><table>
+    <tr><th>データ</th><th>出所</th><th>備考</th></tr>
+    <tr><td>世界地図</td><td>Natural Earth（world-atlas 110m）</td><td>国境線は簡略化。係争地の表示は特定の立場を示しません</td></tr>
+    <tr><td>収録国</td><td>国連加盟193か国＋台湾</td><td>110m地図に形がない小島嶼国・都市国家は光点のみで表示。104か国は詳細、90か国は簡易プロフィール</td></tr>
+    <tr><td>地震</td><td>USGS Earthquake Hazards Program／気象庁</td><td>M4.5以上（国内はM4以上）、24時間以内</td></tr>
+    <tr><td>台風・洪水・火山・山火事・竜巻</td><td>GDACS（国連・EU共同）／NOAA NHC／気象庁 台風情報／NWS</td><td>GDACSの警戒レベル（緑・橙・赤）を表示。竜巻は米国NWSの警報のみ</td></tr>
+    <tr><td>渡航危険レベル</td><td>外務省 海外安全ホームページ</td><td>地域により異なります。必ず原典を確認してください</td></tr>
+    <tr><td>平和度・報道の自由・腐敗認識</td><td>Institute for Economics &amp; Peace（GPI）／国境なき記者団（RSF）／Transparency International（CPI）</td><td>各機関の最新版の順位・点数</td></tr>
+    <tr><td>基本情報・日本との関係・世界一</td><td>各国政府統計、外務省、JETRO、国連、報道などを基に運営が編集</td><td>概数。年次は項目に記載</td></tr>
+    <tr><td>伝承・小ネタ</td><td>民間伝承・一般に流布する噂</td><td><strong>未検証</strong>の内容を含みます。事実としては扱わないでください</td></tr>
+    <tr><td>国旗</td><td>運営による簡略化SVG</td><td>公式図案ではありません</td></tr>
+    <tr><td>読み上げ音声</td><td>VOICEVOX</td><td>使用キャラクターのクレジットを画面に表示</td></tr>
+  </table></div>
+
+  <h2><b>06</b>免責</h2>
+  <ul>
+    <li>本ページの情報は迅速さを優先した要約であり、正確性・完全性を保証しません。渡航・投資・安全に関わる判断は、必ず一次情報（政府機関・報道機関の原文）に当たってください。</li>
+    <li>地震速報は観測機関の速報値をそのまま表示しており、後に修正されることがあります。避難や安全確保の判断には気象庁・自治体の公式情報を使ってください。</li>
+    <li>本ページの利用によって生じた損害について、運営は責任を負いません。</li>
+  </ul>
+
+  <h2><b>07</b>配信・コメントについて</h2>
+  <ul>
+    <li>ライブ配信中、コメントで「!国名」と送ると地図がその国に移動し、画面に<strong>投稿者の表示名</strong>が短時間表示されます。表示を望まない場合はコマンドを送らないでください。コメント内容は保存しません。</li>
+    <li>差別的・攻撃的なコメントは表示対象から外します。</li>
+  </ul>
+
+  <h2><b>08</b>連絡先</h2>
+  <p>誤りの指摘、出典に関する問い合わせ、掲載の取り下げ依頼は、配信ページの概要欄に記載の連絡先までお願いします。（公開時にここへ連絡先を記載）</p>
+
+  <footer>GEO-SCOPE — 個人運営 · 最終改定 2026-11-04</footer>
+</div>
+<script>
+fetch('changelog.json?ts='+Date.now(),{cache:'no-store'}).then(r=>r.ok?r.json():Promise.reject()).then(j=>{
+  const el=document.getElementById('log');const rows=(j.entries||[]).slice().reverse().slice(0,300);
+  if(!rows.length){el.innerHTML='<div>まだ記録はありません</div>';return}
+  const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const K={add:'追加',remove:'削除',edit:'修正',correction:'訂正',note:'記録'};
+  el.innerHTML=rows.map(e=>`<div><span class="t">${esc((e.ts||'').replace('T',' ').slice(0,16))}</span><span class="k ${esc(e.type||'')}">${K[e.type]||esc(e.type||'')}</span>${e.country?'['+esc(e.country)+'] ':''}${esc(e.text||e.h||'')}${e.note?' — '+esc(e.note):''}</div>`).join('');
+}).catch(()=>{document.getElementById('log').innerHTML='<div>履歴ファイル（changelog.json）が見つかりません</div>'});
+</script>
+</body>
+</html>

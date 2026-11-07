@@ -1,0 +1,37 @@
+# Market quotes for the LIVE strip (Stooq). Light job, no API cost. Every 30 min on weekdays + a few on weekends (BTC/FX).
+# Delete this file if you do not want the quotes or the extra commits.
+name: update-markets
+on:
+  schedule:
+    - cron: "*/30 * * * 1-5"
+    - cron: "0 */3 * * 0,6"
+  workflow_dispatch:
+concurrency: { group: geo-scope-markets, cancel-in-progress: true }
+permissions: { contents: write, pages: write, id-token: write }
+jobs:
+  markets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node scripts/update_markets.mjs
+      - run: |
+          git config user.name "geo-scope-bot"; git config user.email "bot@users.noreply.github.com"
+          git add site/markets.json; git diff --cached --quiet || git commit -m "markets: $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase --autostash || true; git push || true
+  deploy:
+    needs: markets
+    runs-on: ubuntu-latest
+    concurrency: { group: geo-scope-pages, cancel-in-progress: false }
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: git pull --ff-only || true
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: site }
+      - id: deployment
+        uses: actions/deploy-pages@v4
