@@ -17,15 +17,18 @@
 - GitHub への push、Pages の公開、Actions の手動実行は毎回ユーザーに確認してから行う
 - 出力では ** や "" の記号を使わない
 
-## 現状（2026-11-07 移行時点）
+## 現状（2026-11-08）
 
-- v75 を zip から展開し、ビルドと検査は通過。ローカル git で控えを作った（リモートなし）
-- まだ個人アカウントの GitHub リポジトリは無く、公開もしていない
+- 公開リポジトリ myiorin1011-cpu/geo-scope、Pages は https://myiorin1011-cpu.github.io/geo-scope/ （Source は GitHub Actions）。Secrets に ANTHROPIC_API_KEY、Variables に GEOSCOPE_SITE_URL を登録済み
+- gh CLI は C:\Program Files\GitHub CLI\gh.exe（PATH 未反映のときはフルパスで呼ぶ）。piper は C:\Users\User\AppData\Roaming\Python\Python312\Scripts\piper.exe（PIPER_BIN で指定）。ffmpeg は winget で導入済み
+- 通常の更新は約5分・1回 0.09 ドル前後。GDELT は 429 で使えず RSS のみで動く。音声は Actions で ogg を生成してコミットする
+- マーケット表示は Stooq の無料 CSV 廃止のため停止中
+- 手元の site/voice は Actions が作ったものを pull で受け取る。以前手元で作った音声は C:\Users\User\geo-scope-voice-backup に退避
 
 ## 次にやること
 
-1. 個人アカウントで GitHub リポジトリを作って push し、Pages の Source を GitHub Actions にする。Secrets に ANTHROPIC_API_KEY を入れる
-2. DRY_RUN=1 node scripts/update_news.mjs で RSS と GDELT の取得を実環境で確かめ、エラーのフィードは feeds.json を差し替える
-3. Stooq の取得、実費（Actions ログの usage）、音声の生成と正規化を確かめる
-4. 公開前に site/about.html の運営者情報、連絡先、ポリシーを書く
+1. 定期実行（schedule）が 2026-11-08 時点で一度も動いていない。動かなければ原因を調べる
+2. 独自ドメインを取得し、HANDOFF.md 4章の手順で設定する
+3. about.html の連絡先に Google フォームの URL を入れる
+4. マーケット表示の代わりの取得先を決める
 5. 残りの TODO は HANDOFF.md 7章を見る

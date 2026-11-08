@@ -2,3 +2,4 @@ node_modules/
 .piper/
 voice_samples*/
 *.tmp.wav
+alert-test/
