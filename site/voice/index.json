@@ -139,9 +139,25 @@
   "95e6d04b": {
    "file": "voice/95e6d04b.ogg",
    "dur": 12.9
+  },
+  "fb0db76d": {
+   "file": "voice/fb0db76d.ogg",
+   "dur": 15.4
+  },
+  "d97efca4": {
+   "file": "voice/d97efca4.ogg",
+   "dur": 13.9
+  },
+  "215fd1fc": {
+   "file": "voice/215fd1fc.ogg",
+   "dur": 17
+  },
+  "2e2712ce": {
+   "file": "voice/2e2712ce.ogg",
+   "dur": 15.4
   }
  },
- "updated": "2026-11-08T16:22:06.269Z",
+ "updated": "2026-11-08T17:59:03.630Z",
  "credit": "VOICEVOX:No.7",
  "speaker": 30
 }

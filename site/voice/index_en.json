@@ -139,9 +139,25 @@
   "95e6d04b": {
    "file": "voice/en_95e6d04b.ogg",
    "dur": 15.9
+  },
+  "fb0db76d": {
+   "file": "voice/en_fb0db76d.ogg",
+   "dur": 17
+  },
+  "d97efca4": {
+   "file": "voice/en_d97efca4.ogg",
+   "dur": 14.6
+  },
+  "215fd1fc": {
+   "file": "voice/en_215fd1fc.ogg",
+   "dur": 19.7
+  },
+  "2e2712ce": {
+   "file": "voice/en_2e2712ce.ogg",
+   "dur": 18.8
   }
  },
- "updated": "2026-11-08T16:22:53.914Z",
+ "updated": "2026-11-08T17:59:19.463Z",
  "credit": "Piper TTS (en_US-amy-medium)",
  "voice": "en_US-amy-medium"
 }
