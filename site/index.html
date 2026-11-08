@@ -152,6 +152,8 @@ body.live .strip .ctl{border-top-color:transparent;padding-top:2px}
 .alerts24 .a .ago{color:var(--fg-dim);margin-left:4px}
 .alerts24 .c-emerg{--c:#ff3b3b}.alerts24 .c-quake{--c:#ffd23f}.alerts24 .c-nuke{--c:#c77dff}.alerts24 .c-cyber{--c:#3fa9ff}.alerts24 .c-break{--c:#e8eeee}
 body.live .alerts24{top:16px;right:18px;font-size:11px}
+/* narrow LIVE: the bottom corners hold the clock/ON AIR block, so the list sits under the top banner and steps aside for the alert bar */
+@media (max-width:900px){body.live .alerts24{top:40px;bottom:auto;right:10px;font-size:8.5px}body.live .scope:has(.qbar.on) .alerts24{display:none}}
 @media (max-width:900px){.alerts24{top:auto;bottom:36px;right:10px;left:auto;max-width:60%;font-size:8.5px}.alerts24 .h{display:none}}
 @media (max-width:600px){.alerts24{display:none}}
 
@@ -184,7 +186,9 @@ body.live .chatfeed{display:flex}
 .regmk .rp circle.c{fill:var(--accent)}.regmk .rp circle.r{fill:none;stroke:var(--accent);stroke-width:1;animation:relPulse 1.8s ease-out infinite}
 .regmk .rp text{font-family:var(--mono);font-size:9px;fill:var(--fg);letter-spacing:.06em;paint-order:stroke;stroke:rgba(0,0,0,.85);stroke-width:2px}
 body.live .regban{top:16px;font-size:13px;padding:8px 18px}
-@media (max-width:900px){.regban{top:auto;bottom:40px;font-size:9px;padding:4px 8px;gap:6px}.regban .c{display:none}}
+/* narrow: banner stays on top (alerts24 moves to the bottom there); body.live repeated so its top/padding can't win and stretch the box */
+@media (max-width:900px){.regban,body.live .regban{top:8px;bottom:auto;font-size:9.5px;padding:4px 10px;gap:6px;letter-spacing:.14em;white-space:nowrap;max-width:calc(100% - 20px);overflow:hidden}.regban .c{display:none}}
+@media (max-width:480px){.regban,body.live .regban{font-size:8.5px;letter-spacing:.08em;padding:3px 8px}.regban .j{display:none}}
 
 /* main */
 .main{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(300px,.8fr);gap:10px;flex:1;min-height:0}
@@ -265,6 +269,11 @@ body.lite .dis .spin{animation:none}
 .tcredit{position:absolute;left:50%;bottom:4px;transform:translateX(-50%);z-index:3;font-family:var(--mono);font-size:8px;letter-spacing:.1em;color:var(--fg-dim);opacity:.7;pointer-events:none}
 .tcredit:empty{display:none}
 @media (prefers-reduced-motion:reduce){.plane .ring{animation:none;r:6;opacity:.4}}
+/* region/digest banner and the alert bar share the top centre: push the bar below the banner while both are shown */
+.scope:has(.regban.on) .qbar{top:50px}body.live .scope:has(.regban.on) .qbar{top:62px}
+@media (max-width:900px){.scope:has(.regban.on) .qbar,body.live .scope:has(.regban.on) .qbar{top:36px}}
+@media (max-width:900px){.qbar{top:8px;max-width:calc(100% - 16px);font-size:10px;letter-spacing:.04em;gap:8px;padding:5px 10px}.qbar span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}.qbar b{white-space:nowrap}}
+@media (max-width:480px){.qbar{font-size:9px;flex-wrap:wrap;row-gap:2px}.qbar span:last-child{white-space:normal;flex-basis:100%;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}}
 .qbar .blink{width:8px;height:8px;border-radius:50%;background:var(--alert);box-shadow:0 0 8px var(--alert);animation:blink 1s steps(2) infinite;flex:none}
 body.live .qbar{font-size:15px;padding:8px 18px;top:14px}
 .summary{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) scale(.98);z-index:6;width:min(640px,86%);background:rgba(5,10,12,.9);border:1px solid var(--accent);box-shadow:0 0 24px rgba(0,230,180,.22),inset 0 0 40px rgba(0,230,180,.05);padding:14px 18px 12px;opacity:0;pointer-events:none;transition:opacity .35s,transform .35s}
