@@ -257,6 +257,25 @@ body.lite .dis .spin{animation:none}
 .tcredit{position:absolute;left:50%;bottom:4px;transform:translateX(-50%);z-index:3;font-family:var(--mono);font-size:8px;letter-spacing:.1em;color:var(--fg-dim);opacity:.7;pointer-events:none}
 .tcredit:empty{display:none}
 @media (prefers-reduced-motion:reduce){.plane .ring{animation:none;r:6;opacity:.4}}
+.charts{position:absolute;inset:9% 4% 13%;z-index:4;display:none;flex-direction:column;gap:12px;background:rgba(3,10,12,.94);border:1px solid var(--accent);box-shadow:0 0 26px rgba(0,0,0,.65),inset 0 0 22px rgba(0,0,0,.4);padding:14px 18px 18px;font-family:var(--mono);color:var(--fg);box-sizing:border-box}
+.charts.on{display:flex}
+.charts .top{display:flex;align-items:center;gap:14px;flex-wrap:wrap;letter-spacing:.12em;font-size:12px}
+.charts .top .k{font-family:var(--display);color:var(--accent);font-size:15px;letter-spacing:.22em}
+.charts .tabs{display:flex;gap:6px}.charts .tabs i{font-style:normal;border:1px solid var(--fg-dim);color:var(--fg-dim);padding:2px 9px}.charts .tabs i small{font-size:9px;opacity:.8}
+.charts .tabs i.on{border-color:var(--accent);color:var(--bg);background:var(--accent)}
+.charts .top .u{margin-left:auto;color:var(--fg-dim);font-size:10px}
+.charts .grid{flex:1;min-height:0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.charts .cc{display:flex;flex-direction:column;min-height:0;border:1px solid color-mix(in srgb,var(--fg-dim) 55%,transparent);padding:10px 12px;--c:#5be39a}.charts .cc.dn{--c:#ff6b6b}
+.charts .hd{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.charts .hd .n{color:var(--fg-dim);letter-spacing:.14em;font-size:12px}.charts .hd b{font-size:22px;letter-spacing:.04em}.charts .hd .d{color:var(--c);font-size:13px}
+.charts .pl{position:relative;flex:1;min-height:60px;margin:8px 0 6px;border-left:1px solid color-mix(in srgb,var(--fg-dim) 40%,transparent);border-bottom:1px solid color-mix(in srgb,var(--fg-dim) 40%,transparent)}
+.charts .pl svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.charts .pl polyline{fill:none;stroke:var(--c);stroke-width:1.6;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+.charts .pl .ar{fill:color-mix(in srgb,var(--c) 14%,transparent);stroke:none}
+.charts .pl .hi,.charts .pl .lo{position:absolute;right:4px;font-size:9px;color:var(--fg-dim)}.charts .pl .hi{top:2px}.charts .pl .lo{bottom:2px}
+.charts .ft{display:flex;justify-content:space-between;gap:8px;font-size:9px;color:var(--fg-dim);letter-spacing:.06em}.charts .ft span:nth-child(2){overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.charts .bar{position:absolute;left:0;bottom:0;height:2px;width:100%;background:var(--accent);transform-origin:left;animation:chBar var(--dur) linear forwards}
+@keyframes chBar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media (max-width:700px){.charts{inset:56px 8px 8px;padding:10px}.charts .grid{grid-template-columns:1fr;gap:8px}.charts .hd b{font-size:16px}.charts .top .u{display:none}.charts .tabs i{padding:1px 5px;font-size:10px}}
 /* region/digest banner and the alert bar share the top centre: push the bar below the banner while both are shown */
 .scope:has(.regban.on) .qbar{top:50px}body.live .scope:has(.regban.on) .qbar{top:62px}
 @media (max-width:900px){.scope:has(.regban.on) .qbar,body.live .scope:has(.regban.on) .qbar{top:36px}}
@@ -1777,12 +1796,31 @@ const DIGEST=(()=>{let active=null,queue=[],lastHour=null;const W={alert:0,warn:
   function stop(){if(!active)return;active=null;queue=[];banner(false);document.getElementById('modeLabel').textContent='AUTO';scheduleNext(1500);}
   setInterval(()=>{if(SET.digest==='off'||active)return;const now=new Date();if(now.getMinutes()<2&&lastHour!==now.getHours()&&cycleList.length)start();},20000);
   return {start,stop,get active(){return active},pick};})();
+// ---- MARKETS slot (prototype, off unless #charts=on): site/charts.json from scripts/fetch_charts.mjs; at :40 each hour, daily → weekly → monthly → all, 12 s each ----
+const CHARTS=(()=>{const off=!/(^|[#,&?])charts=on\b/.test(location.hash+'&'+location.search);let data=null,active=null,lastHour=null;const STEP=12000;
+  const PER=[['d','日足','DAILY','3M'],['w','週足','WEEKLY','2Y'],['m','月足','MONTHLY','10Y'],['all','全期間','ALL','MAX']];
+  async function load(){if(off)return;try{const r=await fetch('charts.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw 0;data=await r.json();if(!Array.isArray(data.series)||Date.now()-Date.parse(data.updated)>5*86400e3)data=null;}catch(e){data=null;}}
+  function el(){let b=document.getElementById('charts');if(!b){b=document.createElement('div');b.id='charts';b.className='charts';scope.appendChild(b);}return b;}
+  const fmt=v=>v>=1000?Math.round(v).toLocaleString('en-US'):v.toFixed(2);
+  function plot(vs){const lo=Math.min(...vs),hi=Math.max(...vs),rg=hi-lo||1,W=300,H=100;const pts=vs.map((v,i)=>`${(i/(vs.length-1)*W).toFixed(1)},${(H-(v-lo)/rg*H).toFixed(1)}`).join(' ');
+    return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true"><polygon class="ar" points="0,${H} ${pts} ${W},${H}"/><polyline points="${pts}"/></svg><span class="hi">${fmt(hi)}</span><span class="lo">${fmt(lo)}</span>`;}
+  function render(pi){const p=PER[pi],en=lang==='en';
+    const cards=data.series.map(s=>{const a=s.periods?.[p[0]]||[];if(a.length<2)return '';const vs=a.map(r=>r[1]),ch=(vs.at(-1)/vs[0]-1)*100;
+      return `<div class="cc ${ch>=0?'up':'dn'}"><div class="hd"><span class="n">${esc(en?s.en:s.label)}</span><b>${fmt(vs.at(-1))}</b><span class="d">${ch>=0?'▲':'▼'}${Math.abs(ch).toFixed(1)}%</span></div><div class="pl">${plot(vs)}</div><div class="ft"><span>${esc(a[0][0])}</span><span>${esc(s.sub||'')}</span><span>${esc(a.at(-1)[0])}</span></div></div>`;}).join('');
+    el().innerHTML=`<div class="top"><span class="k">MARKETS</span><span class="tabs">${PER.map((q,i)=>`<i class="${i===pi?'on':''}">${en?q[2]:q[1]} <small>${q[3]}</small></i>`).join('')}</span><span class="u">${en?'closing prices':'終値ベース'} · ${esc(data.source||'')}</span></div><div class="grid">${cards}</div><div class="bar" style="--dur:${STEP}ms"></div>`;}
+  function start(){if(off||!data||active)return false;if((typeof REGION!=='undefined'&&REGION.active)||DIGEST.active)return false;
+    active={i:0,t:0};lastHour=new Date().getHours();clearTimeout(cycleTimer);VOICE.stop();document.getElementById('modeLabel').textContent='MARKETS';SFX.notice&&SFX.notice();render(0);el().classList.add('on');active.t=setTimeout(step,STEP);return true;}
+  function step(){if(!active)return;if(++active.i>=PER.length){stop();return;}render(active.i);active.t=setTimeout(step,STEP);}
+  function stop(){if(!active)return;clearTimeout(active.t);active=null;el().classList.remove('on');document.getElementById('modeLabel').textContent='AUTO';scheduleNext(1500);}
+  if(!off){load();setInterval(load,30*60e3);setInterval(()=>{if(active)return;const now=new Date();if(now.getMinutes()===40&&lastHour!==now.getHours()&&cycleList.length)start();},20000);}
+  return {start,stop,load,get active(){return active},get enabled(){return !off&&!!data}};})();
+window.GEOSCOPE=Object.assign(window.GEOSCOPE||{},{charts:()=>CHARTS.start(),chartsStop:()=>CHARTS.stop()});
 // ---- programme line (bottom-right, LIVE): what is on now and what comes next ----
 const SCHED=(()=>{const el=()=>document.getElementById('sched');
-  function next(){const now=new Date();const m=now.getMinutes()+now.getSeconds()/60;const slots=[];if(SET.regions!=='off'){slots.push({m:20,k:'JP REGION'},{m:50,k:'US REGION'});}if(SET.digest!=='off')slots.push({m:60,k:'HOURLY'});
+  function next(){const now=new Date();const m=now.getMinutes()+now.getSeconds()/60;const slots=[];if(SET.regions!=='off'){slots.push({m:20,k:'JP REGION'},{m:50,k:'US REGION'});}if(SET.digest!=='off')slots.push({m:60,k:'HOURLY'});if(CHARTS.enabled)slots.push({m:40,k:'MARKETS'});
     return slots.map(s=>({...s,dm:s.m-m>0?s.m-m:s.m-m+60})).sort((a,b)=>a.dm-b.dm);}
   function fmt(mins){const t=new Date(Date.now()+mins*60e3);return t.toLocaleTimeString('ja-JP',{timeZone:'Asia/Tokyo',hour:'2-digit',minute:'2-digit'});}
-  function render(){const e=el();if(!e)return;let now='WORLD WATCH';if(typeof REGION!=='undefined'&&REGION.active)now=REGION.active.r==='japan'?'JP REGION':'US REGION';else if(typeof DIGEST!=='undefined'&&DIGEST.active)now='HOURLY DIGEST';else if(typeof ALERT!=='undefined'&&document.getElementById('bigalert')?.classList.contains('on'))now='ALERT';
+  function render(){const e=el();if(!e)return;let now='WORLD WATCH';if(typeof REGION!=='undefined'&&REGION.active)now=REGION.active.r==='japan'?'JP REGION':'US REGION';else if(typeof DIGEST!=='undefined'&&DIGEST.active)now='HOURLY DIGEST';else if(CHARTS.active)now='MARKETS';else if(typeof ALERT!=='undefined'&&document.getElementById('bigalert')?.classList.contains('on'))now='ALERT';
     const q=next();const nx=q.length?`${q[0].k} ${fmt(q[0].dm)} (${Math.ceil(q[0].dm)}m)`+(q[1]?` · ${q[1].k} ${fmt(q[1].dm)}`:''):'';e.innerHTML=`<b>ON AIR</b> ${now}${nx?` <span class="nx">NEXT ▸ ${nx}</span>`:''}`;}
   setInterval(render,5000);setTimeout(render,500);return {render,next};})();
 // ---- markets strip: site/markets.json written by scripts/update_markets.mjs (Stooq); hidden when missing or older than 36h ----

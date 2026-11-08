@@ -4,3 +4,4 @@ voice_samples*/
 *.tmp.wav
 alert-test/
 site/traffic.json
+site/charts.json
