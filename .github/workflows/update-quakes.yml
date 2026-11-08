@@ -1,7 +1,7 @@
 name: Update GEO-SCOPE quake & disaster feeds
 on:
   schedule:
-    - cron: "*/15 * * * *"      # 15分ごと（GitHubの最短は5分。負荷と履歴の肥大を考えて15分）
+    - cron: "7,22,37,52 * * * *"   # 15分ごと。毎時0分台は GitHub の混雑で落ちやすいので 7分ずらす（2026-11 新リポジトリで schedule が一度も発火しなかったため登録し直し）
   workflow_dispatch:
 permissions: { contents: write, pages: write, id-token: write }
 concurrency: { group: geo-scope-quakes, cancel-in-progress: true }

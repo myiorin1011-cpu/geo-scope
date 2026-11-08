@@ -1,7 +1,7 @@
 name: Update GEO-SCOPE news feed
 on:
   schedule:
-    - cron: "17 */4 * * *"      # 4時間ごと（UTC 0,4,8,12,16,20時17分 = JST 9,13,17,21,1,5時台）。3時間おきなら */3
+    - cron: "19 */4 * * *"      # 4時間ごと（UTC 0,4,8,12,16,20時19分 = JST 9,13,17,21,1,5時台）。3時間おきなら */3（2026-11 schedule 再登録のため 17→19分）
   workflow_dispatch:            # 手動実行ボタン
     inputs:
       init:

@@ -88,6 +88,12 @@ body.live .strip .ctl{border-top-color:transparent;padding-top:2px}
   .strip .gear .gl{display:none}
   .setpanel{position:fixed;left:8px;right:8px;top:auto;bottom:8px;width:auto}
 }
+/* phone: the status column got squeezed between logo and clock and wrapped word by word under the clock → give it its own row */
+@media (max-width:560px){
+  .strip{grid-template-columns:1fr auto;grid-template-areas:"id clock" "status status" "ctl ctl"}
+  .strip .status{gap:2px 12px}
+  .strip .live{white-space:nowrap}
+}
 
 
 /* full-screen breaking alert (first 24h only) */
@@ -477,7 +483,8 @@ body.live .scope .legend{left:18px;right:auto}
 @media (max-width:600px){
   .scope{aspect-ratio:4/5}
   .scope .hud{font-size:7px;left:12px;top:11px}
-  .scope .legend{left:auto;right:12px;top:8px;bottom:auto;flex-direction:column;gap:2px;font-size:9px;align-items:flex-end}
+  .scope .legend,body.live .scope .legend{left:auto;right:12px;top:8px;bottom:auto;flex-direction:column;gap:2px;font-size:9px;align-items:flex-end}
+  body.live .scope .hud{font-size:7px;left:12px;top:11px}
   .callout{left:10px!important;right:10px!important;top:auto!important;bottom:34px;width:auto;font-size:11px;padding:8px 10px}
   body.live .callout{width:auto;font-size:12px;line-height:1.5;padding:8px 10px}body.live .callout .ch{font-size:12px}
   body.live .liveinfo{display:none}
