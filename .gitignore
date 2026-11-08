@@ -3,3 +3,4 @@ node_modules/
 voice_samples*/
 *.tmp.wav
 alert-test/
+site/traffic.json

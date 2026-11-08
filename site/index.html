@@ -258,6 +258,13 @@ body.lite .dis .spin{animation:none}
 @media (prefers-reduced-motion:reduce){.quake .ring{animation:none;r:6;opacity:.4}}
 .qbar{position:absolute;left:50%;top:10px;transform:translateX(-50%);z-index:5;display:none;align-items:center;gap:12px;background:rgba(5,10,12,.92);border:1px solid var(--alert);color:var(--fg);font-family:var(--mono);font-size:12px;letter-spacing:.08em;padding:6px 14px;box-shadow:0 0 14px rgba(255,90,78,.35);max-width:80%}
 .qbar.on{display:flex}.qbar b{color:var(--alert);font-family:var(--display);letter-spacing:.14em}
+.plane .ring{fill:none;stroke:currentColor;stroke-width:.8;animation:qring 1.6s ease-out infinite}
+.plane .core{fill:currentColor}.plane{color:var(--alert)}.plane.sq7600{color:var(--warn)}
+.ship{color:#5fd0ff}.ship .core{fill:none;stroke:currentColor;stroke-width:.8}
+.plane text,.ship text{font-family:var(--mono);font-size:6.5px;fill:currentColor;paint-order:stroke;stroke:var(--bg);stroke-width:2.5px;letter-spacing:.06em}
+.tcredit{position:absolute;left:50%;bottom:4px;transform:translateX(-50%);z-index:3;font-family:var(--mono);font-size:8px;letter-spacing:.1em;color:var(--fg-dim);opacity:.7;pointer-events:none}
+.tcredit:empty{display:none}
+@media (prefers-reduced-motion:reduce){.plane .ring{animation:none;r:6;opacity:.4}}
 .qbar .blink{width:8px;height:8px;border-radius:50%;background:var(--alert);box-shadow:0 0 8px var(--alert);animation:blink 1s steps(2) infinite;flex:none}
 body.live .qbar{font-size:15px;padding:8px 18px;top:14px}
 .summary{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) scale(.98);z-index:6;width:min(640px,86%);background:rgba(5,10,12,.9);border:1px solid var(--accent);box-shadow:0 0 24px rgba(0,230,180,.22),inset 0 0 40px rgba(0,230,180,.05);padding:14px 18px 12px;opacity:0;pointer-events:none;transition:opacity .35s,transform .35s}
@@ -552,6 +559,7 @@ body.live .scope .legend{left:18px;right:auto}
         <g id="night"></g>
         <g id="quakes"></g>
         <g id="disasters"></g>
+        <g id="traffic"></g>
         <g id="markers"></g>
         <g id="rel" class="rel"></g>
         <g id="callout-line"></g>
@@ -560,6 +568,7 @@ body.live .scope .legend{left:18px;right:auto}
       <div class="alerts24" id="alerts24" aria-label="直近24時間の重要アラート"></div>
       <div class="chatfeed" id="chatfeed" aria-live="polite" aria-label="最近のコメント"></div>
       <div class="qbar" id="qbar" role="status"></div>
+      <div class="tcredit" id="tcredit"></div>
       <div class="summary" id="summary" aria-live="polite"></div>
       <div class="poll" id="poll"></div>
       <div class="callout" id="callout" aria-live="polite"></div>
@@ -1216,7 +1225,7 @@ const aspect=()=>{const r=svgEl.getBoundingClientRect();return r.height>0?r.widt
 function fullVB(){const a=aspect();let w=1000,h=1000/a;if(h<480){h=480;w=480*a}return {x:500-w/2,y:240-h/2,w,h}}
 let cam=fullVB(),camAnim=null;window.__camReady=true;
 let mkScale=1;
-function setVB(v){cam=v;svgEl.setAttribute('viewBox',`${v.x.toFixed(2)} ${v.y.toFixed(2)} ${v.w.toFixed(2)} ${v.h.toFixed(2)}`);const k=Math.pow(Math.min(1,v.w/1000),.7);if(Math.abs(k-mkScale)>.01){mkScale=k;mk.style.setProperty('--mk',k);document.querySelectorAll('#quakes .mk,#disasters .mk').forEach(m=>m.style.transform=`scale(${k})`)}}
+function setVB(v){cam=v;svgEl.setAttribute('viewBox',`${v.x.toFixed(2)} ${v.y.toFixed(2)} ${v.w.toFixed(2)} ${v.h.toFixed(2)}`);const k=Math.pow(Math.min(1,v.w/1000),.7);if(Math.abs(k-mkScale)>.01){mkScale=k;mk.style.setProperty('--mk',k);document.querySelectorAll('#quakes .mk,#disasters .mk,#traffic .mk').forEach(m=>m.style.transform=`scale(${k})`)}}
 const easeIO=t=>t<.5?2*t*t:-1+(4-2*t)*t;
 function flyTo(target,ms){return new Promise(res=>{cancelAnimationFrame(camAnim);if(reduce||ms===0){setVB(target);return res()}
   const from={...cam},t0=performance.now();
@@ -1607,6 +1616,33 @@ const DISASTER=(()=>{
     clearTimeout(barTimer);barTimer=setTimeout(()=>bar.classList.remove('on'),90000);if(!(window.__holdUntil&&Date.now()<window.__holdUntil))focus(x,true);}
   poll();setInterval(poll,10*60*1000);
   return {poll,get items(){return items},focus,announce,render,_set(list){items=list;render();const el=document.getElementById('disCount');if(el)el.textContent=items.length;}};
+})();
+
+// ---- traffic layer: traffic.json from scripts/fetch_traffic.mjs (aircraft squawking 7500/7600/7700 + ships at chokepoints) ----
+// OFF by default until the data sources' commercial terms are confirmed: opt in with URL "traffic=on" (e.g. #live,traffic=on).
+// Even then it stays hidden until traffic.json exists. Not an official warning: positions are crowd-sourced and delayed.
+const TRAFFIC=(()=>{
+  const g=document.getElementById('traffic'),cr=document.getElementById('tcredit');let data=null,seen=new Set(),first=true;
+  const off=!/(^|[#,&?])traffic=on\b/.test(location.hash+'&'+location.search);
+  const KIND={'7500':'HIJACK','7600':'RADIO FAILURE','7700':'EMERGENCY'};
+  async function poll(){if(off)return;
+    try{const r=await fetch('traffic.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)return;data=await r.json();}catch(e){return}
+    if(Date.now()-Date.parse(data.updated)>3*3600e3){data=null;render();return} // stale relay → hide rather than show old positions
+    render();
+    const fresh=(data.aircraft||[]).filter(a=>!seen.has(a.hex+a.squawk));(data.aircraft||[]).forEach(a=>seen.add(a.hex+a.squawk));
+    if(!first&&fresh.length)announce(fresh[0]);first=false;}
+  function render(){g.innerHTML='';cr.textContent=data?data.credit||'':'';if(!data)return;
+    for(const z of data.ships?.zones||[]){const [x,y]=P(z.lon,z.lat);const el=document.createElementNS('http://www.w3.org/2000/svg','g');el.setAttribute('class','ship');el.setAttribute('transform',`translate(${x.toFixed(1)},${y.toFixed(1)})`);
+      el.innerHTML=`<g class="mk"><path class="core" d="M0,-2.6L2.6,0L0,2.6L-2.6,0Z"/><text x="4" y="2.4">${esc(z.label)} ${z.n}</text></g>`;g.appendChild(el);}
+    for(const a of data.aircraft||[]){const [x,y]=P(a.lon,a.lat);const el=document.createElementNS('http://www.w3.org/2000/svg','g');el.setAttribute('class','plane sq'+a.squawk);el.setAttribute('transform',`translate(${x.toFixed(1)},${y.toFixed(1)})`);
+      el.innerHTML=`<g class="mk"><circle class="ring" r="2"/><path class="core" d="M0,-3.2L2.4,2.6L0,1.4L-2.4,2.6Z"/><text x="5" y="-3">SQK ${esc(a.squawk)} ${esc(a.flight||a.reg||a.hex)}</text></g>`;g.appendChild(el);}
+    g.querySelectorAll('.mk').forEach(m=>m.style.transform=`scale(${mkScale})`);}
+  let barTimer=null;
+  function announce(a){const bar=document.getElementById('qbar');const alt=typeof a.alt==='number'?` · ${a.alt.toLocaleString()} ft`:'';
+    bar.innerHTML=`<span class="blink"></span><b>AIR ${esc(KIND[a.squawk]||'ALERT')}</b><span>SQUAWK ${esc(a.squawk)} · ${esc(a.flight||a.reg||a.hex)}${a.type?' ('+esc(a.type)+')':''}${alt} · adsb.lol</span>`;bar.classList.add('on');SFX.alert();
+    clearTimeout(barTimer);barTimer=setTimeout(()=>bar.classList.remove('on'),60000);}
+  poll();setInterval(poll,2*60*1000);
+  return {poll,render,get data(){return data},_set(d){data=d;render();},announce};
 })();
 
 // ---- news voice: pre-synthesized clips (voice/index.json) played through a radio chain ----

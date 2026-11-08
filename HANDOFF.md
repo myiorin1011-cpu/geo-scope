@@ -105,6 +105,7 @@
 - [ ] マーケット表示の取得先を決め直す。2026-11-08 に確認したところ Stooq は無料 CSV をやめていた（/q/l/ は 404、/q/d/l/ は 403）。ECB（為替）と Coinbase（BTC）の予備は取れる。update-markets.yml のスケジュールは止めてあり、古いデータは 36 時間で自動的に隠れる
 - [ ] RSS は 2026-11-08 の実環境確認で ReliefWeb（HTTP 406）以外すべて取得できた。GDELT は手元の PC からも Actions からも 429（回数制限）。最初の 429 か通信エラーでその実行の GDELT を打ち切るようにした（`GDELT=off` で最初から使わない）。地域枠の INIT は GDELT が取れないと RSS に切り替わる。ReliefWeb がだめなら feeds.json から外すか URL を差し替える
 - [ ] 同梱の `regions.json` / `markets.json` はサンプル（見出しに【サンプル】）。初回の更新で置き換わる
+- [ ] 航空機・船レイヤー（試作のみ、既定で無効）。`scripts/fetch_traffic.mjs` が緊急スコーク 7500/7600/7700 の機体（adsb.lol、データは ODbL）と要所 8 か所の船舶数（aisstream.io、要 `AISSTREAM_KEY`）を `site/traffic.json` に書く。ページは URL に `traffic=on` を付けたときだけ表示。有効化の前に adsb.lol と aisstream.io へ商用利用（収益化した配信）の可否を確認する。航空機が不可なら FlyItalyADSB（無料枠でも商用可・出典表記、全世界は月 49 ユーロ）に切り替え。可なら地震ワークフロー（15 分おき）か配信 PC で fetch_traffic を回し、ページの既定を on にして about.html のデータ出所に追記する
 - [ ] 国紹介 ALL だと 1 ラウンドが 10 分以上になる → `PROFILE 3` 既定化か「1 巡おき」にするか検討
 - [ ] 既存音声を `normalize_voice.mjs` で正規化（1 回）
 - [ ] 公開後: YouTube 配信で OBS ブラウザソース（1920×1080、`#live`）の長時間安定を確認
