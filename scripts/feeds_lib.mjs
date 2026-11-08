@@ -46,11 +46,17 @@ export function parseFeed(xml) {
 }
 
 // ---------- GDELT DOC 2.0 (free, ~1 request / 5 s) ----------
-let lastGdelt = 0;
+// GDELT rate-limits shared IPs (GitHub Actions runners get HTTP 429 on every call). After the first 429 or network
+// failure the rest of the run skips GDELT instead of waiting out dozens of doomed requests. GDELT=off skips it from the start.
+let lastGdelt = 0, gdeltDown = /^(off|0|false)$/i.test(process.env.GDELT || "") ? "GDELT=off" : "";
+export const gdeltOff = () => gdeltDown;
 export async function gdelt(query, { timespan = "4h", max = 250 } = {}) {
+  if (gdeltDown) throw new Error(`skipped (${gdeltDown})`);
   const wait = 5500 - (Date.now() - lastGdelt); if (wait > 0) await sleep(wait); lastGdelt = Date.now();
   const url = `https://api.gdeltproject.org/api/v2/doc/doc?${new URLSearchParams({ query, mode: "artlist", format: "json", maxrecords: String(max), timespan, sort: "datedesc" })}`;
-  const txt = await fetchText(url, 30000); let j; try { j = JSON.parse(txt); } catch { throw new Error("GDELT: non-JSON reply (" + txt.slice(0, 80).replace(/\s+/g, " ") + ")"); }
+  let txt; try { txt = await fetchText(url, 30000); }
+  catch (e) { if (/HTTP 429|fetch failed|abort/i.test(e.message)) { gdeltDown = e.message; console.error(`GDELT unavailable (${e.message}) — skipping it for the rest of this run`); } throw e; }
+  let j; try { j = JSON.parse(txt); } catch { throw new Error("GDELT: non-JSON reply (" + txt.slice(0, 80).replace(/\s+/g, " ") + ")"); }
   return (j.articles || []).map(a => ({ title: String(a.title || "").trim(), link: a.url, date: a.seendate ? a.seendate.replace(/^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})Z$/, "$1-$2-$3T$4:$5:$6Z") : "", desc: "", domain: a.domain, lang: a.language, srcCountry: a.sourcecountry }));
 }
 

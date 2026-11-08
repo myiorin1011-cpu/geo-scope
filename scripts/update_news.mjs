@@ -10,7 +10,7 @@
 // INIT=1: fill countries that have no dated item yet (1 item each). feeds mode uses a GDELT query per country (last 7 days).
 import fs from "node:fs";
 import path from "node:path";
-import { collect, gdelt, makeTagger, pickCandidates, candidateBlock, seenStore, sourceName, costLine } from "./feeds_lib.mjs";
+import { collect, gdelt, gdeltOff, makeTagger, pickCandidates, candidateBlock, seenStore, sourceName, costLine } from "./feeds_lib.mjs";
 
 const API_KEY = process.env.ANTHROPIC_API_KEY;
 if (!API_KEY) { console.error("ANTHROPIC_API_KEY is not set"); process.exit(1); }
@@ -119,6 +119,7 @@ async function feedCandidates() {
   if (INIT) { // one GDELT query per target country
     const items = [];
     for (const k of initTargets) {
+      if (gdeltOff()) break;
       const name = (cfg.country_aliases?.[k] || []).find(a => /^[A-Z][a-z]/.test(a) && a.length > 3) || k.replace(/\./g, "");
       try { const got = await gdelt(`"${name}" sourcelang:english`, { timespan: "7d", max: 8 }); for (const g of got.slice(0, 5)) items.push({ ...g, source: sourceName(g.link, g.domain), lang: "en", tags: [k], ms: Date.parse(g.date) || null, weight: 1 }); }
       catch (e) { console.error(`GDELT ${k}: ${e.message}`); }

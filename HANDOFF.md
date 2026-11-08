@@ -103,7 +103,7 @@
 - [ ] **公開前**: `site/about.html` の運営者情報・連絡先・ポリシーを記入（公開時に対応予定）
 - [ ] 実費の確認：Actions のログの `usage: … ≈ $…` を 1〜2 日分見る
 - [ ] マーケット表示の取得先を決め直す。2026-11-08 に確認したところ Stooq は無料 CSV をやめていた（/q/l/ は 404、/q/d/l/ は 403）。ECB（為替）と Coinbase（BTC）の予備は取れる。update-markets.yml のスケジュールは止めてあり、古いデータは 36 時間で自動的に隠れる
-- [ ] RSS は 2026-11-08 の実環境確認で ReliefWeb（HTTP 406）以外すべて取得できた。GDELT は手元の PC から 429（回数制限）。Actions のログで GDELT と ReliefWeb が取れているか確認し、ReliefWeb がだめなら feeds.json から外すか URL を差し替える
+- [ ] RSS は 2026-11-08 の実環境確認で ReliefWeb（HTTP 406）以外すべて取得できた。GDELT は手元の PC からも Actions からも 429（回数制限）。最初の 429 か通信エラーでその実行の GDELT を打ち切るようにした（`GDELT=off` で最初から使わない）。地域枠の INIT は GDELT が取れないと RSS に切り替わる。ReliefWeb がだめなら feeds.json から外すか URL を差し替える
 - [ ] 同梱の `regions.json` / `markets.json` はサンプル（見出しに【サンプル】）。初回の更新で置き換わる
 - [ ] 国紹介 ALL だと 1 ラウンドが 10 分以上になる → `PROFILE 3` 既定化か「1 巡おき」にするか検討
 - [ ] 既存音声を `normalize_voice.mjs` で正規化（1 回）

@@ -5,7 +5,7 @@
 // Requires: Node 20+, env ANTHROPIC_API_KEY. Optional: MODEL, SITE_DIR, REGIONS=japan,usa, DRY_RUN=1
 // INIT=1: ニュースの無い地域を全部埋める初期化モード（各地域 1 件、直近 1 週間の経済トピック。25 地域ずつ API を呼ぶ）
 import fs from "node:fs"; import path from "node:path";
-import { collect, gdelt, makeTagger, pickCandidates, candidateBlock, seenStore, sourceName, costLine } from "./feeds_lib.mjs";
+import { collect, gdelt, gdeltOff, makeTagger, pickCandidates, candidateBlock, seenStore, sourceName, costLine } from "./feeds_lib.mjs";
 const API_KEY = process.env.ANTHROPIC_API_KEY; if (!API_KEY) { console.error("ANTHROPIC_API_KEY is not set"); process.exit(1); }
 const MODEL = process.env.MODEL || "claude-sonnet-5-5";
 const SITE_DIR = process.env.SITE_DIR || path.resolve("site"), OUT = path.join(SITE_DIR, "regions.json");
@@ -82,16 +82,19 @@ ${block}
 async function feedItems(r, areas, heads, list) {
   const tagger = makeTagger(RA[r] || {}, { notAfter: { "京都": ["東"] } });
   let cands, init = false;
-  if (INIT) { // one GDELT query per empty area (last 7 days)
+  if (INIT && !gdeltOff()) { // one GDELT query per empty area (last 7 days)
     init = true; const empty = areas.filter(a => !list.some(i => i.area === a)); const items = [];
     for (const a of empty) {
+      if (gdeltOff()) break;
       const en = r === "japan" ? GEO.japan[a][2] : a;
       const q = r === "japan" ? `"${en}" sourcecountry:japan (economy OR company OR tourism OR factory OR business)` : `"${en}" sourcelang:english sourcecountry:unitedstates (economy OR jobs OR business OR investment)`;
       try { for (const g of (await gdelt(q, { timespan: "7d", max: 6 })).slice(0, 4)) items.push({ ...g, source: sourceName(g.link, g.domain), tags: [a], ms: Date.parse(g.date) || null }); }
       catch (e) { console.error(`GDELT ${a}: ${e.message}`); }
     }
     cands = items.map((it, i) => ({ ...it, desc: "", id: i + 1 }));
-  } else {
+  }
+  if (!cands || (init && !cands.length)) { // normal run, or INIT when GDELT gave nothing → the RSS feeds
+    if (init) console.log(`${r}: INIT got nothing from GDELT — using the RSS feeds instead`); init = false;
     const items = await collect({ sources: FEEDS[r] || [], gdeltQueries: FEEDS[r + "_gdelt"] || [], sinceMs: Date.now() - HOURS * 3600e3 });
     cands = pickCandidates(items.filter(it => !seen.has(it.link)), { tagger, max: Number(process.env.MAX_CANDIDATES || 120), perKey: 4, requireTag: true });
   }
