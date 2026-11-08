@@ -1929,9 +1929,19 @@
    "file": "voice/profile_WSM_en.ogg",
    "dur": 10.8,
    "text": "Samoa. Apia, ≈220,000. Parliamentary. Travel advisory level 0: No advisory. Japan supports ports and education."
+  },
+  "TWN|ja": {
+   "file": "voice/profile_TWN_ja.ogg",
+   "dur": 8.7,
+   "text": "台湾。台北、約2,300万人。半大統領制。渡航レベル0、危険情報なし。国交はないが経済、人的交流は極めて活発。"
+  },
+  "RWA|ja": {
+   "file": "voice/profile_RWA_ja.ogg",
+   "dur": 9.3,
+   "text": "ルワンダ。キガリ、約1,400万人。大統領制。渡航レベル1、十分注意。ICT立国を目指し、日本のスタートアップや大学の進出が増えている。"
   }
  },
- "updated": "2026-11-08T09:15:29.913Z",
+ "updated": "2026-11-08T16:23:01.970Z",
  "credit": {
   "ja": "VOICEVOX:No.7",
   "en": "Piper TTS (en_US-amy-medium)"

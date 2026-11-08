@@ -87,9 +87,61 @@
   "5728c514": {
    "file": "voice/5728c514.ogg",
    "dur": 13.7
+  },
+  "c537f299": {
+   "file": "voice/c537f299.ogg",
+   "dur": 13.9
+  },
+  "4b7becde": {
+   "file": "voice/4b7becde.ogg",
+   "dur": 15.3
+  },
+  "33c3b9a8": {
+   "file": "voice/33c3b9a8.ogg",
+   "dur": 13.5
+  },
+  "33d8c563": {
+   "file": "voice/33d8c563.ogg",
+   "dur": 12.5
+  },
+  "eec5e445": {
+   "file": "voice/eec5e445.ogg",
+   "dur": 10.3
+  },
+  "2d37429b": {
+   "file": "voice/2d37429b.ogg",
+   "dur": 13.3
+  },
+  "bad63dcd": {
+   "file": "voice/bad63dcd.ogg",
+   "dur": 10.2
+  },
+  "74a74ec5": {
+   "file": "voice/74a74ec5.ogg",
+   "dur": 14
+  },
+  "8b47b668": {
+   "file": "voice/8b47b668.ogg",
+   "dur": 10
+  },
+  "0d7448e0": {
+   "file": "voice/0d7448e0.ogg",
+   "dur": 14
+  },
+  "69907a1e": {
+   "file": "voice/69907a1e.ogg",
+   "dur": 13.2
+  },
+  "59e50a33": {
+   "file": "voice/59e50a33.ogg",
+   "dur": 11.5
+  },
+  "95e6d04b": {
+   "file": "voice/95e6d04b.ogg",
+   "dur": 12.9
   }
  },
- "updated": "2026-11-08T09:02:32.933Z",
+ "updated": "2026-11-08T16:22:06.269Z",
  "credit": "VOICEVOX:No.7",
  "speaker": 30
 }
