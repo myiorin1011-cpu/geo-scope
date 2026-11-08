@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-08T20:48:46.065Z",
+ "updated": "2026-11-08T21:22:17.813Z",
  "sources": [
-  {
-   "name": "気象庁",
-   "url": "https://www.jma.go.jp/bosai/map.html#contents=earthquake_map"
-  },
   {
    "name": "USGS",
    "url": "https://earthquake.usgs.gov/"
+  },
+  {
+   "name": "気象庁",
+   "url": "https://www.jma.go.jp/bosai/map.html#contents=earthquake_map"
   }
  ],
  "items": [
@@ -155,19 +155,6 @@
    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twun",
    "tsunami": false,
    "alert": "green"
-  },
-  {
-   "id": "usgs:us7000twu1",
-   "time": "2026-11-07T20:55:38.512Z",
-   "lat": -3.905,
-   "lon": 128.5121,
-   "depth": 137,
-   "mag": 4.7,
-   "place": "43 km ESE of Ambon, Indonesia",
-   "src": "USGS",
-   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twu1",
-   "tsunami": false,
-   "alert": null
   }
  ]
 }
