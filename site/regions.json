@@ -1,186 +1,101 @@
 {
- "updated": "2026-11-05T12:28:11.324777",
- "note": "サンプルデータ。scripts/update_regions.mjs が実データに置き換えます",
+ "updated": "2026-11-08T07:18:02.509Z",
  "japan": [
   {
    "area": "北海道",
-   "t": "2026-11-05 / 産業",
+   "t": "2026-11-06 / 観光",
    "lv": "info",
-   "h": "【サンプル】半導体工場の稼働に向け地元で採用説明会",
-   "b": "千歳市周辺で人材確保の動きが続く。（表示確認用のサンプル。自動更新で実データに置き換わります）",
-   "h_en": "[Sample] Chip plant hiring sessions ahead of start-up",
-   "b_en": "Recruiting continues around Chitose. (placeholder; replaced by the auto-update)",
-   "ts": "2026-11-05T12:28:11.324777",
+   "h": "札幌駅北口のホテル、12月からランチ開始",
+   "h_en": "Sapporo hotel to start rooftop-floor lunch service in December",
+   "b": "ホテルマイステイズ札幌駅北口が12月1日から、最上階のレストランでランチ営業を始める。北海道産野菜を取り入れた4種類から選べるメイン料理と、ハーフビュッフェを提供する。",
+   "b_en": "Hotel MyStays Sapporo Station North Exit will begin lunch service at its top-floor restaurant on December 1. Guests can choose from four main dishes using Hokkaido-grown vegetables, paired with a half buffet.",
+   "ts": "2026-11-06T07:30:00Z",
    "src": [
     {
-     "name": "サンプル"
-    }
-   ]
-  },
-  {
-   "area": "愛知県",
-   "t": "2026-11-05 / 製造業",
-   "lv": "info",
-   "h": "【サンプル】自動車部品メーカーが県内でEV向け新ライン",
-   "b": "2027年稼働を目指す。（表示確認用のサンプル。自動更新で実データに置き換わります）",
-   "h_en": "[Sample] Auto-parts maker adds EV line in the prefecture",
-   "b_en": "Targeting 2027 start. (placeholder; replaced by the auto-update)",
-   "ts": "2026-11-05T12:28:11.324777",
-   "src": [
-    {
-     "name": "サンプル"
-    }
-   ]
-  },
-  {
-   "area": "福岡県",
-   "t": "2026-11-05 / インフラ",
-   "lv": "info",
-   "h": "【サンプル】データセンター向け非常用電源の新工場が着工",
-   "b": "北九州市で2027年完成予定。（表示確認用のサンプル。自動更新で実データに置き換わります）",
-   "h_en": "[Sample] New plant for data-center backup power breaks ground",
-   "b_en": "Kitakyushu, completion planned 2027. (placeholder; replaced by the auto-update)",
-   "ts": "2026-11-05T12:28:11.324777",
-   "src": [
-    {
-     "name": "サンプル"
+     "name": "minyu-net.com",
+     "url": "https://www.minyu-net.com/release/prwire/detail/202611059555"
     }
    ]
   },
   {
    "area": "大阪府",
-   "t": "2026-11-05 / 消費",
+   "t": "2026-11-06 / インフラ",
    "lv": "info",
-   "h": "【サンプル】インバウンド消費が百貨店売上を押し上げ",
-   "b": "免税売上が前年同月比で増加。（表示確認用のサンプル。自動更新で実データに置き換わります）",
-   "h_en": "[Sample] Inbound spending lifts department-store sales",
-   "b_en": "Duty-free sales up year on year. (placeholder; replaced by the auto-update)",
-   "ts": "2026-11-05T12:28:11.324777",
+   "h": "北陸新幹線の大阪延伸、費用対効果を検証へ",
+   "h_en": "Ministry panel begins cost-benefit review of Hokuriku Shinkansen extension to Osaka",
+   "b": "国土交通省の検討会が初会合を開き、北陸新幹線の大阪延伸をめぐる費用対効果の検証に着手した。延伸計画の経済的な妥当性を改めて確認する作業が始まった形で、今後の議論が注目される。",
+   "b_en": "A Ministry of Land, Infrastructure, Transport and Tourism panel held its first meeting and began verifying the cost-effectiveness of extending the Hokuriku Shinkansen to Osaka. The review reassesses the plan's economic merits, and future discussions are being watched.",
+   "ts": "2026-11-06T09:30:00Z",
    "src": [
     {
-     "name": "サンプル"
-    }
-   ]
-  },
-  {
-   "area": "熊本県",
-   "t": "2026-11-05 / 雇用",
-   "lv": "info",
-   "h": "【サンプル】半導体関連の求人倍率が県全体を上回る",
-   "b": "周辺の住宅・交通整備も課題に。（表示確認用のサンプル。自動更新で実データに置き換わります）",
-   "h_en": "[Sample] Chip-related job openings outpace the prefecture average",
-   "b_en": "Housing and transport around the site are issues. (placeholder; replaced by the auto-update)",
-   "ts": "2026-11-05T12:28:11.324777",
-   "src": [
-    {
-     "name": "サンプル"
-    }
-   ]
-  },
-  {
-   "area": "宮城県",
-   "t": "2026-11-05 / 金融",
-   "lv": "info",
-   "h": "【サンプル】地銀が再エネ向け融資枠を拡大",
-   "b": "県内の洋上風力関連を想定。（表示確認用のサンプル。自動更新で実データに置き換わります）",
-   "h_en": "[Sample] Regional bank widens renewable-energy loan facility",
-   "b_en": "Aimed at offshore-wind projects. (placeholder; replaced by the auto-update)",
-   "ts": "2026-11-05T12:28:11.324777",
-   "src": [
-    {
-     "name": "サンプル"
+     "name": "日本経済新聞",
+     "url": "https://www.nikkei.com/article/DGXZQOUA065IE0W6A101C2000000/"
     }
    ]
   }
  ],
  "usa": [
   {
-   "area": "Texas",
-   "t": "2026-11-05 / エネルギー",
+   "area": "Kansas",
+   "t": "2026-11-08 / 行政",
    "lv": "info",
-   "h": "【サンプル】州内のLNG輸出が過去最高ペース",
-   "b": "メキシコ湾岸の新ターミナルが寄与。（表示確認用のサンプル。自動更新で実データに置き換わります）",
-   "h_en": "[Sample] LNG exports on record pace",
-   "b_en": "New Gulf Coast terminal contributes. (placeholder; replaced by the auto-update)",
-   "ts": "2026-11-05T12:28:11.324777",
+   "h": "カンザス州の歳入が予想超え、予算は安定",
+   "h_en": "Kansas Revenues Beat Expectations, Budget Outlook Stable",
+   "b": "カンザス州の歳入が予想を上回る水準に伸び、州予算の見通しは安定していると地元メディアが報じた。税目別の内訳や金額は見出しからは分からないが、財政運営には追い風となる内容だ。",
+   "b_en": "Kansas state revenues have climbed above expectations, providing a stable outlook for the state budget, local media reported. Breakdowns by tax type are not available in the headline, but the news is favorable for fiscal planning.",
+   "ts": "2026-11-07T19:00:00Z",
    "src": [
     {
-     "name": "サンプル"
+     "name": "greatbendpost.com",
+     "url": "https://greatbendpost.com/posts/6be18b39-b93a-421b-bc9a-724c79943e97"
     }
    ]
   },
   {
-   "area": "California",
-   "t": "2026-11-05 / 電力",
+   "area": "Vermont",
+   "t": "2026-11-08 / 産業",
    "lv": "info",
-   "h": "【サンプル】AIデータセンター向け電力確保で州が新制度",
-   "b": "系統接続の待ち時間短縮を狙う。（表示確認用のサンプル。自動更新で実データに置き換わります）",
-   "h_en": "[Sample] State adopts new rules to secure power for AI data centers",
-   "b_en": "Aims to shorten grid-connection waits. (placeholder; replaced by the auto-update)",
-   "ts": "2026-11-05T12:28:11.324777",
+   "h": "バーモント南西部の鉄道を改良、経済を後押し",
+   "h_en": "Southwestern Vermont Rail Upgraded to Support Regional Economy",
+   "b": "バーモント州南西部の鉄道が改良され、地域経済の下支えになると地元紙が報じた。物流や産業面での効果が期待される内容だが、投資額など詳細は候補記事からは確認できない。",
+   "b_en": "Rail infrastructure in southwestern Vermont is being upgraded to help the regional economy, a local paper reported. Details such as investment size are not available in the candidate material.",
+   "ts": "2026-11-07T16:00:00Z",
    "src": [
     {
-     "name": "サンプル"
+     "name": "vnews.com",
+     "url": "https://vnews.com/2026/11/07/vermont-secures-railway-funding/"
     }
    ]
   },
   {
-   "area": "Michigan",
-   "t": "2026-11-05 / 製造業",
+   "area": "Maryland",
+   "t": "2026-11-08 / 小売",
    "lv": "info",
-   "h": "【サンプル】EV減速で自動車工場がハイブリッド生産へ転換",
-   "b": "雇用は維持の見通し。（表示確認用のサンプル。自動更新で実データに置き換わります）",
-   "h_en": "[Sample] Auto plant pivots to hybrids as EV demand cools",
-   "b_en": "Jobs expected to be kept. (placeholder; replaced by the auto-update)",
-   "ts": "2026-11-05T12:28:11.324777",
+   "h": "アナポリスのコーヒー店が通り向かいへ移転",
+   "h_en": "Annapolis Coffee Shop to Relocate Across Maryland Avenue",
+   "b": "アナポリス中心部のブラウン・マスタッシュ・コーヒーが、同じメリーランド・アベニューの向かい側へ移転する計画だと地元メディアが伝えた。中心街の小規模店舗の動きを伝える地域ニュースだ。",
+   "b_en": "Brown Mustache Coffee in downtown Annapolis plans to move across Maryland Avenue, local outlet Eye on Annapolis reported, a small-business development in the city's downtown retail scene.",
+   "ts": "2026-11-07T22:00:00Z",
    "src": [
     {
-     "name": "サンプル"
+     "name": "eyeonannapolis.net",
+     "url": "https://www.eyeonannapolis.net/2026/11/brown-mustache-coffee-to-relocate-across-maryland-avenue-in-downtown-annapolis/"
     }
    ]
   },
   {
-   "area": "New York",
-   "t": "2026-11-05 / 金融",
+   "area": "Arkansas",
+   "t": "2026-11-07 / 小売",
    "lv": "info",
-   "h": "【サンプル】金融大手が州内で人員再配置",
-   "b": "AI活用で事務部門を縮小。（表示確認用のサンプル。自動更新で実データに置き換わります）",
-   "h_en": "[Sample] Big banks reshuffle staff across the state",
-   "b_en": "Back-office roles shrink with AI. (placeholder; replaced by the auto-update)",
-   "ts": "2026-11-05T12:28:11.324777",
+   "h": "ベントンビルの市場、売上400万ドル超",
+   "h_en": "Bentonville Farmers Market Sets Year-End Sales Record",
+   "b": "アーカンソー州ベントンビルのファーマーズマーケットが、年末の売上で400万ドル超を記録し、過去の記録を塗り替えたと地元紙が伝えた。地元の直売市場の好調ぶりを示す話題だ。",
+   "b_en": "The Bentonville Farmers Market in Arkansas broke its year-end records with more than $4 million in sales, according to the Arkansas Democrat-Gazette, pointing to strong local demand for direct-sale produce and goods.",
+   "ts": "2026-11-07T10:00:00Z",
    "src": [
     {
-     "name": "サンプル"
-    }
-   ]
-  },
-  {
-   "area": "Arizona",
-   "t": "2026-11-05 / 産業",
-   "lv": "info",
-   "h": "【サンプル】半導体工場の第2期が前倒し",
-   "b": "補助金の執行が進む。（表示確認用のサンプル。自動更新で実データに置き換わります）",
-   "h_en": "[Sample] Chip fab phase two pulled forward",
-   "b_en": "Subsidy disbursement advances. (placeholder; replaced by the auto-update)",
-   "ts": "2026-11-05T12:28:11.324777",
-   "src": [
-    {
-     "name": "サンプル"
-    }
-   ]
-  },
-  {
-   "area": "Florida",
-   "t": "2026-11-05 / 不動産",
-   "lv": "info",
-   "h": "【サンプル】住宅保険料の上昇が住宅販売を圧迫",
-   "b": "ハリケーン被害の影響が続く。（表示確認用のサンプル。自動更新で実データに置き換わります）",
-   "h_en": "[Sample] Rising home-insurance costs weigh on sales",
-   "b_en": "Hurricane losses still bite. (placeholder; replaced by the auto-update)",
-   "ts": "2026-11-05T12:28:11.324777",
-   "src": [
-    {
-     "name": "サンプル"
+     "name": "arkansasonline.com",
+     "url": "https://www.arkansasonline.com/news/2026/nov/07/bentonville-farmers-market-shatters-year-end/"
     }
    ]
   }

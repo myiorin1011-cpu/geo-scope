@@ -1,0 +1,35 @@
+{
+ "items": {
+  "42088272": {
+   "file": "voice/42088272.wav",
+   "dur": 13.2
+  },
+  "65b65300": {
+   "file": "voice/65b65300.wav",
+   "dur": 8.8
+  },
+  "84b69368": {
+   "file": "voice/84b69368.wav",
+   "dur": 13.5
+  },
+  "0eaad2d4": {
+   "file": "voice/0eaad2d4.wav",
+   "dur": 16.2
+  },
+  "7a494b33": {
+   "file": "voice/7a494b33.wav",
+   "dur": 13.9
+  },
+  "44c14dd3": {
+   "file": "voice/44c14dd3.wav",
+   "dur": 13.9
+  },
+  "4a562392": {
+   "file": "voice/4a562392.wav",
+   "dur": 13.1
+  }
+ },
+ "updated": "2026-11-08T07:18:35.261Z",
+ "credit": "VOICEVOX:No.7",
+ "speaker": 30
+}

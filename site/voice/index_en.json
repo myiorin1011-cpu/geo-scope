@@ -1,0 +1,35 @@
+{
+ "items": {
+  "42088272": {
+   "file": "voice/en_42088272.wav",
+   "dur": 16.6
+  },
+  "65b65300": {
+   "file": "voice/en_65b65300.wav",
+   "dur": 10.4
+  },
+  "84b69368": {
+   "file": "voice/en_84b69368.wav",
+   "dur": 17.3
+  },
+  "0eaad2d4": {
+   "file": "voice/en_0eaad2d4.wav",
+   "dur": 22.2
+  },
+  "7a494b33": {
+   "file": "voice/en_7a494b33.wav",
+   "dur": 17.4
+  },
+  "44c14dd3": {
+   "file": "voice/en_44c14dd3.wav",
+   "dur": 15.6
+  },
+  "4a562392": {
+   "file": "voice/en_4a562392.wav",
+   "dur": 14.9
+  }
+ },
+ "updated": "2026-11-08T07:18:58.934Z",
+ "credit": "Piper TTS (en_US-amy-medium)",
+ "voice": "en_US-amy-medium"
+}
