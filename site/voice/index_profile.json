@@ -1,0 +1,1939 @@
+{
+ "items": {
+  "USA|ja": {
+   "file": "voice/profile_USA_ja.ogg",
+   "dur": 9.9,
+   "text": "アメリカ合衆国。ワシントンD.C.、約3.4億人。連邦共和制、大統領制。渡航レベル0、危険情報なし。唯一の同盟国 日米安保条約 。"
+  },
+  "USA|en": {
+   "file": "voice/profile_USA_en.ogg",
+   "dur": 16,
+   "text": "the United States. Washington, D.C., ≈340 million. Federal presidential republic. Travel advisory level 0: No advisory. Japan's only treaty ally; about 50,000 US troops are stationed in Japan."
+  },
+  "RUS|ja": {
+   "file": "voice/profile_RUS_ja.ogg",
+   "dur": 9.2,
+   "text": "ロシア。モスクワ、約1.44億人。連邦制、半大統領制。渡航レベル3、渡航中止勧告。北方領土問題で平和条約が未締結のまま。"
+  },
+  "RUS|en": {
+   "file": "voice/profile_RUS_en.ogg",
+   "dur": 13.5,
+   "text": "Russia. Moscow, ≈144 million. Federal semi-presidential. Travel advisory level 3: Do not travel. The Northern Territories dispute means no peace treaty has ever been signed."
+  },
+  "UKR|ja": {
+   "file": "voice/profile_UKR_ja.ogg",
+   "dur": 10.4,
+   "text": "ウクライナ。キーウ、約3,700万人 戦争で大きく変動 。共和制、半大統領制。渡航レベル4、退避勧告。日本は財政、復興支援で主要ドナーのひとつ。"
+  },
+  "UKR|en": {
+   "file": "voice/profile_UKR_en.ogg",
+   "dur": 17.5,
+   "text": "Ukraine. Keev, ≈37 million war has shifted this greatly . Semi-presidential republic. Travel advisory level 4: Evacuate. Japan is one of the main donors for budget and reconstruction support and hosted a recovery conference in Tokyo in 2024."
+  },
+  "IRN|ja": {
+   "file": "voice/profile_IRN_ja.ogg",
+   "dur": 10.5,
+   "text": "イラン。テヘラン、約9,000万人。イスラム共和制。渡航レベル4、退避勧告。日本は原油輸入の大半を中東に依存し、ホルムズかいきょう封鎖の影響を最も受ける国のひとつ。"
+  },
+  "IRN|en": {
+   "file": "voice/profile_IRN_en.ogg",
+   "dur": 13.8,
+   "text": "Iran. Tehran, ≈90 million. Islamic republic. Travel advisory level 4: Evacuate. Japan imports most of its oil from the Middle East and is among the countries most exposed to a Hor-mooz closure."
+  },
+  "ISR|ja": {
+   "file": "voice/profile_ISR_ja.ogg",
+   "dur": 12.9,
+   "text": "イスラエル。エルサレム 国際的には未承認、多くの大使館はテルアビブ 、約1,000万人。議院内閣制。渡航レベル2、不要不急の渡航中止。外交関係は良好で、スタートアップ、半導体分野の協力が拡大。"
+  },
+  "ISR|en": {
+   "file": "voice/profile_ISR_en.ogg",
+   "dur": 16.7,
+   "text": "Israel. Jerusalem not internationally recognised; most embassies in Tel Aviv , ≈10 million. Parliamentary republic. Travel advisory level 2: Avoid non-essential travel. Relations are good, with growing cooperation in start-ups and semiconductors."
+  },
+  "CHN|ja": {
+   "file": "voice/profile_CHN_ja.ogg",
+   "dur": 7.3,
+   "text": "中国。北京、約14.1億人。共産党一党制。渡航レベル1、十分注意。最大の貿易相手国。"
+  },
+  "CHN|en": {
+   "file": "voice/profile_CHN_en.ogg",
+   "dur": 11.3,
+   "text": "China. Beijing, ≈1.41 billion. One-party Communist Party . Travel advisory level 1: Exercise caution. Japan's largest trading partner."
+  },
+  "PRK|ja": {
+   "file": "voice/profile_PRK_ja.ogg",
+   "dur": 9.7,
+   "text": "北朝鮮。平壌、約2,600万人。一党独裁 朝鮮労働党 。渡航レベル2、不要不急の渡航中止。拉致問題が最大の懸案で、国交はない。"
+  },
+  "PRK|en": {
+   "file": "voice/profile_PRK_en.ogg",
+   "dur": 15.3,
+   "text": "North Korea. Pyongyang, ≈26 million. One-party dictatorship Workers' Party . Travel advisory level 2: Avoid non-essential travel. The abduction issue is the biggest sticking point; there are no diplomatic relations."
+  },
+  "JPN|ja": {
+   "file": "voice/profile_JPN_ja.ogg",
+   "dur": 7.5,
+   "text": "日本。東京、約1.23億人。立憲君主制、議院内閣制。渡航レベル0、危険情報なし。この国自身。"
+  },
+  "JPN|en": {
+   "file": "voice/profile_JPN_en.ogg",
+   "dur": 14.7,
+   "text": "Japan. Tokyo, ≈123 million. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. This is Japan itself; see each country's entry for how it relates to Japan."
+  },
+  "ROU|ja": {
+   "file": "voice/profile_ROU_ja.ogg",
+   "dur": 8.2,
+   "text": "ルーマニア。ブカレスト、約1,900万人。半大統領制。渡航レベル0、危険情報なし。1902年の国交樹立以来100年超。"
+  },
+  "ROU|en": {
+   "file": "voice/profile_ROU_en.ogg",
+   "dur": 11.4,
+   "text": "Romania. Bucharest, ≈19 million. Semi-presidential. Travel advisory level 0: No advisory. Diplomatic ties date from 1902."
+  },
+  "SAU|ja": {
+   "file": "voice/profile_SAU_ja.ogg",
+   "dur": 9.1,
+   "text": "サウジアラビア。リヤド、約3,500万人。絶対君主制。渡航レベル3、渡航中止勧告。日本の原油輸入の約4割を占める最大の供給国。"
+  },
+  "SAU|en": {
+   "file": "voice/profile_SAU_en.ogg",
+   "dur": 12.6,
+   "text": "Saudi Arabia. Riyadh, ≈35 million. Absolute monarchy. Travel advisory level 3: Do not travel. Japan's largest crude supplier, about 40% of imports."
+  },
+  "POL|ja": {
+   "file": "voice/profile_POL_ja.ogg",
+   "dur": 8.8,
+   "text": "ポーランド。ワルシャワ、約3,700万人。半大統領制。渡航レベル0、危険情報なし。ショパンや日本のアニメ人気で文化的な結びつきが強い。"
+  },
+  "POL|en": {
+   "file": "voice/profile_POL_en.ogg",
+   "dur": 12,
+   "text": "Poland. Warsaw, ≈37 million. Semi-presidential. Travel advisory level 0: No advisory. Strong cultural ties through Chopin and Japanese anime."
+  },
+  "GBR|ja": {
+   "file": "voice/profile_GBR_ja.ogg",
+   "dur": 10.5,
+   "text": "イギリス。ロンドン、約6,900万人。立憲君主制、議院内閣制。渡航レベル0、危険情報なし。日英同盟 1902年 以来の伝統的友好国。"
+  },
+  "GBR|en": {
+   "file": "voice/profile_GBR_en.ogg",
+   "dur": 13.7,
+   "text": "the United Kingdom. London, ≈69 million. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. A traditional partner since the 1902 alliance."
+  },
+  "KOR|ja": {
+   "file": "voice/profile_KOR_ja.ogg",
+   "dur": 6.6,
+   "text": "韓国。ソウル、約5,100万人。大統領制。渡航レベル0、危険情報なし。最も近い隣国。"
+  },
+  "KOR|en": {
+   "file": "voice/profile_KOR_en.ogg",
+   "dur": 9.9,
+   "text": "South Korea. Seoul, ≈51 million. Presidential. Travel advisory level 0: No advisory. Japan's nearest neighbour."
+  },
+  "FRA|ja": {
+   "file": "voice/profile_FRA_ja.ogg",
+   "dur": 9.8,
+   "text": "フランス。パリ、約6,800万人。半大統領制 第五共和政 。渡航レベル0、危険情報なし。1858年の修好通商条約以来の関係。"
+  },
+  "FRA|en": {
+   "file": "voice/profile_FRA_en.ogg",
+   "dur": 12.4,
+   "text": "France. Paris, ≈68 million. Semi-presidential Fifth Republic . Travel advisory level 0: No advisory. Ties date from the 1858 treaty."
+  },
+  "DEU|ja": {
+   "file": "voice/profile_DEU_ja.ogg",
+   "dur": 9.3,
+   "text": "ドイツ。ベルリン、約8,400万人。連邦制、議院内閣制。渡航レベル0、危険情報なし。明治期の近代化で法制度、医学の手本とした国。"
+  },
+  "DEU|en": {
+   "file": "voice/profile_DEU_en.ogg",
+   "dur": 11,
+   "text": "Germany. Berlin, ≈84 million. Federal parliamentary. Travel advisory level 0: No advisory. A model for Meiji-era law and medicine."
+  },
+  "ITA|ja": {
+   "file": "voice/profile_ITA_ja.ogg",
+   "dur": 8.2,
+   "text": "イタリア。ローマ、約5,900万人。議院内閣制。渡航レベル0、危険情報なし。次期戦闘機GCAPの共同開発パートナー。"
+  },
+  "ITA|en": {
+   "file": "voice/profile_ITA_en.ogg",
+   "dur": 9.7,
+   "text": "Italy. Rome, ≈59 million. Parliamentary. Travel advisory level 0: No advisory. GCAP fighter partner."
+  },
+  "ESP|ja": {
+   "file": "voice/profile_ESP_ja.ogg",
+   "dur": 10.3,
+   "text": "スペイン。マドリード、約4,800万人。立憲君主制、議院内閣制。渡航レベル0、危険情報なし。1613年の慶長遣欧使節がセビリア近郊に到達。"
+  },
+  "ESP|en": {
+   "file": "voice/profile_ESP_en.ogg",
+   "dur": 17.1,
+   "text": "Spain. Madrid, ≈48 million. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. The 1613 Keichō embassy reached near Seville; descendants with the surname 'Japón' still live in Coria del Río."
+  },
+  "IND|ja": {
+   "file": "voice/profile_IND_ja.ogg",
+   "dur": 9.4,
+   "text": "インド。ニューデリー、約14.5億人 世界1位 。連邦制、議院内閣制。渡航レベル1、十分注意。にちべいごういん クアッド の一角。"
+  },
+  "IND|en": {
+   "file": "voice/profile_IND_en.ogg",
+   "dur": 10.6,
+   "text": "India. New Delhi, ≈1.45 billion 1st . Federal parliamentary. Travel advisory level 1: Exercise caution. A Quad partner."
+  },
+  "PAK|ja": {
+   "file": "voice/profile_PAK_ja.ogg",
+   "dur": 8.6,
+   "text": "パキスタン。イスラマバード、約2.5億人。連邦制、議院内閣制。渡航レベル2、不要不急の渡航中止。日本の中古車が多く走る。"
+  },
+  "PAK|en": {
+   "file": "voice/profile_PAK_en.ogg",
+   "dur": 12.1,
+   "text": "Pakistan. Islamabad, ≈250 million. Federal parliamentary. Travel advisory level 2: Avoid non-essential travel. Japanese used cars are everywhere."
+  },
+  "BRA|ja": {
+   "file": "voice/profile_BRA_ja.ogg",
+   "dur": 9.6,
+   "text": "ブラジル。ブラジリア、約2.1億人。連邦共和制、大統領制。渡航レベル1、十分注意。世界最大の日系社会 約200万人 がある。"
+  },
+  "BRA|en": {
+   "file": "voice/profile_BRA_en.ogg",
+   "dur": 17.1,
+   "text": "Brazil. Brasília, ≈210 million. Federal presidential. Travel advisory level 1: Exercise caution. Home to the world's largest Japanese diaspora ≈2 million ; about 200,000 Brazilians live in Japan, many in manufacturing."
+  },
+  "MEX|ja": {
+   "file": "voice/profile_MEX_ja.ogg",
+   "dur": 10.8,
+   "text": "メキシコ。メキシコシティ、約1.3億人。連邦共和制、大統領制。渡航レベル1、十分注意。1888年に日本がアジア以外で初めて対等条約を結んだ国。"
+  },
+  "MEX|en": {
+   "file": "voice/profile_MEX_en.ogg",
+   "dur": 15.8,
+   "text": "Mexico. Mexico City, ≈130 million. Federal presidential. Travel advisory level 1: Exercise caution. In 1888 Mexico became the first non-Asian country to sign an equal treaty with Japan."
+  },
+  "CAN|ja": {
+   "file": "voice/profile_CAN_ja.ogg",
+   "dur": 9,
+   "text": "カナダ。オタワ、約4,100万人。立憲君主制、議院内閣制、連邦制。渡航レベル0、危険情報なし。移民、留学先として人気。"
+  },
+  "CAN|en": {
+   "file": "voice/profile_CAN_en.ogg",
+   "dur": 12,
+   "text": "Canada. Ottawa, ≈41 million. Constitutional monarchy, federal parliamentary. Travel advisory level 0: No advisory. Popular for migration and study."
+  },
+  "AUS|ja": {
+   "file": "voice/profile_AUS_ja.ogg",
+   "dur": 11.1,
+   "text": "オーストラリア。キャンベラ、約2,700万人。立憲君主制、議院内閣制、連邦制。渡航レベル0、危険情報なし。石炭、鉄鉱石、エルエヌジーの最大級の供給国。"
+  },
+  "AUS|en": {
+   "file": "voice/profile_AUS_en.ogg",
+   "dur": 17.1,
+   "text": "Australia. Canberra, ≈27 million. Constitutional monarchy, federal parliamentary. Travel advisory level 0: No advisory. A top supplier of coal, iron ore and L N G; often called a 'quasi-ally' with close Quad and security ties."
+  },
+  "TUR|ja": {
+   "file": "voice/profile_TUR_ja.ogg",
+   "dur": 10.4,
+   "text": "トルコ。アンカラ、約8,600万人。大統領制。渡航レベル1、十分注意。1890年のエルトゥールル号遭難で串本町民が乗員を救助した逸話が親日の原点。"
+  },
+  "TUR|en": {
+   "file": "voice/profile_TUR_en.ogg",
+   "dur": 19.3,
+   "text": "Turkey. Ankara, ≈86 million. Presidential. Travel advisory level 1: Exercise caution. The 1890 Ertuğrul shipwreck, when villagers of Kushimoto rescued the crew, is the root of Turkish goodwill; in 1985 a Turkish plane evacuated Japanese from Tehran."
+  },
+  "EGY|ja": {
+   "file": "voice/profile_EGY_ja.ogg",
+   "dur": 10.1,
+   "text": "エジプト。カイロ 新行政首都へ移転中 、約1.1億人。大統領制。渡航レベル1、十分注意。日本がODAで大エジプト博物館の建設と修復を支援。"
+  },
+  "EGY|en": {
+   "file": "voice/profile_EGY_en.ogg",
+   "dur": 17.2,
+   "text": "Egypt. Cairo moving to the New Administrative Capital , ≈110 million. Presidential. Travel advisory level 1: Exercise caution. Japan funded the Grand Egyptian Museum's construction and conservation through ODA; Japanese-style 'tokkatsu' schools are spreading."
+  },
+  "IRQ|ja": {
+   "file": "voice/profile_IRQ_ja.ogg",
+   "dur": 9.8,
+   "text": "イラク。バグダッド、約4,600万人。連邦制、議院内閣制。渡航レベル3、渡航中止勧告。2004から06年に自衛隊がサマワで復興支援活動。"
+  },
+  "IRQ|en": {
+   "file": "voice/profile_IRQ_en.ogg",
+   "dur": 13.1,
+   "text": "Iraq. Baghdad, ≈46 million. Federal parliamentary. Travel advisory level 3: Do not travel. The SDF ran reconstruction work in Samawah in 2004–06."
+  },
+  "YEM|ja": {
+   "file": "voice/profile_YEM_ja.ogg",
+   "dur": 14.1,
+   "text": "イエメン。サナア フーシは支配 、アデン 暫定政府 、約3,500万人。内戦下で分裂。渡航レベル4、退避勧告。フーシはは 日本船は狙わない と表明したが、紅海ルートの迂回で日本向け海上輸送コストが上昇している。"
+  },
+  "YEM|en": {
+   "file": "voice/profile_YEM_en.ogg",
+   "dur": 17,
+   "text": "Yemen. Sanaa Hoothee-held / Aden interim government , ≈35 million. Divided by civil war. Travel advisory level 4: Evacuate. The Hoothees say they will not target Japanese ships, but Red Sea diversions have pushed up shipping costs to Japan."
+  },
+  "TWN|en": {
+   "file": "voice/profile_TWN_en.ogg",
+   "dur": 13.3,
+   "text": "Taiwan. Taipei, ≈23 million. Semi-presidential. Travel advisory level 0: No advisory. No formal relations, yet economic and people-to-people ties are intense."
+  },
+  "IDN|ja": {
+   "file": "voice/profile_IDN_ja.ogg",
+   "dur": 9.8,
+   "text": "インドネシア。ジャカルタ ヌサンタラへ移転中 、約2.8億人 世界4位 。大統領制。渡航レベル1、十分注意。日本の最大級のODA供与先。"
+  },
+  "IDN|en": {
+   "file": "voice/profile_IDN_en.ogg",
+   "dur": 15.5,
+   "text": "Indonesia. Jakarta moving to Nusantara , ≈280 million 4th . Presidential. Travel advisory level 1: Exercise caution. One of Japan's largest ODA recipients; the Jakarta MRT was built with Japanese support."
+  },
+  "BGR|ja": {
+   "file": "voice/profile_BGR_ja.ogg",
+   "dur": 10,
+   "text": "ブルガリア。ソフィア、約640万人。議院内閣制。渡航レベル0、危険情報なし。ヨーグルトの国として知られ、 明治ブルガリアヨーグルト で日本での認知度が高い。"
+  },
+  "BGR|en": {
+   "file": "voice/profile_BGR_en.ogg",
+   "dur": 13.9,
+   "text": "Bulgaria. Sofia, ≈6.4 million. Parliamentary. Travel advisory level 0: No advisory. Known in Japan for yogurt 'Meiji Bulgaria Yogurt' ; sumo wrestler Kotooshu is Bulgarian."
+  },
+  "HUN|ja": {
+   "file": "voice/profile_HUN_ja.ogg",
+   "dur": 7.8,
+   "text": "ハンガリー。ブダペスト、約960万人。議院内閣制。渡航レベル0、危険情報なし。ルービックキューブやトカイワインで知られる。"
+  },
+  "HUN|en": {
+   "file": "voice/profile_HUN_en.ogg",
+   "dur": 14,
+   "text": "Hungary. Budapest, ≈9.6 million. Parliamentary. Travel advisory level 0: No advisory. Known for the Rubik's Cube and Tokaji wine; many Japanese auto-parts makers operate here."
+  },
+  "BEL|ja": {
+   "file": "voice/profile_BEL_ja.ogg",
+   "dur": 10.1,
+   "text": "ベルギー。ブリュッセル、約1,180万人。立憲君主制、連邦制。渡航レベル0、危険情報なし。イーユー、ナトー本部所在地として日本の対欧外交の窓口。"
+  },
+  "BEL|en": {
+   "file": "voice/profile_BEL_en.ogg",
+   "dur": 15.1,
+   "text": "Belgium. Brussels, ≈11.8 million. Constitutional monarchy, federal. Travel advisory level 0: No advisory. Japan's gateway to EU diplomacy as host of the EU and Nayto; source of chocolate and beer."
+  },
+  "SWE|ja": {
+   "file": "voice/profile_SWE_ja.ogg",
+   "dur": 10.7,
+   "text": "スウェーデン。ストックホルム、約1,060万人。立憲君主制、議院内閣制。渡航レベル0、危険情報なし。北欧デザインやIKEA、ゲーム Minecraft で日本に浸透。"
+  },
+  "SWE|en": {
+   "file": "voice/profile_SWE_en.ogg",
+   "dur": 16.5,
+   "text": "Sweden. Stockholm, ≈10.6 million. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. Nordic design, IKEA and games such as Minecraft are everywhere in Japan; long royal–imperial exchanges."
+  },
+  "ECU|ja": {
+   "file": "voice/profile_ECU_ja.ogg",
+   "dur": 9.1,
+   "text": "エクアドル。キト、約1,800万人。大統領制。渡航レベル2、不要不急の渡航中止。バナナの主要供給国で、日本のバナナの約1割を占める。"
+  },
+  "ECU|en": {
+   "file": "voice/profile_ECU_en.ogg",
+   "dur": 12,
+   "text": "Ecuador. Quito, ≈18 million. Presidential. Travel advisory level 2: Avoid non-essential travel. A major banana supplier, around a tenth of Japan's imports."
+  },
+  "ZAF|ja": {
+   "file": "voice/profile_ZAF_ja.ogg",
+   "dur": 14,
+   "text": "南アフリカ。プレトリア 行政 、ケープタウン 立法 、ブルームフォンテーン 司法 、約6,300万人。議院内閣制的大統領制。渡航レベル1、十分注意。プラチナ、パラジウムなど自動車触媒に欠かせない金属の供給国。"
+  },
+  "ZAF|en": {
+   "file": "voice/profile_ZAF_en.ogg",
+   "dur": 18.6,
+   "text": "South Africa. Pretoria executive / Cape Town legislative / Bloemfontein judicial , ≈63 million. Parliamentary republic. Travel advisory level 1: Exercise caution. Supplier of platinum and palladium essential for car catalysts; also a Japanese car production base."
+  },
+  "RWA|en": {
+   "file": "voice/profile_RWA_en.ogg",
+   "dur": 13.5,
+   "text": "Rwanda. Kigali, ≈14 million. Presidential. Travel advisory level 1: Exercise caution. Positioning itself as an ICT nation, with growing Japanese start-up and university presence."
+  },
+  "NPL|ja": {
+   "file": "voice/profile_NPL_ja.ogg",
+   "dur": 9.1,
+   "text": "ネパール。カトマンズ、約3,000万人。連邦共和制、議院内閣制。渡航レベル1、十分注意。在日ネパール人は約20万人で急増中。"
+  },
+  "NPL|en": {
+   "file": "voice/profile_NPL_en.ogg",
+   "dur": 15.9,
+   "text": "Nepal. Kathmandu, ≈30 million. Federal parliamentary republic. Travel advisory level 1: Exercise caution. About 200,000 Nepalis live in Japan and the number is rising fast; many 'Indian' restaurants are Nepali-run."
+  },
+  "PHL|ja": {
+   "file": "voice/profile_PHL_ja.ogg",
+   "dur": 7.4,
+   "text": "フィリピン。マニラ、約1.17億人。大統領制。渡航レベル1、十分注意。在日フィリピン人は約30万人。"
+  },
+  "PHL|en": {
+   "file": "voice/profile_PHL_en.ogg",
+   "dur": 14.8,
+   "text": "the Philippines. Manila, ≈117 million. Presidential. Travel advisory level 1: Exercise caution. About 300,000 Filipinos live in Japan; an EPA brings care and nursing workers."
+  },
+  "VEN|ja": {
+   "file": "voice/profile_VEN_ja.ogg",
+   "dur": 11.1,
+   "text": "ベネズエラ。カラカス、約2,800万人 流出で変動 。大統領制。渡航レベル2、不要不急の渡航中止。日本との直接的な経済関係は小さいが、原油市場を通じて影響。"
+  },
+  "VEN|en": {
+   "file": "voice/profile_VEN_en.ogg",
+   "dur": 17.3,
+   "text": "Venezuela. Caracas, ≈28 million volatile due to emigration . Presidential. Travel advisory level 2: Avoid non-essential travel. Limited direct economic ties, but influence via the oil market; Japanese emigrants arrived in the 1920s."
+  },
+  "NOR|ja": {
+   "file": "voice/profile_NOR_ja.ogg",
+   "dur": 8.1,
+   "text": "ノルウェー。オスロ、約560万人。立憲君主制、議院内閣制。渡航レベル0、危険情報なし。サバの最大の輸入元。"
+  },
+  "NOR|en": {
+   "file": "voice/profile_NOR_en.ogg",
+   "dur": 15.9,
+   "text": "Norway. Oslo, ≈5.6 million. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. The biggest supplier of mackerel to Japan — 'Norwegian saba' has been on Japanese tables for half a century."
+  },
+  "IRL|ja": {
+   "file": "voice/profile_IRL_ja.ogg",
+   "dur": 7.4,
+   "text": "アイルランド。ダブリン、約530万人。議院内閣制。渡航レベル0、危険情報なし。ギネスやウイスキーの輸入元。"
+  },
+  "IRL|en": {
+   "file": "voice/profile_IRL_en.ogg",
+   "dur": 14.3,
+   "text": "Ireland. Dublin, ≈5.3 million. Parliamentary. Travel advisory level 0: No advisory. Source of Guinness and whiskey; many Japanese IT and pharma firms base European operations here."
+  },
+  "KHM|ja": {
+   "file": "voice/profile_KHM_ja.ogg",
+   "dur": 9.1,
+   "text": "カンボジア。プノンペン、約1,700万人。立憲君主制、議院内閣制。渡航レベル1、十分注意。アンコール遺跡の修復に日本が長年協力。"
+  },
+  "KHM|en": {
+   "file": "voice/profile_KHM_en.ogg",
+   "dur": 16.8,
+   "text": "Cambodia. Phnom Penh, ≈17 million. Constitutional monarchy, parliamentary. Travel advisory level 1: Exercise caution. Japan has long helped restore Angkor; in 1992 the SDF joined its first UN peacekeeping mission here."
+  },
+  "EST|ja": {
+   "file": "voice/profile_EST_ja.ogg",
+   "dur": 9,
+   "text": "エストニア。タリン、約137万人。議院内閣制。渡航レベル0、危険情報なし。電子政府のモデルとして日本の行政DXが参考にする国。"
+  },
+  "EST|en": {
+   "file": "voice/profile_EST_en.ogg",
+   "dur": 11.4,
+   "text": "Estonia. Tallinn, ≈1.37 million. Parliamentary. Travel advisory level 0: No advisory. A model for Japan's government digitalisation."
+  },
+  "QAT|ja": {
+   "file": "voice/profile_QAT_ja.ogg",
+   "dur": 7.8,
+   "text": "カタール。ドーハ、約300万人 国民は1割強 。首長制。渡航レベル1、十分注意。エルエヌジーの主要供給国。"
+  },
+  "QAT|en": {
+   "file": "voice/profile_QAT_en.ogg",
+   "dur": 15.3,
+   "text": "Cutter. Doha, ≈3 million citizens ≈10% . Emirate. Travel advisory level 1: Exercise caution. A key L N G supplier; Japanese trading houses helped develop the fields under long-term contracts."
+  },
+  "OMN|ja": {
+   "file": "voice/profile_OMN_ja.ogg",
+   "dur": 8,
+   "text": "オマーン。マスカット、約500万人。絶対君主制 スルタン制 。渡航レベル1、十分注意。ホルムズかいきょうの南岸を押さえる国。"
+  },
+  "OMN|en": {
+   "file": "voice/profile_OMN_en.ogg",
+   "dur": 14.2,
+   "text": "Oman. Muscat, ≈5 million. Absolute monarchy sultanate . Travel advisory level 1: Exercise caution. Controls the southern shore of Hor-mooz — an important partner for the safety of Japanese tankers."
+  },
+  "NLD|ja": {
+   "file": "voice/profile_NLD_ja.ogg",
+   "dur": 10.9,
+   "text": "オランダ。アムステルダム 政府所在地はハーグ 、約1,800万人。立憲君主制、議院内閣制。渡航レベル0、危険情報なし。江戸時代の鎖国下で唯一通商を続けた西洋国。"
+  },
+  "NLD|en": {
+   "file": "voice/profile_NLD_en.ogg",
+   "dur": 16.8,
+   "text": "the Netherlands. Amsterdam government in The Hague , ≈18 million. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. The only Western country allowed to trade during Japan's isolation; Western learning entered via Dejima."
+  },
+  "GRC|ja": {
+   "file": "voice/profile_GRC_ja.ogg",
+   "dur": 10,
+   "text": "ギリシャ。アテネ、約1,040万人。議院内閣制。渡航レベル0、危険情報なし。海運大国同士で、日本の造船所がギリシャ船主向けに多くの船を建造してきた。"
+  },
+  "GRC|en": {
+   "file": "voice/profile_GRC_en.ogg",
+   "dur": 12.8,
+   "text": "Greece. Athens, ≈10.4 million. Parliamentary. Travel advisory level 0: No advisory. Fellow shipping powers: Japanese yards have built many ships for Greek owners."
+  },
+  "KAZ|ja": {
+   "file": "voice/profile_KAZ_ja.ogg",
+   "dur": 6.3,
+   "text": "カザフスタン。アスタナ、約2,000万人。大統領制。渡航レベル1、十分注意。ウラン供給国。"
+  },
+  "KAZ|en": {
+   "file": "voice/profile_KAZ_en.ogg",
+   "dur": 14.5,
+   "text": "Kazakhstan. Astana, ≈20 million. Presidential. Travel advisory level 1: Exercise caution. A uranium supplier with Japanese stakes in mine development; the anchor of Japan's Central Asia diplomacy."
+  },
+  "ARG|ja": {
+   "file": "voice/profile_ARG_ja.ogg",
+   "dur": 8.5,
+   "text": "アルゼンチン。ブエノスアイレス、約4,600万人。連邦共和制、大統領制。渡航レベル1、十分注意。日系人約6万人。"
+  },
+  "ARG|en": {
+   "file": "voice/profile_ARG_en.ogg",
+   "dur": 14.6,
+   "text": "Argentina. Buenos Aires, ≈46 million. Federal presidential. Travel advisory level 1: Exercise caution. About 60,000 people of Japanese descent; beef imports were allowed in 2018."
+  },
+  "NGA|ja": {
+   "file": "voice/profile_NGA_ja.ogg",
+   "dur": 11.2,
+   "text": "ナイジェリア。アブジャ、約2.3億人 アフリカ1位 。連邦共和制、大統領制。渡航レベル2、不要不急の渡航中止。アフリカ最大の人口を持つ市場として日本企業の進出先。"
+  },
+  "NGA|en": {
+   "file": "voice/profile_NGA_en.ogg",
+   "dur": 16.2,
+   "text": "Nigeria. Abuja, ≈230 million 1st in Africa . Federal presidential. Travel advisory level 2: Avoid non-essential travel. A target market for Japanese firms as Africa's most populous country; also an L N G supplier."
+  },
+  "VNM|ja": {
+   "file": "voice/profile_VNM_ja.ogg",
+   "dur": 8.4,
+   "text": "ベトナム。ハノイ、約1億人。共産党一党制。渡航レベル0、危険情報なし。在日ベトナム人は約60万人で中国に次ぐ2位。"
+  },
+  "VNM|en": {
+   "file": "voice/profile_VNM_en.ogg",
+   "dur": 17.1,
+   "text": "Vietnam. Hanoi, ≈100 million. One-party Communist Party . Travel advisory level 0: No advisory. About 600,000 Vietnamese live in Japan, second only to Chinese; many trainees and students, and a dense cluster of Japanese factories."
+  },
+  "THA|ja": {
+   "file": "voice/profile_THA_ja.ogg",
+   "dur": 9.5,
+   "text": "タイ。バンコク、約7,200万人。立憲君主制、議院内閣制。渡航レベル1、十分注意。日系企業約6,000社が進出する アジアのデトロイト 。"
+  },
+  "THA|en": {
+   "file": "voice/profile_THA_en.ogg",
+   "dur": 15.1,
+   "text": "Thailand. Bangkok, ≈72 million. Constitutional monarchy, parliamentary. Travel advisory level 1: Exercise caution. The 'Detroit of Asia' with some 6,000 Japanese firms and many long-term Japanese residents."
+  },
+  "AFG|ja": {
+   "file": "voice/profile_AFG_ja.ogg",
+   "dur": 9.3,
+   "text": "アフガニスタン。カブール、約4,200万人。タリバン暫定政権。渡航レベル4、退避勧告。中村哲医師 ペシャワール会 の用水路事業で知られる。"
+  },
+  "AFG|en": {
+   "file": "voice/profile_AFG_en.ogg",
+   "dur": 16.8,
+   "text": "Afghanistan. Kabul, ≈42 million. Taliban interim government. Travel advisory level 4: Evacuate. Known in Japan for Dr Tetsu Nakamura's irrigation work Peshawar-kai ; SDF aircraft were sent for the 2021 evacuation."
+  },
+  "SYR|ja": {
+   "file": "voice/profile_SYR_ja.ogg",
+   "dur": 8.9,
+   "text": "シリア。ダマスカス、約2,400万人 難民流出で変動 。暫定政権。渡航レベル4、退避勧告。内戦で日本大使館は一時閉鎖。"
+  },
+  "SYR|en": {
+   "file": "voice/profile_SYR_en.ogg",
+   "dur": 15.5,
+   "text": "Syria. Damascus, ≈24 million volatile due to displacement . Transitional government. Travel advisory level 4: Evacuate. The Japanese embassy was temporarily closed during the civil war; Japan is a major humanitarian donor."
+  },
+  "LBN|ja": {
+   "file": "voice/profile_LBN_ja.ogg",
+   "dur": 10.2,
+   "text": "レバノン。ベイルート、約550万人。宗派別権力分有制。渡航レベル3、渡航中止勧告。日産元会長カルロス、ゴーン氏が逃亡した先として日本では知られる。"
+  },
+  "LBN|en": {
+   "file": "voice/profile_LBN_en.ogg",
+   "dur": 14,
+   "text": "Lebanon. Beirut, ≈5.5 million. Confessional power-sharing. Travel advisory level 3: Do not travel. Known in Japan as the country Carlos Ghosn fled to; Lebanese food is popular."
+  },
+  "CUB|ja": {
+   "file": "voice/profile_CUB_ja.ogg",
+   "dur": 7.7,
+   "text": "キューバ。ハバナ、約1,100万人。共産党一党制。渡航レベル1、十分注意。ヘミングウェイ、葉巻、ラム酒で知られる。"
+  },
+  "CUB|en": {
+   "file": "voice/profile_CUB_en.ogg",
+   "dur": 13.6,
+   "text": "Cuba. Havana, ≈11 million. One-party Communist Party . Travel advisory level 1: Exercise caution. Known for Hemingway, cigars and rum; diplomatic ties since 1929."
+  },
+  "COL|ja": {
+   "file": "voice/profile_COL_ja.ogg",
+   "dur": 6.8,
+   "text": "コロンビア。ボゴタ、約5,200万人。大統領制。渡航レベル1、十分注意。コーヒーの主要輸入元。"
+  },
+  "COL|en": {
+   "file": "voice/profile_COL_en.ogg",
+   "dur": 12.8,
+   "text": "Colombia. Bogotá, ≈52 million. Presidential. Travel advisory level 1: Exercise caution. A major coffee source; also a big flower carnation exporter to Japan."
+  },
+  "FIN|ja": {
+   "file": "voice/profile_FIN_ja.ogg",
+   "dur": 8.3,
+   "text": "フィンランド。ヘルシンキ、約560万人。議院内閣制。渡航レベル0、危険情報なし。ムーミンとサウナ文化で日本での人気が高い。"
+  },
+  "FIN|en": {
+   "file": "voice/profile_FIN_en.ogg",
+   "dur": 15.2,
+   "text": "Finland. Helsinki, ≈5.6 million. Parliamentary. Travel advisory level 0: No advisory. Moomins and sauna culture are hugely popular in Japan; Helsinki is one of the shortest direct flights to Europe."
+  },
+  "ETH|ja": {
+   "file": "voice/profile_ETH_ja.ogg",
+   "dur": 8,
+   "text": "エチオピア。アディスアベバ、約1.3億人。連邦制、議院内閣制。渡航レベル2、不要不急の渡航中止。コーヒー原産地。"
+  },
+  "ETH|en": {
+   "file": "voice/profile_ETH_en.ogg",
+   "dur": 13.3,
+   "text": "Ethiopia. Addis Ababa, ≈130 million. Federal parliamentary. Travel advisory level 2: Avoid non-essential travel. Birthplace of coffee; Japan supports agriculture and education."
+  },
+  "KEN|ja": {
+   "file": "voice/profile_KEN_ja.ogg",
+   "dur": 7.3,
+   "text": "ケニア。ナイロビ、約5,500万人。大統領制。渡航レベル1、十分注意。日本のODAでモンバサ港を整備。"
+  },
+  "KEN|en": {
+   "file": "voice/profile_KEN_en.ogg",
+   "dur": 14.3,
+   "text": "Kenya. Nairobi, ≈55 million. Presidential. Travel advisory level 1: Exercise caution. Japan funded Mombasa port through ODA; many Kenyan runners compete for Japanese corporate teams."
+  },
+  "BLR|ja": {
+   "file": "voice/profile_BLR_ja.ogg",
+   "dur": 8.8,
+   "text": "ベラルーシ。ミンスク、約900万人。大統領制 ルカシェンコ長期政権 。渡航レベル2、不要不急の渡航中止。日本との関係は限定的。"
+  },
+  "BLR|en": {
+   "file": "voice/profile_BLR_en.ogg",
+   "dur": 13.9,
+   "text": "Belarus. Minsk, ≈9 million. Presidential Lukashenko's long rule . Travel advisory level 2: Avoid non-essential travel. Limited ties; a history of civic exchange through Chernobyl-area aid."
+  },
+  "GEO|ja": {
+   "file": "voice/profile_GEO_ja.ogg",
+   "dur": 7.8,
+   "text": "ジョージア。トビリシ、約370万人。議院内閣制。渡航レベル1、十分注意。栃ノ心など大相撲の力士を輩出。"
+  },
+  "GEO|en": {
+   "file": "voice/profile_GEO_en.ogg",
+   "dur": 12.8,
+   "text": "Georgia. Tbilisi, ≈3.7 million. Parliamentary. Travel advisory level 1: Exercise caution. Home of sumo wrestler Tochinoshin; wine exports to Japan are growing."
+  },
+  "DZA|ja": {
+   "file": "voice/profile_DZA_ja.ogg",
+   "dur": 8.4,
+   "text": "アルジェリア。アルジェ、約4,600万人。大統領制。渡航レベル2、不要不急の渡航中止。欧州向け天然ガスの供給国として注目。"
+  },
+  "DZA|en": {
+   "file": "voice/profile_DZA_en.ogg",
+   "dur": 13.3,
+   "text": "Algeria. Algiers, ≈46 million. Presidential. Travel advisory level 2: Avoid non-essential travel. A gas supplier to Europe; Japanese firms have been involved in plant construction."
+  },
+  "MAR|ja": {
+   "file": "voice/profile_MAR_ja.ogg",
+   "dur": 7.2,
+   "text": "モロッコ。ラバト、約3,800万人。立憲君主制。渡航レベル1、十分注意。タコの主要輸入元のひとつ。"
+  },
+  "MAR|en": {
+   "file": "voice/profile_MAR_en.ogg",
+   "dur": 10.4,
+   "text": "Morocco. Rabat, ≈38 million. Constitutional monarchy. Travel advisory level 1: Exercise caution. A key octopus supplier."
+  },
+  "TUN|ja": {
+   "file": "voice/profile_TUN_ja.ogg",
+   "dur": 7.6,
+   "text": "チュニジア。チュニス、約1,200万人。大統領制。渡航レベル1、十分注意。 アラブの春 後の民主化を日本が支援。"
+  },
+  "TUN|en": {
+   "file": "voice/profile_TUN_en.ogg",
+   "dur": 13.6,
+   "text": "Tunisia. Tunis, ≈12 million. Presidential. Travel advisory level 1: Exercise caution. Japan backed democratisation after the Arab Spring and hosted TICAD here in 2022."
+  },
+  "LBY|ja": {
+   "file": "voice/profile_LBY_ja.ogg",
+   "dur": 7.8,
+   "text": "リビア。トリポリ、約700万人。東西分裂 統一政府と東部勢力 。渡航レベル4、退避勧告。原油の供給国。"
+  },
+  "LBY|en": {
+   "file": "voice/profile_LBY_en.ogg",
+   "dur": 13.2,
+   "text": "Libya. Tripoli, ≈7 million. Divided east–west. Travel advisory level 4: Evacuate. An oil supplier; Japanese nationals were evacuated during the 2011 civil war."
+  },
+  "SDN|ja": {
+   "file": "voice/profile_SDN_ja.ogg",
+   "dur": 9.2,
+   "text": "スーダン。ハルツーム、約4,900万人。軍事政権 内戦中 。渡航レベル4、退避勧告。2023年の内戦で自衛隊機が邦人を退避。"
+  },
+  "SDN|en": {
+   "file": "voice/profile_SDN_en.ogg",
+   "dur": 15.9,
+   "text": "Sudan. Khartoum, ≈49 million. Military rule civil war . Travel advisory level 4: Evacuate. SDF aircraft evacuated Japanese nationals when war broke out in 2023; a humanitarian aid recipient."
+  },
+  "SSD|ja": {
+   "file": "voice/profile_SSD_ja.ogg",
+   "dur": 9.9,
+   "text": "南スーダン。ジュバ、約1,200万人。大統領制 暫定統一政府 。渡航レベル4、退避勧告。2012から17年に自衛隊がPKOで施設部隊を派遣。"
+  },
+  "SSD|en": {
+   "file": "voice/profile_SSD_en.ogg",
+   "dur": 14.6,
+   "text": "South Sudan. Juba, ≈12 million. Presidential transitional unity government . Travel advisory level 4: Evacuate. SDF engineers served in the UN mission here from 2012 to 2017."
+  },
+  "SOM|ja": {
+   "file": "voice/profile_SOM_ja.ogg",
+   "dur": 10.5,
+   "text": "ソマリア。モガディシュ、約1,800万人。連邦制 事実上分裂 。渡航レベル4、退避勧告。海賊対策で海上自衛隊がアデン湾で護衛活動を継続、ジブチに拠点。"
+  },
+  "SOM|en": {
+   "file": "voice/profile_SOM_en.ogg",
+   "dur": 14.2,
+   "text": "Somalia. Mogadishu, ≈18 million. Federal effectively fragmented . Travel advisory level 4: Evacuate. Japan's navy continues anti-piracy escorts in the Gulf of Aden from a base in Djibouti."
+  },
+  "TZA|ja": {
+   "file": "voice/profile_TZA_ja.ogg",
+   "dur": 9.4,
+   "text": "タンザニア。ドドマ 法律上 、ダルエスサラーム 事実上 、約6,700万人。大統領制。渡航レベル1、十分注意。キリマンジャロコーヒーで知られる。"
+  },
+  "TZA|en": {
+   "file": "voice/profile_TZA_en.ogg",
+   "dur": 15.4,
+   "text": "Tanzania. Dodoma official / Dar es Salaam de facto , ≈67 million. Presidential. Travel advisory level 1: Exercise caution. Known for Kilimanjaro coffee; Japan supports agriculture and ports through ODA."
+  },
+  "UGA|ja": {
+   "file": "voice/profile_UGA_ja.ogg",
+   "dur": 8.9,
+   "text": "ウガンダ。カンパラ、約4,900万人。大統領制 ムセベニ長期政権 。渡航レベル1、十分注意。日本はODAでナイル架橋などを支援。"
+  },
+  "UGA|en": {
+   "file": "voice/profile_UGA_en.ogg",
+   "dur": 14.5,
+   "text": "Uganda. Kampala, ≈49 million. Presidential Museveni's long rule . Travel advisory level 1: Exercise caution. Japan funded a Nile bridge through ODA and cooperates on refugee support."
+  },
+  "COD|ja": {
+   "file": "voice/profile_COD_ja.ogg",
+   "dur": 8.7,
+   "text": "コンゴ民主共和国。キンシャサ、約1.05億人。大統領制。渡航レベル3、渡航中止勧告。イーブイ電池に不可欠なコバルトの供給国。"
+  },
+  "COD|en": {
+   "file": "voice/profile_COD_en.ogg",
+   "dur": 16,
+   "text": "the Democratic Republic of the Congo. Kinshasa, ≈105 million. Presidential. Travel advisory level 3: Do not travel. Supplier of cobalt essential for EV batteries; Japan provides humanitarian aid for the eastern conflict."
+  },
+  "AGO|ja": {
+   "file": "voice/profile_AGO_ja.ogg",
+   "dur": 6.6,
+   "text": "アンゴラ。ルアンダ、約3,700万人。大統領制。渡航レベル1、十分注意。原油の供給国。"
+  },
+  "AGO|en": {
+   "file": "voice/profile_AGO_en.ogg",
+   "dur": 12.6,
+   "text": "Angola. Luanda, ≈37 million. Presidential. Travel advisory level 1: Exercise caution. An oil supplier; Japan cooperates on fisheries and health through ODA."
+  },
+  "MOZ|ja": {
+   "file": "voice/profile_MOZ_ja.ogg",
+   "dur": 8.7,
+   "text": "モザンビーク。マプト、約3,400万人。大統領制。渡航レベル2、不要不急の渡航中止。日本の三井物産がエルエヌジー開発に参画。"
+  },
+  "MOZ|en": {
+   "file": "voice/profile_MOZ_en.ogg",
+   "dur": 15.1,
+   "text": "Mozambique. Maputo, ≈34 million. Presidential. Travel advisory level 2: Avoid non-essential travel. Mitsui is a partner in the L N G project; Japan supports agriculture along the Nacala Corridor."
+  },
+  "GHA|ja": {
+   "file": "voice/profile_GHA_ja.ogg",
+   "dur": 7.9,
+   "text": "ガーナ。アクラ、約3,400万人。大統領制。渡航レベル1、十分注意。野口英世が黄熱病研究中に亡くなった地。"
+  },
+  "GHA|en": {
+   "file": "voice/profile_GHA_en.ogg",
+   "dur": 13.3,
+   "text": "Ghana. Accra, ≈34 million. Presidential. Travel advisory level 1: Exercise caution. Where Hideyo Noguchi died researching yellow fever; a main source of cocoa for Japanese chocolate."
+  },
+  "SEN|ja": {
+   "file": "voice/profile_SEN_ja.ogg",
+   "dur": 8.1,
+   "text": "セネガル。ダカール、約1,800万人。大統領制。渡航レベル1、十分注意。日本は水産、保健分野でODA協力。"
+  },
+  "SEN|en": {
+   "file": "voice/profile_SEN_en.ogg",
+   "dur": 12.5,
+   "text": "Senegal. Dakar, ≈18 million. Presidential. Travel advisory level 1: Exercise caution. Japan cooperates on fisheries and health; Japanese vessels fish offshore."
+  },
+  "MLI|ja": {
+   "file": "voice/profile_MLI_ja.ogg",
+   "dur": 7.5,
+   "text": "マリ。バマコ、約2,300万人。軍事政権。渡航レベル4、退避勧告。日本はサヘル地域の安定化支援を実施。"
+  },
+  "MLI|en": {
+   "file": "voice/profile_MLI_en.ogg",
+   "dur": 11.5,
+   "text": "Mali. Bamako, ≈23 million. Military junta. Travel advisory level 4: Evacuate. Japan supports stabilisation efforts in the Sahel."
+  },
+  "NER|ja": {
+   "file": "voice/profile_NER_ja.ogg",
+   "dur": 6.2,
+   "text": "ニジェール。ニアメ、約2,700万人。軍事政権。渡航レベル4、退避勧告。ウラン資源国。"
+  },
+  "NER|en": {
+   "file": "voice/profile_NER_en.ogg",
+   "dur": 12.1,
+   "text": "Niger. Niamey, ≈27 million. Military junta. Travel advisory level 4: Evacuate. A uranium producer; Japan provides food and education aid."
+  },
+  "PER|ja": {
+   "file": "voice/profile_PER_ja.ogg",
+   "dur": 6.6,
+   "text": "ペルー。リマ、約3,400万人。大統領制。渡航レベル1、十分注意。日系人約10万人。"
+  },
+  "PER|en": {
+   "file": "voice/profile_PER_en.ogg",
+   "dur": 13.8,
+   "text": "Peru. Lima, ≈34 million. Presidential. Travel advisory level 1: Exercise caution. About 100,000 people of Japanese descent; Fujimori became president in 1990."
+  },
+  "CHL|ja": {
+   "file": "voice/profile_CHL_ja.ogg",
+   "dur": 6.8,
+   "text": "チリ。サンティアゴ、約2,000万人。大統領制。渡航レベル1、十分注意。銅とサーモンの主要供給国。"
+  },
+  "CHL|en": {
+   "file": "voice/profile_CHL_en.ogg",
+   "dur": 12.9,
+   "text": "Chile. Santiago, ≈20 million. Presidential. Travel advisory level 1: Exercise caution. A major copper and salmon supplier — much of Japan's imported salmon is Chilean."
+  },
+  "BOL|ja": {
+   "file": "voice/profile_BOL_ja.ogg",
+   "dur": 10.2,
+   "text": "ボリビア。ラパス 政府 、スクレ 憲法上 、約1,200万人。大統領制。渡航レベル1、十分注意。日系移民の歴史 サンタクルス州にオキナワ移住地 。"
+  },
+  "BOL|en": {
+   "file": "voice/profile_BOL_en.ogg",
+   "dur": 15.8,
+   "text": "Bolivia. La Paz seat of government / Sucre constitutional , ≈12 million. Presidential. Travel advisory level 1: Exercise caution. Japanese settlements Okinawa colony in Santa Cruz ; Uyuni is a favourite of Japanese travellers."
+  },
+  "URY|ja": {
+   "file": "voice/profile_URY_ja.ogg",
+   "dur": 8.3,
+   "text": "ウルグアイ。モンテビデオ、約340万人。大統領制。渡航レベル0、危険情報なし。牛肉の対日輸出が2019年に解禁。"
+  },
+  "URY|en": {
+   "file": "voice/profile_URY_en.ogg",
+   "dur": 15.6,
+   "text": "Uruguay. Montevideo, ≈3.4 million. Presidential. Travel advisory level 0: No advisory. Beef exports to Japan opened in 2019; 'the world's poorest president' Mujica is admired in Japan."
+  },
+  "PRY|ja": {
+   "file": "voice/profile_PRY_ja.ogg",
+   "dur": 6.9,
+   "text": "パラグアイ。アスンシオン、約700万人。大統領制。渡航レベル1、十分注意。日系人約1万人。"
+  },
+  "PRY|en": {
+   "file": "voice/profile_PRY_en.ogg",
+   "dur": 14.4,
+   "text": "Paraguay. Asunción, ≈7 million. Presidential. Travel advisory level 1: Exercise caution. About 10,000 people of Japanese descent; Japanese colonies Iguazú, La Paz pioneered soybean farming."
+  },
+  "GTM|ja": {
+   "file": "voice/profile_GTM_ja.ogg",
+   "dur": 7.1,
+   "text": "グアテマラ。グアテマラシティ、約1,800万人。大統領制。渡航レベル1、十分注意。コーヒーの主要輸入元。"
+  },
+  "GTM|en": {
+   "file": "voice/profile_GTM_en.ogg",
+   "dur": 12.7,
+   "text": "Guatemala. Guatemala City, ≈18 million. Presidential. Travel advisory level 1: Exercise caution. A main coffee source; Japan provides health and education aid."
+  },
+  "HTI|ja": {
+   "file": "voice/profile_HTI_ja.ogg",
+   "dur": 10.2,
+   "text": "ハイチ。ポルトープランス、約1,200万人。暫定政権 事実上無政府状態の地域あり 。渡航レベル4、退避勧告。2010年のハイチ地震で自衛隊がPKO派遣。"
+  },
+  "HTI|en": {
+   "file": "voice/profile_HTI_en.ogg",
+   "dur": 14.9,
+   "text": "Haiti. Port-au-Prince, ≈12 million. Transitional parts effectively ungoverned . Travel advisory level 4: Evacuate. The SDF joined the UN mission after the 2010 earthquake; Japan continues humanitarian aid."
+  },
+  "PAN|ja": {
+   "file": "voice/profile_PAN_ja.ogg",
+   "dur": 7.3,
+   "text": "パナマ。パナマシティ、約450万人。大統領制。渡航レベル1、十分注意。日本船の多くがパナマ船籍。"
+  },
+  "PAN|en": {
+   "file": "voice/profile_PAN_en.ogg",
+   "dur": 14.3,
+   "text": "Panama. Panama City, ≈4.5 million. Presidential. Travel advisory level 1: Exercise caution. Many Japanese ships fly the Panamanian flag; Japan is financing the canal's fourth bridge."
+  },
+  "UZB|ja": {
+   "file": "voice/profile_UZB_ja.ogg",
+   "dur": 7.6,
+   "text": "ウズベキスタン。タシケント、約3,600万人。大統領制。渡航レベル1、十分注意。サマルカンドなど親日観光地。"
+  },
+  "UZB|en": {
+   "file": "voice/profile_UZB_en.ogg",
+   "dur": 15,
+   "text": "Uzbekistan. Tashkent, ≈36 million. Presidential. Travel advisory level 1: Exercise caution. Samarkand draws Japanese visitors; the Navoi Theatre was built by Japanese internees after WWII."
+  },
+  "AZE|ja": {
+   "file": "voice/profile_AZE_ja.ogg",
+   "dur": 6.8,
+   "text": "アゼルバイジャン。バクー、約1,000万人。大統領制。渡航レベル1、十分注意。原油、ガスの供給国。"
+  },
+  "AZE|en": {
+   "file": "voice/profile_AZE_en.ogg",
+   "dur": 13.3,
+   "text": "Azerbaijan. Baku, ≈10 million. Presidential. Travel advisory level 1: Exercise caution. An oil and gas supplier; Japanese firms participate in Caspian field development."
+  },
+  "ARM|ja": {
+   "file": "voice/profile_ARM_ja.ogg",
+   "dur": 7.5,
+   "text": "アルメニア。エレバン、約300万人。議院内閣制。渡航レベル1、十分注意。日本とは2015年に大使館開設。"
+  },
+  "ARM|en": {
+   "file": "voice/profile_ARM_en.ogg",
+   "dur": 12.6,
+   "text": "Armenia. Yerevan, ≈3 million. Parliamentary. Travel advisory level 1: Exercise caution. Japan opened an embassy in 2015; IT exchange is growing."
+  },
+  "MNG|ja": {
+   "file": "voice/profile_MNG_ja.ogg",
+   "dur": 8.4,
+   "text": "モンゴル。ウランバートル、約350万人。半大統領制。渡航レベル0、危険情報なし。大相撲のモンゴル出身力士で親しみが深い。"
+  },
+  "MNG|en": {
+   "file": "voice/profile_MNG_en.ogg",
+   "dur": 14.2,
+   "text": "Mongolia. Ulaanbaatar, ≈3.5 million. Semi-presidential. Travel advisory level 0: No advisory. Familiar through Mongolian sumo wrestlers; Japan is one of its largest ODA donors."
+  },
+  "MMR|ja": {
+   "file": "voice/profile_MMR_ja.ogg",
+   "dur": 9.1,
+   "text": "ミャンマー。ネピドー、約5,400万人。軍事政権 内戦状態 。渡航レベル3、渡航中止勧告。在日ミャンマー人が急増 約10万人 。"
+  },
+  "MMR|en": {
+   "file": "voice/profile_MMR_en.ogg",
+   "dur": 16.5,
+   "text": "Myanmar. Naypyidaw, ≈54 million. Military junta civil war . Travel advisory level 3: Do not travel. The Myanmar community in Japan has surged ≈100,000 ; Japanese firms had invested in the Thilawa SEZ."
+  },
+  "MYS|ja": {
+   "file": "voice/profile_MYS_ja.ogg",
+   "dur": 10.8,
+   "text": "マレーシア。クアラルンプール 行政はプトラジャヤ 、約3,400万人。立憲君主制、議院内閣制。渡航レベル1、十分注意。 ルック、イースト政策 で日本を手本に。"
+  },
+  "MYS|en": {
+   "file": "voice/profile_MYS_en.ogg",
+   "dur": 17,
+   "text": "Malaysia. Kuala Lumpur administration in Putrajaya , ≈34 million. Constitutional monarchy, parliamentary. Travel advisory level 1: Exercise caution. The 'Look East' policy took Japan as a model; a popular long-stay destination for Japanese."
+  },
+  "BGD|ja": {
+   "file": "voice/profile_BGD_ja.ogg",
+   "dur": 9.2,
+   "text": "バングラデシュ。ダッカ、約1.7億人。議院内閣制 暫定政権 。渡航レベル2、不要不急の渡航中止。日本のODA最大級の受け取り国。"
+  },
+  "BGD|en": {
+   "file": "voice/profile_BGD_en.ogg",
+   "dur": 15.7,
+   "text": "Bangladesh. Dhaka, ≈170 million. Parliamentary interim government . Travel advisory level 2: Avoid non-essential travel. One of Japan's largest ODA recipients; the Dhaka metro was built with Japanese support."
+  },
+  "LKA|ja": {
+   "file": "voice/profile_LKA_ja.ogg",
+   "dur": 11.5,
+   "text": "スリランカ。スリジャヤワルダナプラコッテ、約2,200万人。大統領制。渡航レベル1、十分注意。1951年のサンフランシスコ講和会議で日本への賠償請求を放棄した演説で知られる。"
+  },
+  "LKA|en": {
+   "file": "voice/profile_LKA_en.ogg",
+   "dur": 14.7,
+   "text": "Sri Lanka. Sri Jayawardenepura Kotte, ≈22 million. Presidential. Travel advisory level 1: Exercise caution. Remembered for the 1951 San Francisco speech waiving reparations from Japan."
+  },
+  "NZL|ja": {
+   "file": "voice/profile_NZL_ja.ogg",
+   "dur": 8.4,
+   "text": "ニュージーランド。ウェリントン、約530万人。立憲君主制、議院内閣制。渡航レベル0、危険情報なし。ワーキングホリデーの定番。"
+  },
+  "NZL|en": {
+   "file": "voice/profile_NZL_en.ogg",
+   "dur": 15,
+   "text": "New Zealand. Wellington, ≈5.3 million. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. A working-holiday favourite; supplier of kiwifruit and dairy; rugby ties run deep."
+  },
+  "PRT|ja": {
+   "file": "voice/profile_PRT_ja.ogg",
+   "dur": 10.9,
+   "text": "ポルトガル。リスボン、約1,050万人。半大統領制。渡航レベル0、危険情報なし。1543年の鉄砲伝来、カステラ、天ぷら、パンなど日本語に残る言葉の由来。"
+  },
+  "PRT|en": {
+   "file": "voice/profile_PRT_en.ogg",
+   "dur": 17.9,
+   "text": "Portugal. Lisbon, ≈10.5 million. Semi-presidential. Travel advisory level 0: No advisory. Japan's oldest European contact: firearms arrived in 1543, and words like castella, tempura and pan come from Portuguese."
+  },
+  "CHE|ja": {
+   "file": "voice/profile_CHE_ja.ogg",
+   "dur": 8.7,
+   "text": "スイス。ベルン、約900万人。連邦制、直接民主制。渡航レベル0、危険情報なし。精密機械、製薬で競合しつつ協力。"
+  },
+  "CHE|en": {
+   "file": "voice/profile_CHE_en.ogg",
+   "dur": 13.7,
+   "text": "Switzerland. Bern, ≈9 million. Federal, direct democracy. Travel advisory level 0: No advisory. Rival and partner in precision machinery and pharma; a popular long-stay destination."
+  },
+  "AUT|ja": {
+   "file": "voice/profile_AUT_ja.ogg",
+   "dur": 8,
+   "text": "オーストリア。ウィーン、約910万人。連邦制、議院内閣制。渡航レベル0、危険情報なし。音楽留学先として人気。"
+  },
+  "AUT|en": {
+   "file": "voice/profile_AUT_en.ogg",
+   "dur": 13.1,
+   "text": "Austria. Vienna, ≈9.1 million. Federal parliamentary. Travel advisory level 0: No advisory. A favourite for music study; a neutral state sharing values with Japan."
+  },
+  "CZE|ja": {
+   "file": "voice/profile_CZE_ja.ogg",
+   "dur": 7.5,
+   "text": "チェコ。プラハ、約1,090万人。議院内閣制。渡航レベル0、危険情報なし。日系自動車部品メーカーの集積地。"
+  },
+  "CZE|en": {
+   "file": "voice/profile_CZE_en.ogg",
+   "dur": 13.6,
+   "text": "the Czech Republic. Prague, ≈10.9 million. Parliamentary. Travel advisory level 0: No advisory. A cluster of Japanese auto-parts makers; Prague is popular with Japanese tourists."
+  },
+  "DNK|ja": {
+   "file": "voice/profile_DNK_ja.ogg",
+   "dur": 8.7,
+   "text": "デンマーク。コペンハーゲン、約600万人。立憲君主制、議院内閣制。渡航レベル0、危険情報なし。グリーンランド問題でべいこくと対立。"
+  },
+  "DNK|en": {
+   "file": "voice/profile_DNK_en.ogg",
+   "dur": 13.8,
+   "text": "Denmark. Copenhagen, ≈6 million. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. At odds with the US over Greenland; cooperates with Japan on offshore wind."
+  },
+  "SRB|ja": {
+   "file": "voice/profile_SRB_ja.ogg",
+   "dur": 8.8,
+   "text": "セルビア。ベオグラード、約660万人。議院内閣制。渡航レベル0、危険情報なし。日本はODAでベオグラードの環境改善を支援。"
+  },
+  "SRB|en": {
+   "file": "voice/profile_SRB_en.ogg",
+   "dur": 12.7,
+   "text": "Serbia. Belgrade, ≈6.6 million. Parliamentary. Travel advisory level 0: No advisory. Japan supports environmental improvement in Belgrade through ODA."
+  },
+  "JOR|ja": {
+   "file": "voice/profile_JOR_ja.ogg",
+   "dur": 8,
+   "text": "ヨルダン。アンマン、約1,100万人。立憲君主制。渡航レベル2、不要不急の渡航中止。中東の安定の要として日本が長年支援。"
+  },
+  "JOR|en": {
+   "file": "voice/profile_JOR_en.ogg",
+   "dur": 15,
+   "text": "Jordan. Amman, ≈11 million. Constitutional monarchy. Travel advisory level 2: Avoid non-essential travel. Long supported by Japan as an anchor of Middle East stability; Petra is popular with Japanese tourists."
+  },
+  "KWT|ja": {
+   "file": "voice/profile_KWT_ja.ogg",
+   "dur": 7.9,
+   "text": "クウェート。クウェート、約480万人 国民は3割 。首長制。渡航レベル1、十分注意。原油の主要供給国。"
+  },
+  "KWT|en": {
+   "file": "voice/profile_KWT_en.ogg",
+   "dur": 16.2,
+   "text": "Kuwait. Kuwait City, ≈4.8 million citizens ≈30% . Emirate. Travel advisory level 1: Exercise caution. A major oil supplier; donated 5 million barrels of crude after the 2011 Japan earthquake."
+  },
+  "ARE|ja": {
+   "file": "voice/profile_ARE_ja.ogg",
+   "dur": 8.3,
+   "text": "アラブ首長国連邦。アブダビ、約1,000万人 国民は1割 。連邦首長制。渡航レベル1、十分注意。原油の主要供給国。"
+  },
+  "ARE|en": {
+   "file": "voice/profile_ARE_en.ogg",
+   "dur": 17.1,
+   "text": "the United Arab Emirates. Abu Dhabi, ≈10 million citizens ≈10% . Federation of emirates. Travel advisory level 1: Exercise caution. A major oil supplier and host of the US–Russia–Ukraine talks; many Japanese expatriates."
+  },
+  "TCD|ja": {
+   "file": "voice/profile_TCD_ja.ogg",
+   "dur": 7.9,
+   "text": "チャド。ンジャメナ、約1,900万人。軍事政権→移行。渡航レベル4、退避勧告。日本は食料、難民支援を実施。"
+  },
+  "TCD|en": {
+   "file": "voice/profile_TCD_en.ogg",
+   "dur": 11,
+   "text": "Chad. N'Djamena, ≈19 million. Military-led transition. Travel advisory level 4: Evacuate. Japan provides food and refugee aid."
+  },
+  "DOM|ja": {
+   "file": "voice/profile_DOM_ja.ogg",
+   "dur": 9.4,
+   "text": "ドミニカ共和国。サントドミンゴ、約1,100万人。大統領制。渡航レベル1、十分注意。野球を通じた交流が深く、日本球界にも多くの選手。"
+  },
+  "DOM|en": {
+   "file": "voice/profile_DOM_en.ogg",
+   "dur": 12.4,
+   "text": "the Dominican Republic. Santo Domingo, ≈11 million. Presidential. Travel advisory level 1: Exercise caution. Deep baseball ties, with many players in Japan's leagues."
+  },
+  "BHS|ja": {
+   "file": "voice/profile_BHS_ja.ogg",
+   "dur": 8.5,
+   "text": "バハマ。ナッソー、約40万人。立憲君主制、議院内閣制。渡航レベル1、十分注意。日本との直接的な関係は限定的。"
+  },
+  "BHS|en": {
+   "file": "voice/profile_BHS_en.ogg",
+   "dur": 13.3,
+   "text": "the Bahamas. Nassau, ≈400,000. Constitutional monarchy, parliamentary. Travel advisory level 1: Exercise caution. Limited direct ties with Japan; known for cruise tourism."
+  },
+  "TLS|ja": {
+   "file": "voice/profile_TLS_ja.ogg",
+   "dur": 7.8,
+   "text": "東ティモール。ディリ、約140万人。半大統領制。渡航レベル1、十分注意。日本は独立後の最大級の支援国。"
+  },
+  "TLS|en": {
+   "file": "voice/profile_TLS_en.ogg",
+   "dur": 14.1,
+   "text": "Timor-Leste. Dili, ≈1.4 million. Semi-presidential. Travel advisory level 1: Exercise caution. Japan was among the biggest supporters after independence; the SDF joined the UN mission."
+  },
+  "LSO|ja": {
+   "file": "voice/profile_LSO_ja.ogg",
+   "dur": 7.5,
+   "text": "レソト。マセル、約230万人。立憲君主制。渡航レベル1、十分注意。日本は水、教育分野で支援。"
+  },
+  "LSO|en": {
+   "file": "voice/profile_LSO_en.ogg",
+   "dur": 12.3,
+   "text": "Lesotho. Maseru, ≈2.3 million. Constitutional monarchy. Travel advisory level 1: Exercise caution. Japan supports water and education projects."
+  },
+  "CRI|ja": {
+   "file": "voice/profile_CRI_ja.ogg",
+   "dur": 7.4,
+   "text": "コスタリカ。サンホセ、約520万人。大統領制。渡航レベル1、十分注意。エコツーリズムで日本人に人気。"
+  },
+  "CRI|en": {
+   "file": "voice/profile_CRI_en.ogg",
+   "dur": 13.4,
+   "text": "Costa Rica. San José, ≈5.2 million. Presidential. Travel advisory level 1: Exercise caution. Popular with Japanese eco-tourists; a hub for chips and medical devices."
+  },
+  "NIC|ja": {
+   "file": "voice/profile_NIC_ja.ogg",
+   "dur": 9.3,
+   "text": "ニカラグア。マナグア、約700万人。大統領制 オルテガ長期政権 。渡航レベル1、十分注意。日本はODAで道路、保健を支援してきた。"
+  },
+  "NIC|en": {
+   "file": "voice/profile_NIC_en.ogg",
+   "dur": 12.3,
+   "text": "Nicaragua. Managua, ≈7 million. Presidential Ortega's long rule . Travel advisory level 1: Exercise caution. Japan has funded roads and health through ODA."
+  },
+  "HND|ja": {
+   "file": "voice/profile_HND_ja.ogg",
+   "dur": 8.5,
+   "text": "ホンジュラス。テグシガルパ、約1,050万人。大統領制。渡航レベル2、不要不急の渡航中止。日本はコーヒー輸入や保健協力で関係。"
+  },
+  "HND|en": {
+   "file": "voice/profile_HND_en.ogg",
+   "dur": 12.2,
+   "text": "Honduras. Tegucigalpa, ≈10.5 million. Presidential. Travel advisory level 2: Avoid non-essential travel. Ties through coffee imports and health cooperation."
+  },
+  "SLV|ja": {
+   "file": "voice/profile_SLV_ja.ogg",
+   "dur": 8.8,
+   "text": "エルサルバドル。サンサルバドル、約630万人。大統領制 ブケレ政権 。渡航レベル1、十分注意。日本は防災、教育で支援。"
+  },
+  "SLV|en": {
+   "file": "voice/profile_SLV_en.ogg",
+   "dur": 12.8,
+   "text": "El Salvador. San Salvador, ≈6.3 million. Presidential Boo-keh-leh . Travel advisory level 1: Exercise caution. Japan supports disaster prevention and education."
+  },
+  "BLZ|ja": {
+   "file": "voice/profile_BLZ_ja.ogg",
+   "dur": 9.1,
+   "text": "ベリーズ。ベルモパン、約40万人。立憲君主制、議院内閣制。渡航レベル1、十分注意。日本は水産、環境分野で小規模協力。"
+  },
+  "BLZ|en": {
+   "file": "voice/profile_BLZ_en.ogg",
+   "dur": 13.9,
+   "text": "Belize. Belmopan, ≈400,000. Constitutional monarchy, parliamentary. Travel advisory level 1: Exercise caution. Small-scale Japanese cooperation in fisheries and the environment."
+  },
+  "GUY|ja": {
+   "file": "voice/profile_GUY_ja.ogg",
+   "dur": 7.7,
+   "text": "ガイアナ。ジョージタウン、約80万人。大統領制。渡航レベル1、十分注意。油田開発で日本企業の関心が高まる。"
+  },
+  "GUY|en": {
+   "file": "voice/profile_GUY_en.ogg",
+   "dur": 11.2,
+   "text": "Guyana. Georgetown, ≈800,000. Presidential. Travel advisory level 1: Exercise caution. Japanese firms' interest grows with the oil boom."
+  },
+  "SUR|ja": {
+   "file": "voice/profile_SUR_ja.ogg",
+   "dur": 7.2,
+   "text": "スリナム。パラマリボ、約63万人。大統領制。渡航レベル1、十分注意。日本との関係は限定的。"
+  },
+  "SUR|en": {
+   "file": "voice/profile_SUR_en.ogg",
+   "dur": 12.1,
+   "text": "Suriname. Paramaribo, ≈630,000. Presidential. Travel advisory level 1: Exercise caution. Limited ties with Japan; exports timber and gold."
+  },
+  "JAM|ja": {
+   "file": "voice/profile_JAM_ja.ogg",
+   "dur": 9.2,
+   "text": "ジャマイカ。キングストン、約280万人。立憲君主制、議院内閣制。渡航レベル1、十分注意。ブルーマウンテンコーヒーの最大の顧客は日本。"
+  },
+  "JAM|en": {
+   "file": "voice/profile_JAM_en.ogg",
+   "dur": 14.1,
+   "text": "Jamaica. Kingston, ≈2.8 million. Constitutional monarchy, parliamentary. Travel advisory level 1: Exercise caution. Japan is the main buyer of Blue Mountain coffee; reggae culture is popular."
+  },
+  "ZWE|ja": {
+   "file": "voice/profile_ZWE_ja.ogg",
+   "dur": 7.6,
+   "text": "ジンバブエ。ハラレ、約1,700万人。大統領制。渡航レベル1、十分注意。日本はODAで水、保健を支援。"
+  },
+  "ZWE|en": {
+   "file": "voice/profile_ZWE_en.ogg",
+   "dur": 10.8,
+   "text": "Zimbabwe. Harare, ≈17 million. Presidential. Travel advisory level 1: Exercise caution. Japan supports water and health through ODA."
+  },
+  "BWA|ja": {
+   "file": "voice/profile_BWA_ja.ogg",
+   "dur": 7.9,
+   "text": "ボツワナ。ハボローネ、約250万人。議院内閣制的大統領制。渡航レベル0、危険情報なし。ダイヤモンドの供給国。"
+  },
+  "BWA|en": {
+   "file": "voice/profile_BWA_en.ogg",
+   "dur": 13.4,
+   "text": "Botswana. Gaborone, ≈2.5 million. Parliamentary republic. Travel advisory level 0: No advisory. A diamond supplier; Japan cooperates in education and health."
+  },
+  "NAM|ja": {
+   "file": "voice/profile_NAM_ja.ogg",
+   "dur": 7.2,
+   "text": "ナミビア。ウィントフック、約300万人。大統領制。渡航レベル0、危険情報なし。ウラン、ダイヤの供給国。"
+  },
+  "NAM|en": {
+   "file": "voice/profile_NAM_en.ogg",
+   "dur": 12.1,
+   "text": "Namibia. Windhoek, ≈3 million. Presidential. Travel advisory level 0: No advisory. Supplier of uranium and diamonds; fisheries cooperation with Japan."
+  },
+  "MRT|ja": {
+   "file": "voice/profile_MRT_ja.ogg",
+   "dur": 7.9,
+   "text": "モーリタニア。ヌアクショット、約500万人。大統領制。渡航レベル2、不要不急の渡航中止。日本のタコ輸入の主要供給国。"
+  },
+  "MRT|en": {
+   "file": "voice/profile_MRT_en.ogg",
+   "dur": 13.1,
+   "text": "Mauritania. Nouakchott, ≈5 million. Presidential. Travel advisory level 2: Avoid non-essential travel. A main supplier of octopus to Japan, with long fisheries cooperation."
+  },
+  "BEN|ja": {
+   "file": "voice/profile_BEN_ja.ogg",
+   "dur": 8.6,
+   "text": "ベナン。ポルトノボ、約1,400万人。大統領制。渡航レベル1、十分注意。タレントのゾマホン氏が大使を務めたことで日本での知名度が高い。"
+  },
+  "BEN|en": {
+   "file": "voice/profile_BEN_en.ogg",
+   "dur": 11.9,
+   "text": "Benin. Porto-Novo, ≈14 million. Presidential. Travel advisory level 1: Exercise caution. Well known in Japan through Zomahoun, who served as ambassador."
+  },
+  "CMR|ja": {
+   "file": "voice/profile_CMR_ja.ogg",
+   "dur": 9.8,
+   "text": "カメルーン。ヤウンデ、約2,900万人。大統領制 ビヤ長期政権 。渡航レベル2、不要不急の渡航中止。2002年W杯で中津江村のキャンプ地が話題に。"
+  },
+  "CMR|en": {
+   "file": "voice/profile_CMR_en.ogg",
+   "dur": 14,
+   "text": "Cameroon. Yaoundé, ≈29 million. Presidential Biya's long rule . Travel advisory level 2: Avoid non-essential travel. Remembered in Japan for the 2002 World Cup camp in Nakatsue village."
+  },
+  "TGO|ja": {
+   "file": "voice/profile_TGO_ja.ogg",
+   "dur": 8.6,
+   "text": "トーゴ。ロメ、約900万人。議院内閣制 2024年改憲 。渡航レベル1、十分注意。日本は港湾、教育で協力。"
+  },
+  "TGO|en": {
+   "file": "voice/profile_TGO_en.ogg",
+   "dur": 12.2,
+   "text": "Togo. Lomé, ≈9 million. Parliamentary 2024 constitution . Travel advisory level 1: Exercise caution. Japan cooperates on ports and education."
+  },
+  "CIV|ja": {
+   "file": "voice/profile_CIV_ja.ogg",
+   "dur": 8.8,
+   "text": "コートジボワール。ヤムスクロ 事実上アビジャン 、約3,100万人。大統領制。渡航レベル1、十分注意。チョコレート原料の最大供給国。"
+  },
+  "CIV|en": {
+   "file": "voice/profile_CIV_en.ogg",
+   "dur": 14.3,
+   "text": "Ivory Coast. Yamoussoukro de facto Abidjan , ≈31 million. Presidential. Travel advisory level 1: Exercise caution. The biggest supplier of chocolate's raw material; Japan supports Abidjan port."
+  },
+  "GIN|ja": {
+   "file": "voice/profile_GIN_ja.ogg",
+   "dur": 8.2,
+   "text": "ギニア。コナクリ、約1,400万人。軍事政権→移行。渡航レベル2、不要不急の渡航中止。アルミ原料ボーキサイトの供給国。"
+  },
+  "GIN|en": {
+   "file": "voice/profile_GIN_en.ogg",
+   "dur": 11.3,
+   "text": "Guinea. Conakry, ≈14 million. Military-led transition. Travel advisory level 2: Avoid non-essential travel. A supplier of bauxite for aluminium."
+  },
+  "GNB|ja": {
+   "file": "voice/profile_GNB_ja.ogg",
+   "dur": 7.7,
+   "text": "ギニアビサウ。ビサウ、約210万人。半大統領制。渡航レベル2、不要不急の渡航中止。日本との関係は限定的。"
+  },
+  "GNB|en": {
+   "file": "voice/profile_GNB_en.ogg",
+   "dur": 10.9,
+   "text": "Guinea-Bissau. Bissau, ≈2.1 million. Semi-presidential. Travel advisory level 2: Avoid non-essential travel. Limited ties with Japan."
+  },
+  "LBR|ja": {
+   "file": "voice/profile_LBR_ja.ogg",
+   "dur": 7.3,
+   "text": "リベリア。モンロビア、約550万人。大統領制。渡航レベル1、十分注意。日本船の多くがリベリア船籍。"
+  },
+  "LBR|en": {
+   "file": "voice/profile_LBR_en.ogg",
+   "dur": 12.6,
+   "text": "Liberia. Monrovia, ≈5.5 million. Presidential. Travel advisory level 1: Exercise caution. Many Japanese ships are registered under the Liberian flag."
+  },
+  "SLE|ja": {
+   "file": "voice/profile_SLE_ja.ogg",
+   "dur": 7.8,
+   "text": "シエラレオネ。フリータウン、約870万人。大統領制。渡航レベル1、十分注意。日本は保健、教育で支援。"
+  },
+  "SLE|en": {
+   "file": "voice/profile_SLE_en.ogg",
+   "dur": 12.8,
+   "text": "Sierra Leone. Freetown, ≈8.7 million. Presidential. Travel advisory level 1: Exercise caution. Japan supports health and education, including the Ebola response."
+  },
+  "BFA|ja": {
+   "file": "voice/profile_BFA_ja.ogg",
+   "dur": 7.4,
+   "text": "ブルキナファソ。ワガドゥグ、約2,300万人。軍事政権。渡航レベル4、退避勧告。日本は食料、教育支援。"
+  },
+  "BFA|en": {
+   "file": "voice/profile_BFA_en.ogg",
+   "dur": 11.5,
+   "text": "Burkina Faso. Ouagadougou, ≈23 million. Military junta. Travel advisory level 4: Evacuate. Japan provides food and education aid."
+  },
+  "CAF|ja": {
+   "file": "voice/profile_CAF_ja.ogg",
+   "dur": 7.3,
+   "text": "中央アフリカ。バンギ、約550万人。大統領制。渡航レベル4、退避勧告。日本は人道支援を実施。"
+  },
+  "CAF|en": {
+   "file": "voice/profile_CAF_en.ogg",
+   "dur": 11.3,
+   "text": "the Central African Republic. Bangui, ≈5.5 million. Presidential. Travel advisory level 4: Evacuate. Japan provides humanitarian aid."
+  },
+  "COG|ja": {
+   "file": "voice/profile_COG_ja.ogg",
+   "dur": 9.3,
+   "text": "コンゴ共和国。ブラザビル、約620万人。大統領制 サスヌゲソ長期政権 。渡航レベル1、十分注意。日本は保健、教育で協力。"
+  },
+  "COG|en": {
+   "file": "voice/profile_COG_en.ogg",
+   "dur": 13.2,
+   "text": "the Republic of the Congo. Brazzaville, ≈6.2 million. Presidential Sassou Nguesso's long rule . Travel advisory level 1: Exercise caution. Japan cooperates in health and education."
+  },
+  "GAB|ja": {
+   "file": "voice/profile_GAB_ja.ogg",
+   "dur": 9,
+   "text": "ガボン。リーブルビル、約240万人。大統領制 2023年クーデター後 。渡航レベル1、十分注意。マンガン、木材の供給国。"
+  },
+  "GAB|en": {
+   "file": "voice/profile_GAB_en.ogg",
+   "dur": 14.4,
+   "text": "Gabon. Libreville, ≈2.4 million. Presidential after 2023 coup . Travel advisory level 1: Exercise caution. Supplier of manganese and timber; fisheries cooperation with Japan."
+  },
+  "GNQ|ja": {
+   "file": "voice/profile_GNQ_ja.ogg",
+   "dur": 8.5,
+   "text": "赤道ギニア。マラボ、約180万人。大統領制 オビアン長期政権 。渡航レベル1、十分注意。日本との関係は限定的。"
+  },
+  "GNQ|en": {
+   "file": "voice/profile_GNQ_en.ogg",
+   "dur": 12.7,
+   "text": "Equatorial Guinea. Malabo, ≈1.8 million. Presidential Obiang's long rule . Travel advisory level 1: Exercise caution. Limited ties with Japan; an oil exporter."
+  },
+  "ZMB|ja": {
+   "file": "voice/profile_ZMB_ja.ogg",
+   "dur": 6.2,
+   "text": "ザンビア。ルサカ、約2,100万人。大統領制。渡航レベル1、十分注意。銅の供給国。"
+  },
+  "ZMB|en": {
+   "file": "voice/profile_ZMB_en.ogg",
+   "dur": 11.8,
+   "text": "Zambia. Lusaka, ≈21 million. Presidential. Travel advisory level 1: Exercise caution. A copper supplier; Japan funds health and agriculture."
+  },
+  "MWI|ja": {
+   "file": "voice/profile_MWI_ja.ogg",
+   "dur": 8.1,
+   "text": "マラウイ。リロングウェ、約2,100万人。大統領制。渡航レベル1、十分注意。青年海外協力隊の派遣数が多い国のひとつ。"
+  },
+  "MWI|en": {
+   "file": "voice/profile_MWI_en.ogg",
+   "dur": 12.2,
+   "text": "Malawi. Lilongwe, ≈21 million. Presidential. Travel advisory level 1: Exercise caution. One of the largest destinations for Japanese overseas volunteers."
+  },
+  "SWZ|ja": {
+   "file": "voice/profile_SWZ_ja.ogg",
+   "dur": 8,
+   "text": "エスワティニ。ムババーネ、約120万人。絶対君主制。渡航レベル0、危険情報なし。台湾と国交を持つアフリカ唯一の国。"
+  },
+  "SWZ|en": {
+   "file": "voice/profile_SWZ_en.ogg",
+   "dur": 11.8,
+   "text": "Eswatini. Mbabane, ≈1.2 million. Absolute monarchy. Travel advisory level 0: No advisory. The only African country with ties to Taiwan."
+  },
+  "BDI|ja": {
+   "file": "voice/profile_BDI_ja.ogg",
+   "dur": 7,
+   "text": "ブルンジ。ギテガ、約1,400万人。大統領制。渡航レベル2、不要不急の渡航中止。日本は食料支援。"
+  },
+  "BDI|en": {
+   "file": "voice/profile_BDI_en.ogg",
+   "dur": 10.3,
+   "text": "Burundi. Gitega, ≈14 million. Presidential. Travel advisory level 2: Avoid non-essential travel. Japan provides food aid."
+  },
+  "MDG|ja": {
+   "file": "voice/profile_MDG_ja.ogg",
+   "dur": 7.2,
+   "text": "マダガスカル。アンタナナリボ、約3,100万人。大統領制。渡航レベル1、十分注意。バニラの主要供給国。"
+  },
+  "MDG|en": {
+   "file": "voice/profile_MDG_en.ogg",
+   "dur": 13,
+   "text": "Madagascar. Antananarivo, ≈31 million. Presidential. Travel advisory level 1: Exercise caution. A key vanilla supplier; Japan funded the Toamasina port expansion."
+  },
+  "GMB|ja": {
+   "file": "voice/profile_GMB_ja.ogg",
+   "dur": 7.2,
+   "text": "ガンビア。バンジュール、約270万人。大統領制。渡航レベル1、十分注意。日本との関係は限定的。"
+  },
+  "GMB|en": {
+   "file": "voice/profile_GMB_en.ogg",
+   "dur": 10.2,
+   "text": "the Gambia. Banjul, ≈2.7 million. Presidential. Travel advisory level 1: Exercise caution. Limited ties with Japan."
+  },
+  "ERI|ja": {
+   "file": "voice/profile_ERI_ja.ogg",
+   "dur": 7.8,
+   "text": "エリトリア。アスマラ、約360万人。一党独裁。渡航レベル2、不要不急の渡航中止。日本との関係は限定的。"
+  },
+  "ERI|en": {
+   "file": "voice/profile_ERI_en.ogg",
+   "dur": 10.7,
+   "text": "Eritrea. Asmara, ≈3.6 million. One-party state. Travel advisory level 2: Avoid non-essential travel. Limited ties with Japan."
+  },
+  "DJI|ja": {
+   "file": "voice/profile_DJI_ja.ogg",
+   "dur": 9.6,
+   "text": "ジブチ。ジブチ、約110万人。大統領制。渡航レベル1、十分注意。海賊対処のため海上自衛隊の活動拠点がある、日本にとって特別な国。"
+  },
+  "DJI|en": {
+   "file": "voice/profile_DJI_en.ogg",
+   "dur": 12.6,
+   "text": "Djibouti. Djibouti, ≈1.1 million. Presidential. Travel advisory level 1: Exercise caution. Special to Japan as the base for its anti-piracy naval operations."
+  },
+  "LAO|ja": {
+   "file": "voice/profile_LAO_ja.ogg",
+   "dur": 7.9,
+   "text": "ラオス。ビエンチャン、約770万人。社会主義一党制。渡航レベル1、十分注意。日本はラオス最大級の援助国。"
+  },
+  "LAO|en": {
+   "file": "voice/profile_LAO_en.ogg",
+   "dur": 13.9,
+   "text": "Laos. Vientiane, ≈7.7 million. One-party socialist. Travel advisory level 1: Exercise caution. Japan is among Laos's largest donors; Luang Prabang is popular with Japanese."
+  },
+  "BTN|ja": {
+   "file": "voice/profile_BTN_ja.ogg",
+   "dur": 9.3,
+   "text": "ブータン。ティンプー、約78万人。立憲君主制。渡航レベル0、危険情報なし。皇室、王室の交流が深く、国民の親日感情が強い。"
+  },
+  "BTN|en": {
+   "file": "voice/profile_BTN_en.ogg",
+   "dur": 13,
+   "text": "Bhutan. Thimphu, ≈780,000. Constitutional monarchy. Travel advisory level 0: No advisory. Close royal ties; Bhutanese hold strongly pro-Japan sentiment."
+  },
+  "TJK|ja": {
+   "file": "voice/profile_TJK_ja.ogg",
+   "dur": 7.4,
+   "text": "タジキスタン。ドゥシャンベ、約1,000万人。大統領制。渡航レベル1、十分注意。日本は国境管理、教育で支援。"
+  },
+  "TJK|en": {
+   "file": "voice/profile_TJK_en.ogg",
+   "dur": 10.9,
+   "text": "Tajikistan. Dushanbe, ≈10 million. Presidential. Travel advisory level 1: Exercise caution. Japan supports border management and education."
+  },
+  "KGZ|ja": {
+   "file": "voice/profile_KGZ_ja.ogg",
+   "dur": 7.8,
+   "text": "キルギス。ビシュケク、約720万人。大統領制。渡航レベル1、十分注意。顔立ちが日本人に似るとされ親日的。"
+  },
+  "KGZ|en": {
+   "file": "voice/profile_KGZ_en.ogg",
+   "dur": 11.7,
+   "text": "Kyrgyzstan. Bishkek, ≈7.2 million. Presidential. Travel advisory level 1: Exercise caution. Notably pro-Japan; many study Japanese."
+  },
+  "TKM|ja": {
+   "file": "voice/profile_TKM_ja.ogg",
+   "dur": 9,
+   "text": "トルクメニスタン。アシガバット、約650万人。大統領制 権威主義 。渡航レベル1、十分注意。日本企業がガス化学プラントを多数建設。"
+  },
+  "TKM|en": {
+   "file": "voice/profile_TKM_en.ogg",
+   "dur": 12.6,
+   "text": "Turkmenistan. Ashgabat, ≈6.5 million. Presidential authoritarian . Travel advisory level 1: Exercise caution. Japanese firms built many gas-chemical plants."
+  },
+  "MDA|ja": {
+   "file": "voice/profile_MDA_ja.ogg",
+   "dur": 8,
+   "text": "モルドバ。キシナウ、約250万人。議院内閣制。渡航レベル1、十分注意。日本はイーユー加盟支援、農業で協力。"
+  },
+  "MDA|en": {
+   "file": "voice/profile_MDA_en.ogg",
+   "dur": 11.5,
+   "text": "Moldova. Chișinău, ≈2.5 million. Parliamentary. Travel advisory level 1: Exercise caution. Japan supports EU accession and agriculture."
+  },
+  "LTU|ja": {
+   "file": "voice/profile_LTU_ja.ogg",
+   "dur": 8.8,
+   "text": "リトアニア。ビリニュス、約290万人。半大統領制。渡航レベル0、危険情報なし。杉原千畝が 命のビザ を発給した地。"
+  },
+  "LTU|en": {
+   "file": "voice/profile_LTU_en.ogg",
+   "dur": 13.4,
+   "text": "Lithuania. Vilnius, ≈2.9 million. Semi-presidential. Travel advisory level 0: No advisory. Where Chiune Sugihara issued 'visas for life'; a museum stands in Kaunas."
+  },
+  "LVA|ja": {
+   "file": "voice/profile_LVA_ja.ogg",
+   "dur": 7.8,
+   "text": "ラトビア。リガ、約190万人。議院内閣制。渡航レベル0、危険情報なし。日本はバルト三国との関係を強化中。"
+  },
+  "LVA|en": {
+   "file": "voice/profile_LVA_en.ogg",
+   "dur": 10.9,
+   "text": "Latvia. Riga, ≈1.9 million. Parliamentary. Travel advisory level 0: No advisory. Japan is deepening ties with the Baltics."
+  },
+  "ALB|ja": {
+   "file": "voice/profile_ALB_ja.ogg",
+   "dur": 7.4,
+   "text": "アルバニア。ティラナ、約280万人。議院内閣制。渡航レベル0、危険情報なし。日本は農村開発で支援。"
+  },
+  "ALB|en": {
+   "file": "voice/profile_ALB_en.ogg",
+   "dur": 10.5,
+   "text": "Albania. Tirana, ≈2.8 million. Parliamentary. Travel advisory level 0: No advisory. Japan supports rural development."
+  },
+  "HRV|ja": {
+   "file": "voice/profile_HRV_ja.ogg",
+   "dur": 8.1,
+   "text": "クロアチア。ザグレブ、約380万人。議院内閣制。渡航レベル0、危険情報なし。ドゥブロヴニクは日本人観光客に人気。"
+  },
+  "HRV|en": {
+   "file": "voice/profile_HRV_en.ogg",
+   "dur": 11.3,
+   "text": "Croatia. Zagreb, ≈3.8 million. Parliamentary. Travel advisory level 0: No advisory. Dubrovnik is popular with Japanese tourists."
+  },
+  "LUX|ja": {
+   "file": "voice/profile_LUX_ja.ogg",
+   "dur": 9.2,
+   "text": "ルクセンブルク。ルクセンブルク、約67万人。立憲君主制 大公国 。渡航レベル0、危険情報なし。日系金融機関の欧州拠点が多い。"
+  },
+  "LUX|en": {
+   "file": "voice/profile_LUX_en.ogg",
+   "dur": 12.8,
+   "text": "Luxembourg. Luxembourg, ≈670,000. Grand duchy, constitutional. Travel advisory level 0: No advisory. Many Japanese banks have their European base here."
+  },
+  "ISL|ja": {
+   "file": "voice/profile_ISL_ja.ogg",
+   "dur": 7.8,
+   "text": "アイスランド。レイキャビク、約39万人。議院内閣制。渡航レベル0、危険情報なし。捕鯨国として日本と立場が近い。"
+  },
+  "ISL|en": {
+   "file": "voice/profile_ISL_en.ogg",
+   "dur": 12.7,
+   "text": "Iceland. Reykjavík, ≈390,000. Parliamentary. Travel advisory level 0: No advisory. A whaling nation aligned with Japan; popular for aurora tourism."
+  },
+  "BRN|ja": {
+   "file": "voice/profile_BRN_ja.ogg",
+   "dur": 8.7,
+   "text": "ブルネイ。バンダルスリブガワン、約46万人。絶対君主制 スルタン 。渡航レベル0、危険情報なし。日本はエルエヌジーの最大の買い手。"
+  },
+  "BRN|en": {
+   "file": "voice/profile_BRN_en.ogg",
+   "dur": 13.2,
+   "text": "Brunei. Bandar Seri Begawan, ≈460,000. Absolute monarchy Sultan . Travel advisory level 0: No advisory. Japan is the largest buyer of Brunei's L N G."
+  },
+  "SVN|ja": {
+   "file": "voice/profile_SVN_ja.ogg",
+   "dur": 8.1,
+   "text": "スロベニア。リュブリャナ、約210万人。議院内閣制。渡航レベル0、危険情報なし。ブレッド湖が日本人観光客に人気。"
+  },
+  "SVN|en": {
+   "file": "voice/profile_SVN_en.ogg",
+   "dur": 11.5,
+   "text": "Slovenia. Ljubljana, ≈2.1 million. Parliamentary. Travel advisory level 0: No advisory. Lake Bled is popular with Japanese tourists."
+  },
+  "SVK|ja": {
+   "file": "voice/profile_SVK_ja.ogg",
+   "dur": 8.2,
+   "text": "スロバキア。ブラチスラバ、約540万人。議院内閣制。渡航レベル0、危険情報なし。日系自動車部品メーカーが多数進出。"
+  },
+  "SVK|en": {
+   "file": "voice/profile_SVK_en.ogg",
+   "dur": 11.9,
+   "text": "Slovakia. Bratislava, ≈5.4 million. Parliamentary. Travel advisory level 0: No advisory. Many Japanese auto-parts makers operate here."
+  },
+  "CYP|ja": {
+   "file": "voice/profile_CYP_ja.ogg",
+   "dur": 8.2,
+   "text": "キプロス。ニコシア、約130万人。大統領制。渡航レベル0、危険情報なし。中東退避の経由地として日本人保護で重要。"
+  },
+  "CYP|en": {
+   "file": "voice/profile_CYP_en.ogg",
+   "dur": 12.5,
+   "text": "Cyprus. Nicosia, ≈1.3 million. Presidential. Travel advisory level 0: No advisory. Key evacuation hub for Japanese nationals leaving the Middle East."
+  },
+  "BIH|ja": {
+   "file": "voice/profile_BIH_ja.ogg",
+   "dur": 9.7,
+   "text": "ボスニア、ヘルツェゴビナ。サラエボ、約320万人。連邦制、3人大統領評議会。渡航レベル0、危険情報なし。日本は復興支援を長く実施。"
+  },
+  "BIH|en": {
+   "file": "voice/profile_BIH_en.ogg",
+   "dur": 13.1,
+   "text": "Bosnia and Herzegovina. Sarajevo, ≈3.2 million. Federal; three-member presidency. Travel advisory level 0: No advisory. Japan has long supported reconstruction."
+  },
+  "MKD|ja": {
+   "file": "voice/profile_MKD_ja.ogg",
+   "dur": 7.9,
+   "text": "北マケドニア。スコピエ、約180万人。議院内閣制。渡航レベル0、危険情報なし。日本は環境、保健で協力。"
+  },
+  "MKD|en": {
+   "file": "voice/profile_MKD_en.ogg",
+   "dur": 11.8,
+   "text": "North Macedonia. Skopje, ≈1.8 million. Parliamentary. Travel advisory level 0: No advisory. Japan cooperates on environment and health."
+  },
+  "MNE|ja": {
+   "file": "voice/profile_MNE_ja.ogg",
+   "dur": 8.1,
+   "text": "モンテネグロ。ポドゴリツァ、約62万人。議院内閣制。渡航レベル0、危険情報なし。日本はコトル湾の環境保全で協力。"
+  },
+  "MNE|en": {
+   "file": "voice/profile_MNE_en.ogg",
+   "dur": 11.8,
+   "text": "Montenegro. Podgorica, ≈620,000. Parliamentary. Travel advisory level 0: No advisory. Japan cooperates on Kotor Bay conservation."
+  },
+  "TTO|ja": {
+   "file": "voice/profile_TTO_ja.ogg",
+   "dur": 9.4,
+   "text": "トリニダード、トバゴ。ポートオブスペイン、約150万人。議院内閣制。渡航レベル1、十分注意。日本企業がエルエヌジー、アンモニア事業に参画。"
+  },
+  "TTO|en": {
+   "file": "voice/profile_TTO_en.ogg",
+   "dur": 13.3,
+   "text": "Trinidad and Tobago. Port of Spain, ≈1.5 million. Parliamentary. Travel advisory level 1: Exercise caution. Japanese firms take part in L N G and ammonia projects."
+  },
+  "FJI|ja": {
+   "file": "voice/profile_FJI_ja.ogg",
+   "dur": 9.6,
+   "text": "フィジー。スバ、約93万人。議院内閣制。渡航レベル0、危険情報なし。日本はPALM 太平洋、島サミット の枠組みで協力。"
+  },
+  "FJI|en": {
+   "file": "voice/profile_FJI_en.ogg",
+   "dur": 12.9,
+   "text": "Fiji. Suva, ≈930,000. Parliamentary. Travel advisory level 0: No advisory. Japan cooperates via the PALM summit framework; popular for English study."
+  },
+  "PNG|ja": {
+   "file": "voice/profile_PNG_ja.ogg",
+   "dur": 8.8,
+   "text": "パプアニューギニア。ポートモレスビー、約1,000万人。立憲君主制、議院内閣制。渡航レベル1、十分注意。日本はエルエヌジーの主要輸入国。"
+  },
+  "PNG|en": {
+   "file": "voice/profile_PNG_en.ogg",
+   "dur": 15.3,
+   "text": "Papua New Guinea. Port Moresby, ≈10 million. Constitutional monarchy, parliamentary. Travel advisory level 1: Exercise caution. Japan is a major L N G buyer; war-remains recovery from WWII continues."
+  },
+  "VUT|ja": {
+   "file": "voice/profile_VUT_ja.ogg",
+   "dur": 7.7,
+   "text": "バヌアツ。ポートビラ、約33万人。議院内閣制。渡航レベル0、危険情報なし。日本は防災、水産で協力。"
+  },
+  "VUT|en": {
+   "file": "voice/profile_VUT_en.ogg",
+   "dur": 12.1,
+   "text": "Vanuatu. Port Vila, ≈330,000. Parliamentary. Travel advisory level 0: No advisory. Japan cooperates on disaster prevention and fisheries."
+  },
+  "SLB|ja": {
+   "file": "voice/profile_SLB_ja.ogg",
+   "dur": 8,
+   "text": "ソロモン諸島。ホニアラ、約75万人。立憲君主制、議院内閣制。渡航レベル1、十分注意。ガダルカナルの戦いの地。"
+  },
+  "SLB|en": {
+   "file": "voice/profile_SLB_en.ogg",
+   "dur": 14.7,
+   "text": "the Solomon Islands. Honiara, ≈750,000. Constitutional monarchy, parliamentary. Travel advisory level 1: Exercise caution. Site of the Guadalcanal campaign; remains recovery continues."
+  },
+  "SGP|ja": {
+   "file": "voice/profile_SGP_ja.ogg",
+   "dur": 8.7,
+   "text": "シンガポール。シンガポール、約600万人。議院内閣制。渡航レベル0、危険情報なし。在留邦人約3万人、日系企業約1,000社。"
+  },
+  "SGP|en": {
+   "file": "voice/profile_SGP_en.ogg",
+   "dur": 14.9,
+   "text": "Singapore. Singapore, ≈6 million. Parliamentary. Travel advisory level 0: No advisory. ≈30,000 Japanese residents and ≈1,000 Japanese firms; a regional HQ hub."
+  },
+  "MLT|ja": {
+   "file": "voice/profile_MLT_ja.ogg",
+   "dur": 7.5,
+   "text": "マルタ。バレッタ、約55万人。議院内閣制。渡航レベル0、危険情報なし。英語留学先として日本人に人気。"
+  },
+  "MLT|en": {
+   "file": "voice/profile_MLT_en.ogg",
+   "dur": 10.9,
+   "text": "Malta. Valletta, ≈550,000. Parliamentary. Travel advisory level 0: No advisory. Popular with Japanese for English study."
+  },
+  "MDV|ja": {
+   "file": "voice/profile_MDV_ja.ogg",
+   "dur": 9,
+   "text": "モルディブ。マレ、約52万人。大統領制。渡航レベル0、危険情報なし。日本はマレ島の護岸を建設し、2004年津波で島を守った。"
+  },
+  "MDV|en": {
+   "file": "voice/profile_MDV_en.ogg",
+   "dur": 13.5,
+   "text": "the Maldives. Malé, ≈520,000. Presidential. Travel advisory level 0: No advisory. Japan built Malé's seawall, which protected the island in the 2004 tsunami."
+  },
+  "BHR|ja": {
+   "file": "voice/profile_BHR_ja.ogg",
+   "dur": 8.4,
+   "text": "バーレーン。マナマ、約150万人。立憲君主制。渡航レベル1、十分注意。日本は原油輸入のほか、海自の海賊対処で寄港。"
+  },
+  "BHR|en": {
+   "file": "voice/profile_BHR_en.ogg",
+   "dur": 13.7,
+   "text": "Bahrain. Manama, ≈1.5 million. Constitutional monarchy. Travel advisory level 1: Exercise caution. Japan imports oil and the MSDF calls here for anti-piracy duty."
+  },
+  "MUS|ja": {
+   "file": "voice/profile_MUS_ja.ogg",
+   "dur": 9.8,
+   "text": "モーリシャス。ポートルイス、約130万人。議院内閣制。渡航レベル0、危険情報なし。2020年の日本船籍 わかしお 座礁事故で重油流出。"
+  },
+  "MUS|en": {
+   "file": "voice/profile_MUS_en.ogg",
+   "dur": 13.3,
+   "text": "Mauritius. Port Louis, ≈1.3 million. Parliamentary. Travel advisory level 0: No advisory. Site of the 2020 Wakashio oil spill; Japan supported the clean-up."
+  },
+  "SYC|ja": {
+   "file": "voice/profile_SYC_ja.ogg",
+   "dur": 7,
+   "text": "セーシェル。ビクトリア、約12万人。大統領制。渡航レベル0、危険情報なし。日本はマグロ漁業で関係。"
+  },
+  "SYC|en": {
+   "file": "voice/profile_SYC_en.ogg",
+   "dur": 10.9,
+   "text": "Seychelles. Victoria, ≈120,000. Presidential. Travel advisory level 0: No advisory. Ties with Japan through tuna fisheries."
+  },
+  "COM|ja": {
+   "file": "voice/profile_COM_ja.ogg",
+   "dur": 7,
+   "text": "コモロ。モロニ、約90万人。連邦大統領制。渡航レベル1、十分注意。日本との関係は限定的。"
+  },
+  "COM|en": {
+   "file": "voice/profile_COM_en.ogg",
+   "dur": 10.6,
+   "text": "Comoros. Moroni, ≈900,000. Federal presidential. Travel advisory level 1: Exercise caution. Limited ties with Japan."
+  },
+  "CPV|ja": {
+   "file": "voice/profile_CPV_ja.ogg",
+   "dur": 7.8,
+   "text": "カーボベルデ。プライア、約60万人。半大統領制。渡航レベル0、危険情報なし。日本は水産、港湾で協力。"
+  },
+  "CPV|en": {
+   "file": "voice/profile_CPV_en.ogg",
+   "dur": 11.4,
+   "text": "Cabo Verde. Praia, ≈600,000. Semi-presidential. Travel advisory level 0: No advisory. Japan cooperates on fisheries and ports."
+  },
+  "STP|ja": {
+   "file": "voice/profile_STP_ja.ogg",
+   "dur": 8.1,
+   "text": "サントメ、プリンシペ。サントメ、約23万人。半大統領制。渡航レベル0、危険情報なし。日本との関係は限定的。"
+  },
+  "STP|en": {
+   "file": "voice/profile_STP_en.ogg",
+   "dur": 11.6,
+   "text": "São Tomé and Príncipe. São Tomé, ≈230,000. Semi-presidential. Travel advisory level 0: No advisory. Limited ties with Japan."
+  },
+  "BRB|ja": {
+   "file": "voice/profile_BRB_ja.ogg",
+   "dur": 8.3,
+   "text": "バルバドス。ブリッジタウン、約28万人。共和制、議院内閣制。渡航レベル0、危険情報なし。日本との関係は限定的。"
+  },
+  "BRB|en": {
+   "file": "voice/profile_BRB_en.ogg",
+   "dur": 11,
+   "text": "Barbados. Bridgetown, ≈280,000. Parliamentary republic. Travel advisory level 0: No advisory. Limited ties with Japan."
+  },
+  "LCA|ja": {
+   "file": "voice/profile_LCA_ja.ogg",
+   "dur": 8.3,
+   "text": "セントルシア。カストリーズ、約18万人。立憲君主制、議院内閣制。渡航レベル0、危険情報なし。日本は水産で協力。"
+  },
+  "LCA|en": {
+   "file": "voice/profile_LCA_en.ogg",
+   "dur": 12.4,
+   "text": "Saint Lucia. Castries, ≈180,000. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. Japan cooperates on fisheries."
+  },
+  "GRD|ja": {
+   "file": "voice/profile_GRD_ja.ogg",
+   "dur": 8.2,
+   "text": "グレナダ。セントジョージズ、約13万人。立憲君主制、議院内閣制。渡航レベル0、危険情報なし。日本は水産で協力。"
+  },
+  "GRD|en": {
+   "file": "voice/profile_GRD_en.ogg",
+   "dur": 12.3,
+   "text": "Grenada. St George's, ≈130,000. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. Japan cooperates on fisheries."
+  },
+  "VCT|ja": {
+   "file": "voice/profile_VCT_ja.ogg",
+   "dur": 9.9,
+   "text": "セントビンセント、グレナディーン。キングスタウン、約10万人。立憲君主制、議院内閣制。渡航レベル0、危険情報なし。日本は水産、捕鯨で立場が近い。"
+  },
+  "VCT|en": {
+   "file": "voice/profile_VCT_en.ogg",
+   "dur": 13.8,
+   "text": "Saint Vincent and the Grenadines. Kingstown, ≈100,000. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. Aligned with Japan on fisheries and whaling."
+  },
+  "ATG|ja": {
+   "file": "voice/profile_ATG_ja.ogg",
+   "dur": 8.7,
+   "text": "アンティグア、バーブーダ。セントジョンズ、約10万人。立憲君主制、議院内閣制。渡航レベル0、危険情報なし。日本は水産で協力。"
+  },
+  "ATG|en": {
+   "file": "voice/profile_ATG_en.ogg",
+   "dur": 12.7,
+   "text": "Antigua and Barbuda. St John's, ≈100,000. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. Japan cooperates on fisheries."
+  },
+  "KNA|ja": {
+   "file": "voice/profile_KNA_ja.ogg",
+   "dur": 8.8,
+   "text": "セントクリストファー、ネービス。バセテール、約5万人。立憲君主制、議院内閣制。渡航レベル0、危険情報なし。日本は水産で協力。"
+  },
+  "KNA|en": {
+   "file": "voice/profile_KNA_en.ogg",
+   "dur": 12.8,
+   "text": "Saint Kitts and Nevis. Basseterre, ≈50,000. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. Japan cooperates on fisheries."
+  },
+  "DMA|ja": {
+   "file": "voice/profile_DMA_ja.ogg",
+   "dur": 7.6,
+   "text": "ドミニカ国。ロゾー、約7万人。共和制、議院内閣制。渡航レベル0、危険情報なし。日本は水産で協力。"
+  },
+  "DMA|en": {
+   "file": "voice/profile_DMA_en.ogg",
+   "dur": 12.5,
+   "text": "Dominica. Roseau, ≈70,000. Parliamentary republic. Travel advisory level 0: No advisory. Japan cooperates on fisheries, though positions on whaling differ."
+  },
+  "AND|ja": {
+   "file": "voice/profile_AND_ja.ogg",
+   "dur": 8.8,
+   "text": "アンドラ。アンドラ、ラ、ベリャ、約8万人。共同公制、議院内閣制。渡航レベル0、危険情報なし。日本との関係は限定的。"
+  },
+  "AND|en": {
+   "file": "voice/profile_AND_en.ogg",
+   "dur": 11,
+   "text": "Andorra. Andorra la Vella, ≈80,000. Co-principality, parliamentary. Travel advisory level 0: No advisory. Limited ties with Japan."
+  },
+  "MCO|ja": {
+   "file": "voice/profile_MCO_ja.ogg",
+   "dur": 7.8,
+   "text": "モナコ。モナコ、約3.9万人。立憲君主制 公国 。渡航レベル0、危険情報なし。日本との関係は限定的。"
+  },
+  "MCO|en": {
+   "file": "voice/profile_MCO_en.ogg",
+   "dur": 13.4,
+   "text": "Monaco. Monaco, ≈39,000. Constitutional monarchy principality . Travel advisory level 0: No advisory. Limited ties with Japan; known for the F1 Grand Prix."
+  },
+  "SMR|ja": {
+   "file": "voice/profile_SMR_ja.ogg",
+   "dur": 10.1,
+   "text": "サンマリノ。サンマリノ、約3.4万人。共和制 ふたりの執政 。渡航レベル0、危険情報なし。2011年に欧州初の神社 サンマリノ神社 が建立。"
+  },
+  "SMR|en": {
+   "file": "voice/profile_SMR_en.ogg",
+   "dur": 13.5,
+   "text": "San Marino. San Marino, ≈34,000. Republic with two Captains Regent. Travel advisory level 0: No advisory. Europe's first Shinto shrine was built here in 2011."
+  },
+  "LIE|ja": {
+   "file": "voice/profile_LIE_ja.ogg",
+   "dur": 7.9,
+   "text": "リヒテンシュタイン。ファドゥーツ、約4万人。立憲君主制 公国 。渡航レベル0、危険情報なし。日本との関係は限定的。"
+  },
+  "LIE|en": {
+   "file": "voice/profile_LIE_en.ogg",
+   "dur": 11.1,
+   "text": "Liechtenstein. Vaduz, ≈40,000. Constitutional monarchy principality . Travel advisory level 0: No advisory. Limited ties with Japan."
+  },
+  "FSM|ja": {
+   "file": "voice/profile_FSM_ja.ogg",
+   "dur": 7.7,
+   "text": "ミクロネシア連邦。パリキール、約11万人。連邦大統領制。渡航レベル0、危険情報なし。旧日本委任統治領。"
+  },
+  "FSM|en": {
+   "file": "voice/profile_FSM_en.ogg",
+   "dur": 13.3,
+   "text": "Micronesia. Palikir, ≈110,000. Federal presidential. Travel advisory level 0: No advisory. Former Japanese mandate; many of Japanese descent and strongly pro-Japan."
+  },
+  "MHL|ja": {
+   "file": "voice/profile_MHL_ja.ogg",
+   "dur": 8.4,
+   "text": "マーシャル諸島。マジュロ、約4万人。大統領制。渡航レベル0、危険情報なし。第五福竜丸事件 1954年 の地。"
+  },
+  "MHL|en": {
+   "file": "voice/profile_MHL_en.ogg",
+   "dur": 13.4,
+   "text": "the Marshall Islands. Majuro, ≈40,000. Presidential. Travel advisory level 0: No advisory. Site of the 1954 Lucky Dragon incident; a former Japanese mandate."
+  },
+  "PLW|ja": {
+   "file": "voice/profile_PLW_ja.ogg",
+   "dur": 8.9,
+   "text": "パラオ。マルキョク、約1.8万人。大統領制。渡航レベル0、危険情報なし。旧日本委任統治領で、パラオ語に日本語由来の単語が多い。"
+  },
+  "PLW|en": {
+   "file": "voice/profile_PLW_en.ogg",
+   "dur": 11.8,
+   "text": "Palau. Ngerulmud, ≈18,000. Presidential. Travel advisory level 0: No advisory. Former Japanese mandate; Palauan has many Japanese loanwords."
+  },
+  "NRU|ja": {
+   "file": "voice/profile_NRU_ja.ogg",
+   "dur": 8.2,
+   "text": "ナウル。ヤレン 事実上 、約1.2万人。大統領制。渡航レベル0、危険情報なし。日本は太平洋、島サミットで支援。"
+  },
+  "NRU|en": {
+   "file": "voice/profile_NRU_en.ogg",
+   "dur": 11.2,
+   "text": "Nauru. Yaren de facto , ≈12,000. Presidential. Travel advisory level 0: No advisory. Japan supports it via the Pacific Islands summit."
+  },
+  "KIR|ja": {
+   "file": "voice/profile_KIR_ja.ogg",
+   "dur": 7.4,
+   "text": "キリバス。タラワ、約13万人。大統領制。渡航レベル0、危険情報なし。日本は水産、港湾で協力。"
+  },
+  "KIR|en": {
+   "file": "voice/profile_KIR_en.ogg",
+   "dur": 13.3,
+   "text": "Kiribati. Tarawa, ≈130,000. Presidential. Travel advisory level 0: No advisory. Japan cooperates on fisheries and ports; Tarawa was a WWII battlefield."
+  },
+  "TUV|ja": {
+   "file": "voice/profile_TUV_ja.ogg",
+   "dur": 9,
+   "text": "ツバル。フナフティ、約1.1万人。立憲君主制、議院内閣制。渡航レベル0、危険情報なし。日本は護岸、気候変動対策で支援。"
+  },
+  "TUV|en": {
+   "file": "voice/profile_TUV_en.ogg",
+   "dur": 12.6,
+   "text": "Tuvalu. Funafuti, ≈11,000. Constitutional monarchy, parliamentary. Travel advisory level 0: No advisory. Japan supports seawalls and climate adaptation."
+  },
+  "TON|ja": {
+   "file": "voice/profile_TON_ja.ogg",
+   "dur": 8.4,
+   "text": "トンガ。ヌクアロファ、約10万人。立憲君主制。渡航レベル0、危険情報なし。ラグビー選手の来日が多く、日本との交流が深い。"
+  },
+  "TON|en": {
+   "file": "voice/profile_TON_en.ogg",
+   "dur": 12.7,
+   "text": "Tonga. Nukuʻalofa, ≈100,000. Constitutional monarchy. Travel advisory level 0: No advisory. Many Tongan rugby players come to Japan; ties are close."
+  },
+  "WSM|ja": {
+   "file": "voice/profile_WSM_ja.ogg",
+   "dur": 7.3,
+   "text": "サモア。アピア、約22万人。議院内閣制。渡航レベル0、危険情報なし。日本は港湾、教育で支援。"
+  },
+  "WSM|en": {
+   "file": "voice/profile_WSM_en.ogg",
+   "dur": 10.8,
+   "text": "Samoa. Apia, ≈220,000. Parliamentary. Travel advisory level 0: No advisory. Japan supports ports and education."
+  }
+ },
+ "updated": "2026-11-08T09:15:29.913Z",
+ "credit": {
+  "ja": "VOICEVOX:No.7",
+  "en": "Piper TTS (en_US-amy-medium)"
+ }
+}
