@@ -1,16 +1,29 @@
 {
- "updated": "2026-11-08T20:07:15.405Z",
+ "updated": "2026-11-08T20:22:16.427Z",
  "sources": [
-  {
-   "name": "気象庁",
-   "url": "https://www.jma.go.jp/bosai/map.html#contents=earthquake_map"
-  },
   {
    "name": "USGS",
    "url": "https://earthquake.usgs.gov/"
+  },
+  {
+   "name": "気象庁",
+   "url": "https://www.jma.go.jp/bosai/map.html#contents=earthquake_map"
   }
  ],
  "items": [
+  {
+   "id": "jma:20261109051637",
+   "time": "2026-11-08T20:16:00.000Z",
+   "lat": 38.3,
+   "lon": 141.9,
+   "depth": 50,
+   "mag": 4.5,
+   "place": "宮城県沖",
+   "src": "気象庁",
+   "url": "https://www.jma.go.jp/bosai/map.html#contents=earthquake_map",
+   "maxi": null,
+   "tsunami": false
+  },
   {
    "id": "usgs:us7000twyd",
    "time": "2026-11-08T16:45:12.938Z",
