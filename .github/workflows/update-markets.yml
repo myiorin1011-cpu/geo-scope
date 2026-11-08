@@ -1,10 +1,11 @@
 # Market quotes for the LIVE strip (Stooq). Light job, no API cost. Every 30 min on weekdays + a few on weekends (BTC/FX).
 # Delete this file if you do not want the quotes or the extra commits.
 name: update-markets
+# 2026-11: Stooq stopped serving the free CSV (403/404), so the schedule is paused until a replacement source is chosen.
 on:
-  schedule:
-    - cron: "*/30 * * * 1-5"
-    - cron: "0 */3 * * 0,6"
+  # schedule:
+  #   - cron: "*/30 * * * 1-5"
+  #   - cron: "0 */3 * * 0,6"
   workflow_dispatch:
 concurrency: { group: geo-scope-markets, cancel-in-progress: true }
 permissions: { contents: write, pages: write, id-token: write }

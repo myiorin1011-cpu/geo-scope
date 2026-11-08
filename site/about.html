@@ -58,7 +58,7 @@ footer{margin-top:40px;color:var(--fg-dim);font-family:var(--mono);font-size:11.
 
   <h2><b>03</b>更新頻度と自動化</h2>
   <ul>
-    <li>ニュース：約2時間ごとに自動収集・要約・反映。地震：約15分ごと（自前配信の場合は閲覧者のブラウザから5分ごとに直接取得）。</li>
+    <li>ニュース：約4時間ごとに自動収集・要約・反映（都道府県・米国州の経済ニュースは1日2回）。地震：約15分ごと（自前配信の場合は閲覧者のブラウザから5分ごとに直接取得）。</li>
     <li>自動処理の失敗時はデータを更新せず、前回の内容を表示し続けます。ヘッダーの「LINK」に最終更新時刻を表示しています。</li>
     <li>自動生成には誤りが混じり得ます。気づいた点は下記の連絡先までお知らせください。</li>
   </ul>
@@ -82,7 +82,7 @@ footer{margin-top:40px;color:var(--fg-dim);font-family:var(--mono);font-size:11.
     <tr><td>基本情報・日本との関係・世界一</td><td>各国政府統計、外務省、JETRO、国連、報道などを基に運営が編集</td><td>概数。年次は項目に記載</td></tr>
     <tr><td>伝承・小ネタ</td><td>民間伝承・一般に流布する噂</td><td><strong>未検証</strong>の内容を含みます。事実としては扱わないでください</td></tr>
     <tr><td>国旗</td><td>運営による簡略化SVG</td><td>公式図案ではありません</td></tr>
-    <tr><td>読み上げ音声</td><td>VOICEVOX</td><td>使用キャラクターのクレジットを画面に表示</td></tr>
+    <tr><td>読み上げ音声</td><td>VOICEVOX（日本語：No.7）／Piper TTS（英語）</td><td>使用キャラクター・音声モデルのクレジットを画面に表示</td></tr>
   </table></div>
 
   <h2><b>06</b>免責</h2>
@@ -101,7 +101,7 @@ footer{margin-top:40px;color:var(--fg-dim);font-family:var(--mono);font-size:11.
   <h2><b>08</b>連絡先</h2>
   <p>誤りの指摘、出典に関する問い合わせ、掲載の取り下げ依頼は、配信ページの概要欄に記載の連絡先までお願いします。（公開時にここへ連絡先を記載）</p>
 
-  <footer>GEO-SCOPE — 個人運営 · 最終改定 2026-11-04</footer>
+  <footer>GEO-SCOPE — 個人運営 · 最終改定 2026-11-08</footer>
 </div>
 <script>
 fetch('changelog.json?ts='+Date.now(),{cache:'no-store'}).then(r=>r.ok?r.json():Promise.reject()).then(j=>{

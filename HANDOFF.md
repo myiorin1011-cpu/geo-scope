@@ -54,6 +54,15 @@
 5. Actions タブで `update-news` を手動実行（初回は `init` にチェックすると全か国・全地域を埋める）
 6. 不要なジョブ（例: マーケット）は該当 yml を削除
 
+### 独自ドメインを取ったあとの手順
+1. DNS（ドメインを買ったサービスの管理画面）に登録する
+   - サブドメイン（例 `news.example.com`）なら CNAME を `<GitHubユーザー名>.github.io` に向ける
+   - ドメイン直下（例 `example.com`）なら A レコード 4 つ（185.199.108.153 / 185.199.109.153 / 185.199.110.153 / 185.199.111.153）
+2. GitHub の Settings → Pages → Custom domain にドメインを入れて Save。DNS が通ったら Enforce HTTPS にチェック（証明書の発行に最大 1 日）
+3. Settings → Secrets and variables → Actions → Variables の `GEOSCOPE_SITE_URL` を `https://<ドメイン>/` に変更（OGP の URL に使う）
+4. update-news を手動実行して、新しい URL で OGP 画像とページが出ることを確認
+   - Pages の Source が GitHub Actions のときは `CNAME` ファイルは不要（設定画面の値が使われる）
+
 > 旧アカウントの claude.ai アーティファクト（プレビュー用ページ）は新アカウントからは編集できません。本番は GitHub Pages が正です。
 
 ## 5. 確定済みの仕様・方針（変えるときはユーザー確認）
@@ -92,9 +101,9 @@
 
 ## 7. 残っている TODO / 検討事項
 - [ ] **公開前**: `site/about.html` の運営者情報・連絡先・ポリシーを記入（公開時に対応予定）
-- [ ] **RSS / GDELT の取得を実環境で確認**（開発環境から外部に出られずモックでのみ検証。初回は `DRY_RUN=1 node scripts/update_news.mjs` でログの `feeds: NHK 国際:30 BBC World:25 …` を見て、ERR のフィードがあれば `feeds.json` の URL を差し替え）
 - [ ] 実費の確認：Actions のログの `usage: … ≈ $…` を 1〜2 日分見る
-- [ ] `update_markets.mjs` の Stooq 取得を実環境で確認（開発環境からは外部接続できず未検証。失敗時は前回データを保持し、表示を隠すだけ）
+- [ ] マーケット表示の取得先を決め直す。2026-11-08 に確認したところ Stooq は無料 CSV をやめていた（/q/l/ は 404、/q/d/l/ は 403）。ECB（為替）と Coinbase（BTC）の予備は取れる。update-markets.yml のスケジュールは止めてあり、古いデータは 36 時間で自動的に隠れる
+- [ ] RSS は 2026-11-08 の実環境確認で ReliefWeb（HTTP 406）以外すべて取得できた。GDELT は手元の PC から 429（回数制限）。Actions のログで GDELT と ReliefWeb が取れているか確認し、ReliefWeb がだめなら feeds.json から外すか URL を差し替える
 - [ ] 同梱の `regions.json` / `markets.json` はサンプル（見出しに【サンプル】）。初回の更新で置き換わる
 - [ ] 国紹介 ALL だと 1 ラウンドが 10 分以上になる → `PROFILE 3` 既定化か「1 巡おき」にするか検討
 - [ ] 既存音声を `normalize_voice.mjs` で正規化（1 回）
