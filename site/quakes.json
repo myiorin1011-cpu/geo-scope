@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-08T21:37:14.510Z",
+ "updated": "2026-11-08T21:52:14.398Z",
  "sources": [
-  {
-   "name": "気象庁",
-   "url": "https://www.jma.go.jp/bosai/map.html#contents=earthquake_map"
-  },
   {
    "name": "USGS",
    "url": "https://earthquake.usgs.gov/"
+  },
+  {
+   "name": "気象庁",
+   "url": "https://www.jma.go.jp/bosai/map.html#contents=earthquake_map"
   }
  ],
  "items": [
