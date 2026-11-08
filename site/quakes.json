@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T15:22:20.125Z",
+ "updated": "2026-11-08T15:37:15.833Z",
  "sources": [
   {
    "name": "USGS",
@@ -207,19 +207,6 @@
    "url": "https://www.jma.go.jp/bosai/map.html#contents=earthquake_map",
    "maxi": "1",
    "tsunami": false
-  },
-  {
-   "id": "usgs:us7000twss",
-   "time": "2026-11-07T15:22:50.149Z",
-   "lat": -19.7402,
-   "lon": 14.6467,
-   "depth": 8,
-   "mag": 4.9,
-   "place": "77 km NNW of Khorixas, Namibia",
-   "src": "USGS",
-   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twss",
-   "tsunami": false,
-   "alert": null
   }
  ]
 }
