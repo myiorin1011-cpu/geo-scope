@@ -50,6 +50,8 @@ jobs:
           else echo "regions: skipped this run (twice a day)"; fi
       - name: Validate data files
         run: node scripts/check.mjs
+      - name: Install ffmpeg (ogg/opus clips; without it the voice scripts fall back to WAV, about 10x larger)
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null && ffmpeg -version | head -1
       - name: Wait for VOICEVOX
         run: for i in $(seq 1 30); do curl -sf http://127.0.0.1:50021/version && break; sleep 4; done
       - name: Synthesize voice clips
