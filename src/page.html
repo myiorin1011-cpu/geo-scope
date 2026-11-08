@@ -1417,7 +1417,7 @@ const ALERT=(()=>{
     strip.innerHTML=list.length?`<div class="h">${lang==='en'?'ALERTS · 24H':'重要アラート · 24H'}</div>`+list.map(a=>`<div class="a c-${a.c}"><i></i>${LABEL[a.c]}${a.n?' · '+esc(enName(a.n)):(a.sub?' · '+esc(a.sub):'')}<span class="ago">${esc(a.i?agoOf(a.i):'')}</span></div>`).join(''):'';}
   setInterval(renderStrip,60000);
   const key=(n,i)=>n+'|'+i.t+'|'+i.h;
-  function consider(n,i){const c=classify(i);if(!c)return null;const ts=Date.parse(i.ts||'');const t=isNaN(ts)?itemDate(i):ts; // ts orders same-day alerts; t is date-onlyif(isNaN(t)||Date.now()-t>DAY)return null;const k=key(n,i);if(shown.has(k))return null;shown.add(k);recent.push({c,n,i,t});recent.sort((a,b)=>a.t-b.t);renderStrip();return {c,n,i,t};}
+  function consider(n,i){const c=classify(i);if(!c)return null;const ts=Date.parse(i.ts||'');const t=isNaN(ts)?itemDate(i):ts; /* ts orders same-day alerts (t alone is date-only) */if(isNaN(t)||Date.now()-t>DAY)return null;const k=key(n,i);if(shown.has(k))return null;shown.add(k);recent.push({c,n,i,t});recent.sort((a,b)=>a.t-b.t);renderStrip();return {c,n,i,t};}
   function scan(limit){const found=[];for(const [n,d] of Object.entries(DATA)){if(d.region)continue;for(const i of d.news||[]){const a=consider(n,i);if(a)found.push(a);}}
     found.sort((a,b)=>b.t-a.t);(limit?found.slice(0,limit):found).reverse().forEach(a=>queue.push(a)); // items beyond the limit stay marked as seen
     pump();return found.length;}
