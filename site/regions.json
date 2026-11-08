@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T07:18:02.509Z",
+ "updated": "2026-11-08T08:34:52.051Z",
  "japan": [
   {
    "area": "北海道",
@@ -80,6 +80,22 @@
     {
      "name": "eyeonannapolis.net",
      "url": "https://www.eyeonannapolis.net/2026/11/brown-mustache-coffee-to-relocate-across-maryland-avenue-in-downtown-annapolis/"
+    }
+   ]
+  },
+  {
+   "area": "Texas",
+   "t": "2026-11-07 / 産業",
+   "lv": "info",
+   "h": "テスラ、テキサスでサイバートラック生産縮小へ",
+   "h_en": "Tesla to wind down Cybertruck production at Texas Gigafactory",
+   "b": "NPRによると、テスラはテキサス州のギガファクトリーで、サイバートラックの製造を来月半ばにかけて縮小する見通し。需要不足が主因と伝えられ、賛否の分かれた車種が歴史の一部になる。",
+   "b_en": "NPR reports Tesla will wind down Cybertruck manufacturing at its Gigafactory Texas in the coming weeks, citing insufficient demand. The polarizing vehicle is set to become a thing of the past.",
+   "ts": "2026-11-06T22:22:20Z",
+   "src": [
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/06/nx-s1-6032607/the-cybertrucks-cause-of-death-insufficient-demand"
     }
    ]
   },
