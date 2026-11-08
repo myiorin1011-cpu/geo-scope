@@ -8,6 +8,10 @@ on:
         description: '初期化モード（ニュースのない国に1件ずつ概況を作る。40か国ずつ。全国分なら3回実行）'
         type: boolean
         default: false
+      scheduled:
+        description: '定期実行の代行（PC のタスクスケジューラから呼ぶとき true。地域枠を1日2回に絞る）'
+        type: boolean
+        default: false
 permissions:
   contents: write
   pages: write
@@ -45,7 +49,7 @@ jobs:
         # 地域枠は 1 日 2 回（UTC 20時・8時台 = JST 朝5時台・夕方17時台）と手動実行のときだけ
         run: |
           H=$(date -u +%H)
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$H" = "20" ] || [ "$H" = "08" ]; then
+          if { [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.scheduled }}" != "true" ]; } || [ "$H" = "20" ] || [ "$H" = "08" ]; then
             node scripts/update_regions.mjs || echo "regions step failed (continuing)"
           else echo "regions: skipped this run (twice a day)"; fi
       - name: Validate data files
