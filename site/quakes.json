@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-08T15:37:15.833Z",
+ "updated": "2026-11-08T15:52:15.663Z",
  "sources": [
-  {
-   "name": "USGS",
-   "url": "https://earthquake.usgs.gov/"
-  },
   {
    "name": "気象庁",
    "url": "https://www.jma.go.jp/bosai/map.html#contents=earthquake_map"
+  },
+  {
+   "name": "USGS",
+   "url": "https://earthquake.usgs.gov/"
   }
  ],
  "items": [
@@ -194,19 +194,6 @@
    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twsy",
    "tsunami": false,
    "alert": null
-  },
-  {
-   "id": "jma:20261108004200",
-   "time": "2026-11-07T15:42:00.000Z",
-   "lat": 40.3,
-   "lon": 142.7,
-   "depth": 20,
-   "mag": 4.1,
-   "place": "岩手県沖",
-   "src": "気象庁",
-   "url": "https://www.jma.go.jp/bosai/map.html#contents=earthquake_map",
-   "maxi": "1",
-   "tsunami": false
   }
  ]
 }
