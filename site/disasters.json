@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-08T14:37:23.707Z",
+ "updated": "2026-11-08T14:52:14.240Z",
  "sources": [
   {
    "name": "NHC (NOAA)",
    "url": "https://www.nhc.noaa.gov/"
   },
   {
-   "name": "気象庁 台風情報",
-   "url": "https://www.jma.go.jp/bosai/map.html#contents=typhoon"
-  },
-  {
    "name": "NWS",
    "url": "https://www.weather.gov/"
+  },
+  {
+   "name": "気象庁 台風情報",
+   "url": "https://www.jma.go.jp/bosai/map.html#contents=typhoon"
   }
  ],
  "items": [
