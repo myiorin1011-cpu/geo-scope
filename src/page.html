@@ -1427,7 +1427,7 @@ async function pollFeed(initial){
     const added=applyFeed(feed);feedUpdated=feed.updated||null;
     const dt=feedUpdated?new Date(feedUpdated):null;lt.textContent=dt&&!isNaN(dt)?dt.toLocaleString('ja-JP',{timeZone:'Asia/Tokyo',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'}).replace(/\//g,'-'):'SYNC';
     ls.classList.remove('err');const lf=document.getElementById('liveFeed');if(lf)lf.textContent=lt.textContent;
-    const ageH=dt&&!isNaN(dt)?(Date.now()-dt.getTime())/3600e3:0;const stale=ageH>3;ls.classList.toggle('stale',!!stale);ls.dataset.age=stale?Math.floor(ageH)+'h':'';ls.title=stale?(lang==='en'?`Feed is ${Math.floor(ageH)}h old — check the update job`:`フィードが${Math.floor(ageH)}時間更新されていません（更新ジョブを確認）`):'';DIAG.set('feed',stale?'stale':'ok');DIAG.fails=0;
+    const ageH=dt&&!isNaN(dt)?(Date.now()-dt.getTime())/3600e3:0;const stale=ageH>6;/* updates run every 4h; warn only after one missed run */ls.classList.toggle('stale',!!stale);ls.dataset.age=stale?Math.floor(ageH)+'h':'';ls.title=stale?(lang==='en'?`Feed is ${Math.floor(ageH)}h old — check the update job`:`フィードが${Math.floor(ageH)}時間更新されていません（更新ジョブを確認）`):'';DIAG.set('feed',stale?'stale':'ok');DIAG.fails=0;
     if(added&&!initial){ls.classList.add('fresh');SFX.notice();setTimeout(()=>ls.classList.remove('fresh'),8000);}
   }catch(e){DIAG.fails=(DIAG.fails||0)+1;if(initial||!feedUpdated){ls.classList.add('err');lt.textContent='LOCAL';}else if(DIAG.fails>=3){ls.classList.add('err');ls.classList.remove('stale');lt.textContent=lang==='en'?'NO FEED':'NO FEED';ls.title=lang==='en'?'news.json could not be fetched 3 times in a row':'news.json を3回続けて取得できません';DIAG.set('feed','down');}}
 }

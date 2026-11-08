@@ -31,6 +31,7 @@ jobs:
       - name: Build site/index.html from src/page.html
         env:
           SITE_URL: ${{ vars.GEOSCOPE_SITE_URL || 'https://example.github.io/geo-scope/' }}
+          SITE_INDEX: ${{ vars.GEOSCOPE_INDEX || '' }}   # 公開時に Variables で GEOSCOPE_INDEX=on（それまでは noindex と robots.txt で検索よけ）
         run: node scripts/build_site.mjs
       - name: Generate news.json
         env:
@@ -88,7 +89,7 @@ jobs:
         run: |
           git config user.name "geo-scope-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add site/index.html site/news.json site/regions.json site/voice site/changelog.json .cache
+          git add site/index.html site/robots.txt site/news.json site/regions.json site/voice site/changelog.json .cache
           git diff --cached --quiet || git commit -m "news: $(date -u +'%Y-%m-%d %H:%M UTC')"
           git pull --rebase --autostash || true
           git push

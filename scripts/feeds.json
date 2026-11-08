@@ -82,11 +82,6 @@
    "name": "UN News",
    "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
    "weight": 0.8
-  },
-  {
-   "name": "ReliefWeb",
-   "url": "https://reliefweb.int/updates/rss.xml",
-   "weight": 0.6
   }
  ],
  "world_gdelt": [

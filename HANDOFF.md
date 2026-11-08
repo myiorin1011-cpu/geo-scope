@@ -62,6 +62,7 @@
 3. Settings → Secrets and variables → Actions → Variables の `GEOSCOPE_SITE_URL` を `https://<ドメイン>/` に変更（OGP の URL に使う）
 4. update-news を手動実行して、新しい URL で OGP 画像とページが出ることを確認
    - Pages の Source が GitHub Actions のときは `CNAME` ファイルは不要（設定画面の値が使われる）
+5. 検索に載せてよくなったら、Variables に `GEOSCOPE_INDEX=on` を追加し、`site/about.html` の robots の meta 行を消す。次の update-news で index.html の noindex が外れ、robots.txt が Allow になる（それまでは検索よけ）
 
 > 旧アカウントの claude.ai アーティファクト（プレビュー用ページ）は新アカウントからは編集できません。本番は GitHub Pages が正です。
 
@@ -105,7 +106,7 @@
 - [ ] GitHub の schedule が発火しない（2026-11-08 時点で一度も動いていない。ワークフローは active、cron を登録し直しても同じ）。代わりに作業 PC のタスクスケジューラ（フォルダ \GEO-SCOPE\）が `scripts/kick_hidden.vbs` → `scripts/kick_actions.ps1` で gh workflow run を呼ぶ。地震 15 分ごと、ニュース 4 時間ごと（JST 1,5,9,13,17,21 時 19 分、`scheduled=true` で地域枠は 1 日 2 回）。PC が切れている間は止まる。GitHub 側の schedule 実行が最近あれば自動でスキップする。ログは `%LOCALAPPDATA%\geo-scope\kick.log`。直ったら `Unregister-ScheduledTask -TaskPath \GEO-SCOPE\ -TaskName *` で外す。2026-11-09 21:50 に `scripts/stop_actions.ps1`（タスク GEO-SCOPE stop）が news と quakes のワークフローを disable し、代行タスクも消す（まだ広く公開しないため、1日分だけ動かす方針）。再開は gh workflow enable の後にタスクを登録し直す
 - [ ] 実費の確認：Actions のログの `usage: … ≈ $…` を 1〜2 日分見る
 - [ ] マーケット表示の取得先を決め直す。2026-11-08 に確認したところ Stooq は無料 CSV をやめていた（/q/l/ は 404、/q/d/l/ は 403）。ECB（為替）と Coinbase（BTC）の予備は取れる。update-markets.yml のスケジュールは止めてあり、古いデータは 36 時間で自動的に隠れる
-- [ ] RSS は 2026-11-08 の実環境確認で ReliefWeb（HTTP 406）以外すべて取得できた。GDELT は手元の PC からも Actions からも 429（回数制限）。最初の 429 か通信エラーでその実行の GDELT を打ち切るようにした（`GDELT=off` で最初から使わない）。地域枠の INIT は GDELT が取れないと RSS に切り替わる。ReliefWeb がだめなら feeds.json から外すか URL を差し替える
+- [ ] RSS は 2026-11-08 の実環境確認で ReliefWeb（HTTP 406）以外すべて取得できた。GDELT は手元の PC からも Actions からも 429（回数制限）。最初の 429 か通信エラーでその実行の GDELT を打ち切るようにした（`GDELT=off` で最初から使わない）。地域枠の INIT は GDELT が取れないと RSS に切り替わる。ReliefWeb は RSS の URL をいくつ試しても 406 だったので 2026-11-09 に feeds.json から外した（国連系は UN News が残っている）
 - [ ] 同梱の `regions.json` / `markets.json` はサンプル（見出しに【サンプル】）。初回の更新で置き換わる
 - [ ] 航空機・船レイヤー（試作のみ、既定で無効）。`scripts/fetch_traffic.mjs` が緊急スコーク 7500/7600/7700 の機体（adsb.lol、データは ODbL）と要所 8 か所の船舶数（aisstream.io、要 `AISSTREAM_KEY`）を `site/traffic.json` に書く。ページは URL に `traffic=on` を付けたときだけ表示。有効化の前に adsb.lol と aisstream.io へ商用利用（収益化した配信）の可否を確認する。航空機が不可なら FlyItalyADSB（無料枠でも商用可・出典表記、全世界は月 49 ユーロ）に切り替え。可なら地震ワークフロー（15 分おき）か配信 PC で fetch_traffic を回し、ページの既定を on にして about.html のデータ出所に追記する
 - [ ] 株価チャートの時間帯（試作のみ、既定で無効）。`scripts/fetch_charts.mjs` が全世界株式（eMAXIS Slim 全世界株式の基準価額 CSV）、S&P500・日経平均（FRED の CSV、APIキー不要）を `site/charts.json` に書く。ページは URL に `charts=on` を付けたときだけ、毎時40分に日足 3M → 週足 2Y → 月足 10Y → 全期間を12秒ずつ映す（コンソールで GEOSCOPE.charts() でも出る）。有効化の前に、S&P ダウ・ジョーンズ・インデックスと日本経済新聞社へ指数の商用表示の可否、三菱UFJアセットマネジメントのサイト規約を確認する。可なら地震ワークフローか1日1回のワークフローで fetch_charts を回し、charts.json を .gitignore から外す
