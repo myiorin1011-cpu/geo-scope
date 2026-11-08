@@ -101,7 +101,7 @@
 
 ## 7. 残っている TODO / 検討事項
 - [ ] **公開前**: `site/about.html` の運営者情報・連絡先・ポリシーを記入（公開時に対応予定）
-- [ ] GitHub の schedule が発火しない（2026-11-08 時点で一度も動いていない。ワークフローは active、cron を登録し直しても同じ）。代わりに作業 PC のタスクスケジューラ（フォルダ \GEO-SCOPE\）が `scripts/kick_hidden.vbs` → `scripts/kick_actions.ps1` で gh workflow run を呼ぶ。地震 15 分ごと、ニュース 4 時間ごと（JST 1,5,9,13,17,21 時 19 分、`scheduled=true` で地域枠は 1 日 2 回）。PC が切れている間は止まる。GitHub 側の schedule 実行が最近あれば自動でスキップする。ログは `%LOCALAPPDATA%\geo-scope\kick.log`。直ったら `Unregister-ScheduledTask -TaskPath \GEO-SCOPE\ -TaskName *` で外す
+- [ ] GitHub の schedule が発火しない（2026-11-08 時点で一度も動いていない。ワークフローは active、cron を登録し直しても同じ）。代わりに作業 PC のタスクスケジューラ（フォルダ \GEO-SCOPE\）が `scripts/kick_hidden.vbs` → `scripts/kick_actions.ps1` で gh workflow run を呼ぶ。地震 15 分ごと、ニュース 4 時間ごと（JST 1,5,9,13,17,21 時 19 分、`scheduled=true` で地域枠は 1 日 2 回）。PC が切れている間は止まる。GitHub 側の schedule 実行が最近あれば自動でスキップする。ログは `%LOCALAPPDATA%\geo-scope\kick.log`。直ったら `Unregister-ScheduledTask -TaskPath \GEO-SCOPE\ -TaskName *` で外す。2026-11-09 21:50 に `scripts/stop_actions.ps1`（タスク GEO-SCOPE stop）が news と quakes のワークフローを disable し、代行タスクも消す（まだ広く公開しないため、1日分だけ動かす方針）。再開は gh workflow enable の後にタスクを登録し直す
 - [ ] 実費の確認：Actions のログの `usage: … ≈ $…` を 1〜2 日分見る
 - [ ] マーケット表示の取得先を決め直す。2026-11-08 に確認したところ Stooq は無料 CSV をやめていた（/q/l/ は 404、/q/d/l/ は 403）。ECB（為替）と Coinbase（BTC）の予備は取れる。update-markets.yml のスケジュールは止めてあり、古いデータは 36 時間で自動的に隠れる
 - [ ] RSS は 2026-11-08 の実環境確認で ReliefWeb（HTTP 406）以外すべて取得できた。GDELT は手元の PC からも Actions からも 429（回数制限）。最初の 429 か通信エラーでその実行の GDELT を打ち切るようにした（`GDELT=off` で最初から使わない）。地域枠の INIT は GDELT が取れないと RSS に切り替わる。ReliefWeb がだめなら feeds.json から外すか URL を差し替える
