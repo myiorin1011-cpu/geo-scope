@@ -4,6 +4,10 @@
    "file": "voice/42088272.ogg",
    "dur": 13.3
   },
+  "75034883": {
+   "file": "voice/75034883.ogg",
+   "dur": 15.8
+  },
   "ecfd4008": {
    "file": "voice/ecfd4008.ogg",
    "dur": 15.8
@@ -155,9 +159,57 @@
   "2e2712ce": {
    "file": "voice/2e2712ce.ogg",
    "dur": 15.4
+  },
+  "050fb65f": {
+   "file": "voice/050fb65f.ogg",
+   "dur": 15.8
+  },
+  "db314743": {
+   "file": "voice/db314743.ogg",
+   "dur": 14.3
+  },
+  "f2ab27ed": {
+   "file": "voice/f2ab27ed.ogg",
+   "dur": 15.7
+  },
+  "821f1679": {
+   "file": "voice/821f1679.ogg",
+   "dur": 12.8
+  },
+  "d0e0947f": {
+   "file": "voice/d0e0947f.ogg",
+   "dur": 11.6
+  },
+  "78863a10": {
+   "file": "voice/78863a10.ogg",
+   "dur": 12.7
+  },
+  "ef5a70e3": {
+   "file": "voice/ef5a70e3.ogg",
+   "dur": 11.7
+  },
+  "aca5224d": {
+   "file": "voice/aca5224d.ogg",
+   "dur": 11.6
+  },
+  "a2d62d2d": {
+   "file": "voice/a2d62d2d.ogg",
+   "dur": 11.2
+  },
+  "d6112c7b": {
+   "file": "voice/d6112c7b.ogg",
+   "dur": 15.6
+  },
+  "8dab99d8": {
+   "file": "voice/8dab99d8.ogg",
+   "dur": 13.4
+  },
+  "23b619c0": {
+   "file": "voice/23b619c0.ogg",
+   "dur": 11.2
   }
  },
- "updated": "2026-11-08T17:59:03.630Z",
+ "updated": "2026-11-08T23:49:05.656Z",
  "credit": "VOICEVOX:No.7",
  "speaker": 30
 }
