@@ -1,16 +1,29 @@
 {
- "updated": "2026-11-09T02:37:14.538Z",
+ "updated": "2026-11-09T02:52:16.947Z",
  "sources": [
-  {
-   "name": "USGS",
-   "url": "https://earthquake.usgs.gov/"
-  },
   {
    "name": "気象庁",
    "url": "https://www.jma.go.jp/bosai/map.html#contents=earthquake_map"
+  },
+  {
+   "name": "USGS",
+   "url": "https://earthquake.usgs.gov/"
   }
  ],
  "items": [
+  {
+   "id": "usgs:us7000tx0x",
+   "time": "2026-11-09T02:21:57.196Z",
+   "lat": -25.1858,
+   "lon": -176.9956,
+   "depth": 136,
+   "mag": 4.9,
+   "place": "south of the Fiji Islands",
+   "src": "USGS",
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx0x",
+   "tsunami": false,
+   "alert": null
+  },
   {
    "id": "usgs:us7000tx0f",
    "time": "2026-11-09T00:46:59.721Z",
