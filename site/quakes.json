@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-09T05:07:16.292Z",
+ "updated": "2026-11-09T05:22:48.143Z",
  "sources": [
-  {
-   "name": "USGS",
-   "url": "https://earthquake.usgs.gov/"
-  },
   {
    "name": "気象庁",
    "url": "https://www.jma.go.jp/bosai/map.html#contents=earthquake_map"
+  },
+  {
+   "name": "USGS",
+   "url": "https://earthquake.usgs.gov/"
   }
  ],
  "items": [
@@ -22,7 +22,8 @@
    "src": "気象庁",
    "url": "https://www.jma.go.jp/bosai/map.html#contents=earthquake_map",
    "maxi": "1",
-   "tsunami": false
+   "tsunami": false,
+   "url_usgs": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx1i"
   },
   {
    "id": "jma:20261109135259",
