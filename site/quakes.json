@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T06:52:57.957Z",
+ "updated": "2026-11-09T07:38:25.423Z",
  "sources": [
   {
    "name": "気象庁",
@@ -11,6 +11,19 @@
   }
  ],
  "items": [
+  {
+   "id": "usgs:us7000tx2g",
+   "time": "2026-11-09T07:04:13.845Z",
+   "lat": 55.8343,
+   "lon": 160.9753,
+   "depth": 155,
+   "mag": 4.6,
+   "place": "54 km S of Klyuchi, Russia",
+   "src": "USGS",
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx2g",
+   "tsunami": false,
+   "alert": null
+  },
   {
    "id": "usgs:us7000tx1p",
    "time": "2026-11-09T05:16:56.823Z",

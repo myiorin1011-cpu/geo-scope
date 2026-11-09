@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T06:52:58.198Z",
+ "updated": "2026-11-09T07:38:25.671Z",
  "sources": [
   {
    "name": "NHC (NOAA)",
@@ -8,6 +8,10 @@
   {
    "name": "気象庁 台風情報",
    "url": "https://www.jma.go.jp/bosai/map.html#contents=typhoon"
+  },
+  {
+   "name": "NWS",
+   "url": "https://www.weather.gov/"
   }
  ],
  "items": [
@@ -28,7 +32,6 @@
   }
  ],
  "errors": [
-  "500 https://api.weather.gov/alerts/active?event=Tornado%20Warning",
   "400 https://www.gdacs.org/gdacsapi/api/events/geteventlist/MAP?eventlist=TC;FL;VO;WF;DR&alertlevel=Green;Orange;Red"
  ]
 }
