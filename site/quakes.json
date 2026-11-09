@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T10:07:16.303Z",
+ "updated": "2026-11-09T10:22:17.384Z",
  "sources": [
   {
    "name": "USGS",
@@ -11,6 +11,19 @@
   }
  ],
  "items": [
+  {
+   "id": "usgs:us7000tx34",
+   "time": "2026-11-09T09:53:38.135Z",
+   "lat": -2.9775,
+   "lon": 130.5842,
+   "depth": 10,
+   "mag": 4.8,
+   "place": "183 km E of Masohi, Indonesia",
+   "src": "USGS",
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx34",
+   "tsunami": false,
+   "alert": null
+  },
   {
    "id": "usgs:us7000tx32",
    "time": "2026-11-09T09:48:27.806Z",
