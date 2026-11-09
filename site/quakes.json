@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T04:37:16.984Z",
+ "updated": "2026-11-09T04:52:14.452Z",
  "sources": [
   {
    "name": "USGS",
@@ -39,11 +39,11 @@
   },
   {
    "id": "usgs:us7000tx0f",
-   "time": "2026-11-09T00:46:59.721Z",
-   "lat": -23.6266,
-   "lon": 179.1054,
-   "depth": 538,
-   "mag": 5.3,
+   "time": "2026-11-09T00:46:59.021Z",
+   "lat": -23.6774,
+   "lon": 179.2119,
+   "depth": 535,
+   "mag": 5.1,
    "place": "south of the Fiji Islands",
    "src": "USGS",
    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx0f",
