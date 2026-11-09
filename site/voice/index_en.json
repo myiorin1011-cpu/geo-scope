@@ -12,10 +12,6 @@
    "file": "voice/en_ecfd4008.ogg",
    "dur": 20.8
   },
-  "a4037653": {
-   "file": "voice/en_a4037653.ogg",
-   "dur": 17.4
-  },
   "65b65300": {
    "file": "voice/en_65b65300.ogg",
    "dur": 10.3
@@ -67,14 +63,6 @@
   "e69e247a": {
    "file": "voice/en_e69e247a.ogg",
    "dur": 15.3
-  },
-  "84b69368": {
-   "file": "voice/en_84b69368.ogg",
-   "dur": 17.4
-  },
-  "0eaad2d4": {
-   "file": "voice/en_0eaad2d4.ogg",
-   "dur": 22.3
   },
   "7a494b33": {
    "file": "voice/en_7a494b33.ogg",
@@ -207,9 +195,57 @@
   "23b619c0": {
    "file": "voice/en_23b619c0.ogg",
    "dur": 11.9
+  },
+  "86fe45a3": {
+   "file": "voice/en_86fe45a3.ogg",
+   "dur": 17.3
+  },
+  "2b0cf1bc": {
+   "file": "voice/en_2b0cf1bc.ogg",
+   "dur": 17
+  },
+  "4b45a057": {
+   "file": "voice/en_4b45a057.ogg",
+   "dur": 16.6
+  },
+  "f8d8eef4": {
+   "file": "voice/en_f8d8eef4.ogg",
+   "dur": 16
+  },
+  "fa1c4e31": {
+   "file": "voice/en_fa1c4e31.ogg",
+   "dur": 15.8
+  },
+  "634647ee": {
+   "file": "voice/en_634647ee.ogg",
+   "dur": 13.8
+  },
+  "1852f8c7": {
+   "file": "voice/en_1852f8c7.ogg",
+   "dur": 14.8
+  },
+  "84137e7d": {
+   "file": "voice/en_84137e7d.ogg",
+   "dur": 16.8
+  },
+  "e87af819": {
+   "file": "voice/en_e87af819.ogg",
+   "dur": 18.5
+  },
+  "68b9aed3": {
+   "file": "voice/en_68b9aed3.ogg",
+   "dur": 14.2
+  },
+  "6f1f0218": {
+   "file": "voice/en_6f1f0218.ogg",
+   "dur": 17
+  },
+  "6ebd18a5": {
+   "file": "voice/en_6ebd18a5.ogg",
+   "dur": 13.3
   }
  },
- "updated": "2026-11-08T23:49:33.171Z",
+ "updated": "2026-11-09T06:47:40.516Z",
  "credit": "Piper TTS (en_US-amy-medium)",
  "voice": "en_US-amy-medium"
 }
