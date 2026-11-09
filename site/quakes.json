@@ -1,16 +1,29 @@
 {
- "updated": "2026-11-09T05:22:48.143Z",
+ "updated": "2026-11-09T05:37:27.375Z",
  "sources": [
-  {
-   "name": "気象庁",
-   "url": "https://www.jma.go.jp/bosai/map.html#contents=earthquake_map"
-  },
   {
    "name": "USGS",
    "url": "https://earthquake.usgs.gov/"
+  },
+  {
+   "name": "気象庁",
+   "url": "https://www.jma.go.jp/bosai/map.html#contents=earthquake_map"
   }
  ],
  "items": [
+  {
+   "id": "usgs:us7000tx1p",
+   "time": "2026-11-09T05:16:56.823Z",
+   "lat": -10.912,
+   "lon": 165.6396,
+   "depth": 10,
+   "mag": 4.8,
+   "place": "26 km SW of Lata, Solomon Islands",
+   "src": "USGS",
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx1p",
+   "tsunami": false,
+   "alert": null
+  },
   {
    "id": "jma:20261109140157",
    "time": "2026-11-09T05:01:00.000Z",
