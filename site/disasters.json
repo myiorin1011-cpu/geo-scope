@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T08:37:17.826Z",
+ "updated": "2026-11-09T08:52:17.789Z",
  "sources": [
   {
    "name": "NHC (NOAA)",
@@ -19,14 +19,14 @@
    "id": "nhc:cp042026",
    "type": "cyclone",
    "name": "TS Pena",
-   "lat": 11.4,
-   "lon": -157.6,
+   "lat": 11.3,
+   "lon": -158.4,
    "level": "green",
    "wind_kt": 40,
    "cat": 0,
    "pressure": "1002",
-   "movement": "260° 8kt",
-   "time": "2026-11-09T03:00:00.000Z",
+   "movement": "270° 9kt",
+   "time": "2026-11-09T09:00:00.000Z",
    "src": "NHC",
    "url": "https://www.nhc.noaa.gov/"
   }
