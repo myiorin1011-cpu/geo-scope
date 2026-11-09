@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T11:37:16.467Z",
+ "updated": "2026-11-09T11:52:16.539Z",
  "sources": [
   {
    "name": "USGS",
@@ -11,6 +11,19 @@
   }
  ],
  "items": [
+  {
+   "id": "usgs:us7000tx3c",
+   "time": "2026-11-09T11:25:07.473Z",
+   "lat": 4.1741,
+   "lon": 127.7802,
+   "depth": 98,
+   "mag": 4.7,
+   "place": "271 km N of Tobelo, Indonesia",
+   "src": "USGS",
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx3c",
+   "tsunami": false,
+   "alert": null
+  },
   {
    "id": "usgs:us7000tx38",
    "time": "2026-11-09T10:23:53.528Z",
