@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T04:52:14.452Z",
+ "updated": "2026-11-09T05:07:16.292Z",
  "sources": [
   {
    "name": "USGS",
@@ -11,6 +11,33 @@
   }
  ],
  "items": [
+  {
+   "id": "jma:20261109140157",
+   "time": "2026-11-09T05:01:00.000Z",
+   "lat": 36.3,
+   "lon": 141.7,
+   "depth": 40,
+   "mag": 4.5,
+   "place": "茨城県沖",
+   "src": "気象庁",
+   "url": "https://www.jma.go.jp/bosai/map.html#contents=earthquake_map",
+   "maxi": "1",
+   "tsunami": false
+  },
+  {
+   "id": "jma:20261109135259",
+   "time": "2026-11-09T04:52:00.000Z",
+   "lat": 36.2,
+   "lon": 142.2,
+   "depth": 10,
+   "mag": 5.9,
+   "place": "茨城県沖",
+   "src": "気象庁",
+   "url": "https://www.jma.go.jp/bosai/map.html#contents=earthquake_map",
+   "maxi": null,
+   "tsunami": false,
+   "url_usgs": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx1f"
+  },
   {
    "id": "usgs:us7000tx16",
    "time": "2026-11-09T03:34:59.466Z",
