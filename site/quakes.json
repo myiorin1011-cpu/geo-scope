@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T09:22:22.706Z",
+ "updated": "2026-11-09T09:37:22.617Z",
  "sources": [
   {
    "name": "気象庁",
@@ -180,19 +180,6 @@
    "place": "46 km NW of Huara, Chile",
    "src": "USGS",
    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twxf",
-   "tsunami": false,
-   "alert": null
-  },
-  {
-   "id": "usgs:us7000twx1",
-   "time": "2026-11-08T09:23:35.700Z",
-   "lat": 39.8647,
-   "lon": 143.5257,
-   "depth": 10,
-   "mag": 4.7,
-   "place": "137 km E of Miyako, Japan",
-   "src": "USGS",
-   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twx1",
    "tsunami": false,
    "alert": null
   }
