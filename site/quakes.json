@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-09T01:52:14.483Z",
+ "updated": "2026-11-09T02:07:18.769Z",
  "sources": [
-  {
-   "name": "USGS",
-   "url": "https://earthquake.usgs.gov/"
-  },
   {
    "name": "気象庁",
    "url": "https://www.jma.go.jp/bosai/map.html#contents=earthquake_map"
+  },
+  {
+   "name": "USGS",
+   "url": "https://earthquake.usgs.gov/"
   }
  ],
  "items": [
@@ -102,20 +102,6 @@
    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twx1",
    "tsunami": false,
    "alert": null
-  },
-  {
-   "id": "jma:20261108105319",
-   "time": "2026-11-08T01:53:00.000Z",
-   "lat": 32.6,
-   "lon": 130.6,
-   "depth": 10,
-   "mag": 4.3,
-   "place": "熊本県天草・芦北地方",
-   "src": "気象庁",
-   "url": "https://www.jma.go.jp/bosai/map.html#contents=earthquake_map",
-   "maxi": null,
-   "tsunami": false,
-   "url_usgs": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twvb"
   }
  ]
 }
