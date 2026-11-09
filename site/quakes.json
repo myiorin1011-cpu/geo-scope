@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T03:52:15.932Z",
+ "updated": "2026-11-09T04:07:16.334Z",
  "sources": [
   {
    "name": "USGS",
@@ -13,12 +13,12 @@
  "items": [
   {
    "id": "usgs:us7000tx16",
-   "time": "2026-11-09T03:35:01.077Z",
-   "lat": -10.8963,
-   "lon": 165.6176,
-   "depth": 25,
+   "time": "2026-11-09T03:34:59.466Z",
+   "lat": -10.8669,
+   "lon": 165.5616,
+   "depth": 17,
    "mag": 6.4,
-   "place": "27 km SW of Lata, Solomon Islands",
+   "place": "30 km WSW of Lata, Solomon Islands",
    "src": "USGS",
    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx16",
    "tsunami": false,
