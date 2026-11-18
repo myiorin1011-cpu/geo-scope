@@ -137,7 +137,7 @@ async function feedCandidates() {
 
 // ---------------- Claude ----------------
 async function callClaude(user, { search }) {
-  const body = { model: MODEL, max_tokens: INIT ? 16000 : 9000, system, messages: [{ role: "user", content: user }] };
+  const body = { model: MODEL, max_tokens: 16000, system, messages: [{ role: "user", content: user }] };
   if (search) body.tools = [{ type: "web_search_20250305", name: "web_search", max_uses: INIT ? 60 : Number(process.env.MAX_SEARCHES || 25) }];
   const r = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
@@ -147,12 +147,30 @@ async function callClaude(user, { search }) {
   if (!r.ok) throw new Error(`API ${r.status}: ${await r.text()}`);
   const data = await r.json();
   console.log(costLine(data.usage, "news "));
+  if (data.stop_reason !== "end_turn") console.error(`stop_reason: ${data.stop_reason} (output may be cut off; trying to keep the complete part)`);
   return data.content.filter(c => c.type === "text").map(c => c.text).join("\n");
 }
 function extractJSON(text) {
   const s = text.indexOf("{"), e = text.lastIndexOf("}");
   if (s < 0 || e < 0) throw new Error("no JSON in response");
-  return JSON.parse(text.slice(s, e + 1));
+  try { return JSON.parse(text.slice(s, e + 1)); }
+  catch (err) { const r = salvageJSON(text.slice(s)); if (r) { console.error(`JSON was cut off (${err.message}); kept the complete part`); return r; } throw err; }
+}
+// A reply cut off by max_tokens: walk back to the last complete value and close the open brackets.
+function salvageJSON(t) {
+  const stack = [], cuts = []; let str = false, esc = false;
+  for (let i = 0; i < t.length; i++) {
+    const c = t[i];
+    if (str) { if (esc) esc = false; else if (c === "\\") esc = true; else if (c === '"') str = false; continue; }
+    if (c === '"') str = true;
+    else if (c === "{" || c === "[") stack.push(c === "{" ? "}" : "]");
+    else if (c === "}" || c === "]") { stack.pop(); cuts.push([i + 1, stack.slice()]); }
+  }
+  for (let k = cuts.length - 1; k >= 0 && k >= cuts.length - 400; k--) {
+    const [end, open] = cuts[k];
+    try { return JSON.parse(t.slice(0, end) + open.reverse().join("")); } catch {}
+  }
+  return null;
 }
 function clean(str, max) { return String(str || "").replace(/\s+/g, " ").trim().slice(0, max); }
 
@@ -215,7 +233,7 @@ function merge(fresh) {
 function sim(a, b) { const A = new Set(a), B = new Set(b); let n = 0; for (const c of A) if (B.has(c)) n++; return n / Math.max(A.size, B.size); }
 
 (async () => {
-  let fresh = { items: {} }; let seen = null; let cands = [];
+  let fresh = { items: {} }; let seen = null; let cands = []; let parsed = false;
   try {
     if (SOURCE === "search") fresh = extractJSON(await callClaude(searchPrompt(), { search: true }));
     else {
@@ -224,13 +242,15 @@ function sim(a, b) { const A = new Set(a), B = new Set(b); let n = 0; for (const
       fresh = extractJSON(await callClaude(feedsPrompt(candidateBlock(cands, toJST), cands.length), { search: false }));
       attachSources(fresh, cands);
     }
+    parsed = true;
   } catch (e) {
     console.error("fetch/parse failed, will only refresh timestamp:", e.message);
   }
   const before = JSON.parse(JSON.stringify(current.items));
   const { added, log } = merge(fresh);
   // every candidate that was shown to Claude counts as "seen" (picked or not) → it is not sent (= paid for) again
-  if (seen && !process.env.DRY_RUN) { for (const c of cands) seen.add(c.link); seen.save(); }
+  // only when the reply was usable; after a failed call the same articles are offered again next run
+  if (parsed && seen && !process.env.DRY_RUN) { for (const c of cands) seen.add(c.link); seen.save(); }
   try {
     const clPath = path.join(SITE_DIR, "changelog.json");
     const cl = fs.existsSync(clPath) ? JSON.parse(fs.readFileSync(clPath, "utf8")) : { entries: [] };
